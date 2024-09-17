@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "many_more_ores_and_crafts:palladiumingot"
+    }
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:palladiumnugget",
+    "count": 9
+  }
+}

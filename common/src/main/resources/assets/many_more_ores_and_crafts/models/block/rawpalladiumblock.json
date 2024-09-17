@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "up": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "north": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "east": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "south": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "west": "many_more_ores_and_crafts:block/raw_palladium_block",
+    "particle": "many_more_ores_and_crafts:block/raw_palladium_block"
+  },
+  "render_type": "solid"
+}

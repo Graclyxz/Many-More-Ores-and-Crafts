@@ -11,6 +11,7 @@ displayName = "${mod_name}" #mandatory
 logoFile="${mod_id}.png" #optional
 credits="${credits}" #optional
 authors = "${mod_author}" #optional
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/many-more-ores-and-crafts"
 description = '''${description}''' #mandatory (Supports multiline text)
 [[mixins]]
 config = "${mod_id}.mixins.json"

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "many_more_ores_and_crafts:tiningot"
+    }
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:tinarmor_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "up": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "north": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "east": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "south": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "west": "many_more_ores_and_crafts:block/raw_orichalcum_block",
+    "particle": "many_more_ores_and_crafts:block/raw_orichalcum_block"
+  },
+  "render_type": "solid"
+}

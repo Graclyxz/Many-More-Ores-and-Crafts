@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "many_more_ores_and_crafts:tungsteningot"
+    }
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:tungstenarmor_boots",
+    "count": 1
+  }
+}

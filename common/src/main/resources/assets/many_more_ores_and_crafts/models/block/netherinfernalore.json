@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "up": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "north": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "east": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "south": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "west": "many_more_ores_and_crafts:block/nether_infernal_ore",
+    "particle": "minecraft:block/fire_0"
+  },
+  "render_type": "solid"
+}

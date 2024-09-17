@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "up": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "north": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "east": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "south": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "west": "many_more_ores_and_crafts:block/raw_cobalt_block",
+    "particle": "many_more_ores_and_crafts:block/raw_cobalt_block"
+  },
+  "render_type": "solid"
+}
