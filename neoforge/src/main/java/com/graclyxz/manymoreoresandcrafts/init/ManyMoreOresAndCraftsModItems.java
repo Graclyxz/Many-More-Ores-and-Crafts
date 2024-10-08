@@ -1,5 +1,6 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
+import com.graclyxz.manymoreoresandcrafts.item.amethystItems.*;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -115,12 +116,6 @@ import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltingotItem;
 import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobalthoeItem;
 import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltaxeItem;
 import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethystswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethystshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethystpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethysthoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethystaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.AmethystarmorItem;
 import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteswordItem;
 import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteshovelItem;
 import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantitepickaxeItem;

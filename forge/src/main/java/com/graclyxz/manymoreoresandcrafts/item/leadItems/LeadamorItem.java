@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
 
-public abstract class LeadamorItem extends ArmorItem {
+/*public abstract class LeadamorItem extends ArmorItem {
 	public LeadamorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -104,3 +104,4 @@ public abstract class LeadamorItem extends ArmorItem {
 		}
 	}
 }
+*/

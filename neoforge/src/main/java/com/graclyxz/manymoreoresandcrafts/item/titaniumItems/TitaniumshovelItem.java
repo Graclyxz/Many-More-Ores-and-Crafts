@@ -1,13 +1,9 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.titaniumItems;
 
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
@@ -47,6 +43,6 @@ public class TitaniumshovelItem extends ShovelItem {
 	};
 
 	public TitaniumshovelItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 5.5f, -3f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 5.5f, -3f)).rarity(Rarity.EPIC));
 	}
 }

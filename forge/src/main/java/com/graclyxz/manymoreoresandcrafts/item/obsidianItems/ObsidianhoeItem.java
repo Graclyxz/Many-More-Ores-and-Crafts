@@ -1,40 +1,49 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.obsidianItems;
 
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.HoeItem;
 
 import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
+import net.minecraft.world.level.block.Block;
+
 
 public class ObsidianhoeItem extends HoeItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 2031;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 7f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 22;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.OBSIDIANINGOT.get()));
+		}
+	};
+
 	public ObsidianhoeItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 2031;
-			}
-
-			public float getSpeed() {
-				return 7f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 0f;
-			}
-
-			public int getLevel() {
-				return 3;
-			}
-
-			public int getEnchantmentValue() {
-				return 22;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.OBSIDIANINGOT.get()));
-			}
-		}, 0, 0f, new Item.Properties());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 0f, 0f)).fireResistant().rarity(Rarity.UNCOMMON));
 	}
 }

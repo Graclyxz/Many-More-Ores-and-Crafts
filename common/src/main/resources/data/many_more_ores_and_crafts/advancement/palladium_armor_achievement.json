@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:palladiumarmor_chestplate"
+      "item": "many_more_ores_and_crafts:palladiumarmor_chestplate"
     },
     "title": {
       "translate": "advancements.palladium_armor_achievement.title"

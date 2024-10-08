@@ -1,13 +1,9 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.palladiumItems;
 
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
@@ -47,6 +43,6 @@ public class PalladiumpickaxeItem extends PickaxeItem {
 	};
 
 	public PalladiumpickaxeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -2.8f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -2.8f)).rarity(Rarity.UNCOMMON));
 	}
 }

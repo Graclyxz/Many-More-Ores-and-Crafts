@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
 
-public abstract class CobaltarmorItem extends ArmorItem {
+/*public abstract class CobaltarmorItem extends ArmorItem {
 	public CobaltarmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -104,3 +104,4 @@ public abstract class CobaltarmorItem extends ArmorItem {
 		}
 	}
 }
+*/

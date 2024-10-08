@@ -6,6 +6,6 @@ import net.minecraft.world.item.Item;
 
 public class RawinfernalItem extends Item {
 	public RawinfernalItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
 	}
 }

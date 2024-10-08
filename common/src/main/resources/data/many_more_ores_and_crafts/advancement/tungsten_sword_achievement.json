@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:tungstensword"
+      "item": "many_more_ores_and_crafts:tungstensword"
     },
     "title": {
       "translate": "advancements.tungsten_sword_achievement.title"

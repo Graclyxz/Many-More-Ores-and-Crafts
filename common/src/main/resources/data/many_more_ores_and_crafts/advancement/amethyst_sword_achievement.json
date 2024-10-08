@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:amethystsword"
+      "item": "many_more_ores_and_crafts:amethystsword"
     },
     "title": {
       "translate": "advancements.amethyst_sword_achievement.title"

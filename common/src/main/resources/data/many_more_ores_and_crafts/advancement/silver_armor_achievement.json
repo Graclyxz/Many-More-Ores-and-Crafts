@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:silverarmor_chestplate"
+      "item": "many_more_ores_and_crafts:silverarmor_chestplate"
     },
     "title": {
       "translate": "advancements.silver_armor_achievement.title"

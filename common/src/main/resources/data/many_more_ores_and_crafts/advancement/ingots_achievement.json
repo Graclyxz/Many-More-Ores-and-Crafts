@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:adamantiteingot"
+      "item": "many_more_ores_and_crafts:adamantiteingot"
     },
     "title": {
       "translate": "advancements.ingots_achievement.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.ingots_achievement.descr"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

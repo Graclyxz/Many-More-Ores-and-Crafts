@@ -1,13 +1,9 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.cobaltItems;
 
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
@@ -47,6 +43,6 @@ public class CobalthoeItem extends HoeItem {
 	};
 
 	public CobalthoeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 0f, 0f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 0f, 0f)).rarity(Rarity.UNCOMMON));
 	}
 }

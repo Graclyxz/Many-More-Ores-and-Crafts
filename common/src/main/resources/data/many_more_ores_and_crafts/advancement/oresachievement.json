@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:rawtitanium"
+      "item": "many_more_ores_and_crafts:rawtitanium"
     },
     "title": {
       "translate": "advancements.oresachievement.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.oresachievement.descr"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

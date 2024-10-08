@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:orichlcumsword"
+      "item": "many_more_ores_and_crafts:orichlcumsword"
     },
     "title": {
       "translate": "advancements.orichalcum_sword_achievement.title"

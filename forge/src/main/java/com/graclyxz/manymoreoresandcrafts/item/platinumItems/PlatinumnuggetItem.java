@@ -6,6 +6,6 @@ import net.minecraft.world.item.Item;
 
 public class PlatinumnuggetItem extends Item {
 	public PlatinumnuggetItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
 	}
 }

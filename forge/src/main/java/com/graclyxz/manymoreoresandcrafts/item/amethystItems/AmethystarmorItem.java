@@ -14,7 +14,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-public abstract class AmethystarmorItem extends ArmorItem {
+/*public abstract class AmethystarmorItem extends ArmorItem {
 	public AmethystarmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -103,3 +103,4 @@ public abstract class AmethystarmorItem extends ArmorItem {
 		}
 	}
 }
+*/

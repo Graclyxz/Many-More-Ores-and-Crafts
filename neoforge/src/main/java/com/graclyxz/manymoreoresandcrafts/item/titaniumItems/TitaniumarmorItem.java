@@ -1,16 +1,13 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.titaniumItems;
 
+import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -43,7 +40,7 @@ public abstract class TitaniumarmorItem extends ArmorItem {
 	}
 
 	public TitaniumarmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(ARMOR_MATERIAL, type, properties);
+		super(ARMOR_MATERIAL, type, properties.rarity(Rarity.EPIC));
 	}
 
 	public static class Helmet extends TitaniumarmorItem {

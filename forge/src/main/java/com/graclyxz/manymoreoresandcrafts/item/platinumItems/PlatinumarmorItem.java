@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
 
-public abstract class PlatinumarmorItem extends ArmorItem {
+/*public abstract class PlatinumarmorItem extends ArmorItem {
 	public PlatinumarmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -104,3 +104,4 @@ public abstract class PlatinumarmorItem extends ArmorItem {
 		}
 	}
 }
+*/

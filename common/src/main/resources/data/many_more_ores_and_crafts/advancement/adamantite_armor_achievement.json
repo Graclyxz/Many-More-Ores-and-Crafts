@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:adamantitearmor_chestplate"
+      "item": "many_more_ores_and_crafts:adamantitearmor_chestplate"
     },
     "title": {
       "translate": "advancements.adamantite_armor_achievement.title"

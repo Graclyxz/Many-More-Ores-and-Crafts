@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:mythrilsword"
+      "item": "many_more_ores_and_crafts:mythrilsword"
     },
     "title": {
       "translate": "advancements.swords_achievement.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.swords_achievement.descr"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

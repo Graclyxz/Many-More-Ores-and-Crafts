@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:titaniumarmor_chestplate"
+      "item": "many_more_ores_and_crafts:titaniumarmor_chestplate"
     },
     "title": {
       "translate": "advancements.titanium_armor_achievement.title"

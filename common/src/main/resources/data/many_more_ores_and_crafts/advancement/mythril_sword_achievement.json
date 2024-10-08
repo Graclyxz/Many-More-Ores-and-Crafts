@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:mythrilsword"
+      "item": "many_more_ores_and_crafts:mythrilsword"
     },
     "title": {
       "translate": "advancements.mythril_sword_achievement.title"

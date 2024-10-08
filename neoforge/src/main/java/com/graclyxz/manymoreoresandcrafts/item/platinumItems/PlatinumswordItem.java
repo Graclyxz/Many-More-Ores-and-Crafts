@@ -1,12 +1,9 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.platinumItems;
 
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
@@ -46,6 +43,6 @@ public class PlatinumswordItem extends SwordItem {
 	};
 
 	public PlatinumswordItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -2.2f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -2.2f)).rarity(Rarity.UNCOMMON));
 	}
 }
