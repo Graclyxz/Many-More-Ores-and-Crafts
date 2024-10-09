@@ -1,107 +1,65 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.silverItems;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
+
+import java.util.List;
+import java.util.EnumMap;
 
 import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
 
-/*public abstract class SilverarmorItem extends ArmorItem {
-	public SilverarmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 15;
-			}
+public class SilverarmorItem extends ArmorItem {
+    public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{2, 4, 5, 2}[type.getSlot().getIndex()];
-			}
+    public static void registerArmorMaterial(RegisterEvent event) {
+        event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+            ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 5);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 5);
+            }), 12, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_gold")), () -> Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.SILVERINGOT.get())),
+                    List.of(new ArmorMaterial.Layer(ResourceLocation.parse("many_more_ores_and_crafts:silver"))), 0f, 0f);
+            registerHelper.register(ResourceLocation.parse("many_more_ores_and_crafts:silverarmor"), armorMaterial);
+            ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+        });
+    }
 
-			@Override
-			public int getEnchantmentValue() {
-				return 12;
-			}
+    public SilverarmorItem(ArmorItem.Type type, Item.Properties properties) {
+        super(ARMOR_MATERIAL, type, properties);
+    }
 
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_gold"));
-			}
+    public static class Helmet extends SilverarmorItem {
+        public Helmet() {
+            super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)));
+        }
+    }
 
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.SILVERINGOT.get()));
-			}
+    public static class Chestplate extends SilverarmorItem {
+        public Chestplate() {
+            super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15)));
+        }
+    }
 
-			@Override
-			public String getName() {
-				return "silverarmor";
-			}
+    public static class Leggings extends SilverarmorItem {
+        public Leggings() {
+            super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15)));
+        }
+    }
 
-			@Override
-			public float getToughness() {
-				return 0f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0f;
-			}
-		}, type, properties);
-	}
-
-	public static class Helmet extends SilverarmorItem {
-		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/silver_layer_1.png";
-		}
-	}
-
-	public static class Chestplate extends SilverarmorItem {
-		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/silver_layer_1.png";
-		}
-	}
-
-	public static class Leggings extends SilverarmorItem {
-		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/silver_layer_2.png";
-		}
-	}
-
-	public static class Boots extends SilverarmorItem {
-		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/silver_layer_1.png";
-		}
-	}
+    public static class Boots extends SilverarmorItem {
+        public Boots() {
+            super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)));
+        }
+    }
 }
-*/

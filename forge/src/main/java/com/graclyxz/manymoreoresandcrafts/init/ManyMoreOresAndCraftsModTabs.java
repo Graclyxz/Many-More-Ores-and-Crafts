@@ -89,7 +89,7 @@ public class ManyMoreOresAndCraftsModTabs {
 				tabData.accept(ManyMoreOresAndCraftsModBlocks.RAWTINBLOCK.get().asItem());
 				tabData.accept(ManyMoreOresAndCraftsModBlocks.RAWTITANIUMBLOCK.get().asItem());
 				tabData.accept(ManyMoreOresAndCraftsModBlocks.RAWTUNGSTENBLOCK.get().asItem());
-				/*tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEARMOR_HELMET.get());
+				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEARMOR_HELMET.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEARMOR_CHESTPLATE.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEARMOR_LEGGINGS.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEARMOR_BOOTS.get());
@@ -144,7 +144,7 @@ public class ManyMoreOresAndCraftsModTabs {
 				tabData.accept(ManyMoreOresAndCraftsModItems.TUNGSTENARMOR_HELMET.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.TUNGSTENARMOR_CHESTPLATE.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.TUNGSTENARMOR_LEGGINGS.get());
-				tabData.accept(ManyMoreOresAndCraftsModItems.TUNGSTENARMOR_BOOTS.get());*/
+				tabData.accept(ManyMoreOresAndCraftsModItems.TUNGSTENARMOR_BOOTS.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITESWORD.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEPICKAXE.get());
 				tabData.accept(ManyMoreOresAndCraftsModItems.ADAMANTITEAXE.get());

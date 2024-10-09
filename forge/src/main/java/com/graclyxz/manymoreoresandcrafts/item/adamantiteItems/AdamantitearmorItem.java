@@ -1,107 +1,78 @@
-
 package com.graclyxz.manymoreoresandcrafts.item.adamantiteItems;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.core.Registry;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.*;
 
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
-import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
+import java.util.List;
+import java.util.EnumMap;
+import java.util.function.Supplier;
 
-/*public abstract class AdamantitearmorItem extends ArmorItem {
-	public AdamantitearmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 25;
-			}
+import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
+import static com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems.ADAMANTITEINGOT;
 
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{3, 6, 8, 3}[type.getSlot().getIndex()];
-			}
+public class AdamantitearmorItem extends ArmorItem {
 
-			@Override
-			public int getEnchantmentValue() {
-				return 15;
-			}
+    public static final Holder<ArmorMaterial> ARMOR_MATERIAL = register("adamantite", Util.make(new EnumMap<>(ArmorItem.Type.class),
+                    attribute -> {
+                        attribute.put(ArmorItem.Type.BOOTS, 3);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                        attribute.put(ArmorItem.Type.HELMET, 3);
+                        attribute.put(ArmorItem.Type.BODY, 8);
+                    }), 15, 1f, 0.2f,
+            () -> ADAMANTITEINGOT.get()
+    );
 
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_iron"));
-			}
+    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
+                                                  int enchantability, float toughness, float knockbackResistance,
+                                                  Supplier<Item> ingredientItem) {
+        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_IRON;
+        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
+        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.ADAMANTITEINGOT.get()));
-			}
+        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
+        for (ArmorItem.Type type : ArmorItem.Type.values()) {
+            typeMap.put(type, typeProtection.get(type));
+        }
 
-			@Override
-			public String getName() {
-				return "adamantitearmor";
-			}
+        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
+                new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
+    }
 
-			@Override
-			public float getToughness() {
-				return 1f;
-			}
+    public AdamantitearmorItem(ArmorItem.Type type, Item.Properties properties) {
+        super(ARMOR_MATERIAL, type, properties.rarity(Rarity.RARE));
+    }
 
-			@Override
-			public float getKnockbackResistance() {
-				return 0.2f;
-			}
-		}, type, properties);
-	}
+    public static class Helmet extends AdamantitearmorItem {
+        public Helmet() {
+            super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25)));
+        }
+    }
 
-	public static class Helmet extends AdamantitearmorItem {
-		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
-		}
+    public static class Chestplate extends AdamantitearmorItem {
+        public Chestplate() {
+            super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25)));
+        }
+    }
 
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/adamantite_layer_1.png";
-		}
-	}
+    public static class Leggings extends AdamantitearmorItem {
+        public Leggings() {
+            super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25)));
+        }
+    }
 
-	public static class Chestplate extends AdamantitearmorItem {
-		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/adamantite_layer_1.png";
-		}
-	}
-
-	public static class Leggings extends AdamantitearmorItem {
-		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/adamantite_layer_2.png";
-		}
-	}
-
-	public static class Boots extends AdamantitearmorItem {
-		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/adamantite_layer_1.png";
-		}
-	}
+    public static class Boots extends AdamantitearmorItem {
+        public Boots() {
+            super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25)));
+        }
+    }
 }
-*/
