@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "nether_wastes",
+    "crimson_forest",
+    "warped_forest",
+    "basalt_deltas"
+  ],
+  "features": "many_more_ores_and_crafts:netherinfernalore",
+  "step": "underground_ores"
+}

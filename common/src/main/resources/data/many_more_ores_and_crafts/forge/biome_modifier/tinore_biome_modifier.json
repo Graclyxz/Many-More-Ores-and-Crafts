@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "many_more_ores_and_crafts:tinore",
+  "step": "underground_ores"
+}

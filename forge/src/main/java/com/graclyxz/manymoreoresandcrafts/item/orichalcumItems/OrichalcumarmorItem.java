@@ -1,37 +1,53 @@
 
 package com.graclyxz.manymoreoresandcrafts.item.orichalcumItems;
 
+import net.minecraft.core.Registry;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
 
 import java.util.List;
 import java.util.EnumMap;
+import java.util.function.Supplier;
 
-import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
+import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
+import static com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems.ORICHALCUMINGOT;
 
 public class OrichalcumarmorItem extends ArmorItem {
-    public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
-    public static void registerArmorMaterial(RegisterEvent event) {
-        event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
-            ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 2);
-                map.put(ArmorItem.Type.LEGGINGS, 5);
-                map.put(ArmorItem.Type.CHESTPLATE, 6);
-                map.put(ArmorItem.Type.HELMET, 2);
-                map.put(ArmorItem.Type.BODY, 6);
-            }), 15, DeferredHolder.create(Registries.SOUND_EVENT,  ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(ManyMoreOresAndCraftsModItems.ORICHALCUMINGOT.get())),
-                    List.of(new ArmorMaterial.Layer( ResourceLocation.parse("many_more_ores_and_crafts:orichalcum"))), 1f, 0.2f);
-            registerHelper.register(ResourceLocation.parse("many_more_ores_and_crafts:orichalcumarmor"), armorMaterial);
-            ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
-        });
+    public static final Holder<ArmorMaterial> ARMOR_MATERIAL = register("orichalcum", Util.make(new EnumMap<>(ArmorItem.Type.class),
+                    attribute -> {
+                        attribute.put(ArmorItem.Type.BOOTS, 2);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                        attribute.put(ArmorItem.Type.HELMET, 2);
+                        attribute.put(ArmorItem.Type.BODY, 6);
+                    }), 15, 1f, 0.2f,
+            () -> ORICHALCUMINGOT.get()
+    );
+
+    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
+                                                  int enchantability, float toughness, float knockbackResistance,
+                                                  Supplier<Item> ingredientItem) {
+        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_DIAMOND;
+        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
+        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
+
+        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
+        for (ArmorItem.Type type : ArmorItem.Type.values()) {
+            typeMap.put(type, typeProtection.get(type));
+        }
+
+        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
+                new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
     }
 
     public OrichalcumarmorItem(ArmorItem.Type type, Item.Properties properties) {

@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-          "com.graclyxz.manymoreoresandcrafts.ExampleMod"
+          "com.graclyxz.manymoreoresandcrafts.ManyMoreOresAndCraftsMod"
         ]
     },
     "mixins": [

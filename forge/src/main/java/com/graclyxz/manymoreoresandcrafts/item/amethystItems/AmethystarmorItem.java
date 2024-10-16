@@ -38,7 +38,7 @@ public class AmethystarmorItem extends ArmorItem {
                                                   int enchantability, float toughness, float knockbackResistance,
                                                   Supplier<Item> ingredientItem) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
-        Holder<SoundEvent> equipSound = (Holder<SoundEvent>) SoundEvents.AMETHYST_BLOCK_RESONATE;
+        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_CHAIN;
         Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
         List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
