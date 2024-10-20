@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:tinsword"
+      "id": "many_more_ores_and_crafts:tinsword"
     },
     "title": {
       "translate": "advancements.tin_sword_achievement.title"

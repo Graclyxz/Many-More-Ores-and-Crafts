@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:leadsword"
+      "id": "many_more_ores_and_crafts:leadsword"
     },
     "title": {
       "translate": "advancements.lead_sword_achievement.title"

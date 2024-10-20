@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:cobaltsword"
+      "id": "many_more_ores_and_crafts:cobaltsword"
     },
     "title": {
       "translate": "advancements.cobalt_sword_achievement.title"

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:palladiumsword"
+      "id": "many_more_ores_and_crafts:palladiumsword"
     },
     "title": {
       "translate": "advancements.palladium_sword_achievement.title"

@@ -2,6 +2,7 @@ package com.graclyxz.manymoreoresandcrafts.init;
 
 import com.graclyxz.manymoreoresandcrafts.item.amethystItems.*;
 import com.graclyxz.manymoreoresandcrafts.item.tinItems.*;
+
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;

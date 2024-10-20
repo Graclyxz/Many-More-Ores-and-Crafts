@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class NetherinfernaloreBlock extends Block {
 	public NetherinfernaloreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHER_ORE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHER_ORE).strength(8f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

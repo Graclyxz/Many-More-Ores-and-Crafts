@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:obsidiansword"
+      "id": "many_more_ores_and_crafts:obsidiansword"
     },
     "title": {
       "translate": "advancements.obsidian_sword_archievement.title"

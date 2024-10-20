@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "many_more_ores_and_crafts:titaniumsword"
+      "id": "many_more_ores_and_crafts:titaniumsword"
     },
     "title": {
       "translate": "advancements.titanium_sword_achievement.title"

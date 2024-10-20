@@ -1,6 +1,7 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
 import com.graclyxz.manymoreoresandcrafts.item.amethystItems.*;
+
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
