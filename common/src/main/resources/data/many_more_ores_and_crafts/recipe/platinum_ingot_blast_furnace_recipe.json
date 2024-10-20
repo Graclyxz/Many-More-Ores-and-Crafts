@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 4,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "many_more_ores_and_crafts:rawplatinum"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:platinumingot"
+  }
+}
