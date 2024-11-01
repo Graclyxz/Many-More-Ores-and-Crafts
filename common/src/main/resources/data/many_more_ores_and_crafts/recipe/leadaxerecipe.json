@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "many_more_ores_and_crafts:leadingot"
+      "tag": "c:ingots/lead"
     },
     "b": {
       "item": "minecraft:stick"
