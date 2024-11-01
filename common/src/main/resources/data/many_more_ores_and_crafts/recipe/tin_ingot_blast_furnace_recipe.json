@@ -4,7 +4,7 @@
   "experience": 2,
   "cookingtime": 100,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawtin"
+    "tag": "c:raw_materials/tin"
   },
   "result": {
     "id": "many_more_ores_and_crafts:tiningot"

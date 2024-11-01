@@ -4,7 +4,7 @@
   "experience": 6,
   "cookingtime": 300,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:raworichalcum"
+    "tag": "c:raw_materials/orichalcum"
   },
   "result": {
     "id": "many_more_ores_and_crafts:orichalcumingot"

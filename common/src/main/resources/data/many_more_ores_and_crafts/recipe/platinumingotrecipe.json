@@ -4,7 +4,7 @@
   "experience": 4,
   "cookingtime": 200,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawplatinum"
+    "tag": "c:raw_materials/platinum"
   },
   "result": {
     "id": "many_more_ores_and_crafts:platinumingot"
