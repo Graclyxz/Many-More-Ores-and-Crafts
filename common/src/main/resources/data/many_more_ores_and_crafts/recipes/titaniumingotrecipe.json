@@ -4,7 +4,7 @@
   "experience": 8,
   "cookingtime": 400,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawtitanium"
+    "tag": "forge:raw_materials/titanium"
   },
   "result": "many_more_ores_and_crafts:titaniumingot"
 }

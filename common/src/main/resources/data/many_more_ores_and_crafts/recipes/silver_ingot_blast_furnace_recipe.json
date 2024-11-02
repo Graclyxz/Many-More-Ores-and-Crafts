@@ -4,7 +4,7 @@
   "experience": 3,
   "cookingtime": 100,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawsilver"
+    "tag": "forge:raw_materials/silver"
   },
   "result": "many_more_ores_and_crafts:silveringot"
 }

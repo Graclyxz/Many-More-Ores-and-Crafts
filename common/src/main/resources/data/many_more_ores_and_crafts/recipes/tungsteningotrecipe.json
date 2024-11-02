@@ -4,7 +4,7 @@
   "experience": 3,
   "cookingtime": 200,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawtungsten"
+    "tag": "forge:raw_materials/tungsten"
   },
   "result": "many_more_ores_and_crafts:tungsteningot"
 }

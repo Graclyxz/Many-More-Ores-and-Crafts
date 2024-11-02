@@ -4,7 +4,7 @@
   "experience": 8,
   "cookingtime": 600,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawinfernal"
+    "tag": "forge:raw_materials/infernal"
   },
   "result": "many_more_ores_and_crafts:infernalingot"
 }

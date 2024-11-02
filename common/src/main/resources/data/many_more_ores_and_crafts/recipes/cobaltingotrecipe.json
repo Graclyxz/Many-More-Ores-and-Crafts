@@ -4,7 +4,7 @@
   "experience": 5,
   "cookingtime": 300,
   "ingredient": {
-    "item": "many_more_ores_and_crafts:rawcobalt"
+    "tag": "forge:raw_materials/cobalt"
   },
   "result": "many_more_ores_and_crafts:cobaltingot"
 }

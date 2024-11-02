@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "many_more_ores_and_crafts:adamantiteingot"
+      "tag": "forge:ingots/adamantite"
     },
     "b": {
       "item": "minecraft:stick"

@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "many_more_ores_and_crafts:mythrilingot"
+      "tag": "forge:ingots/mythril"
     },
     "b": {
       "item": "minecraft:stick"
