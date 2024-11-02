@@ -16,7 +16,7 @@
       {
         "target": {
           "predicate_type": "tag_match",
-          "tag": "c:stones"
+          "tag": "forge:stone"
         },
         "state": {
           "Name": "many_more_ores_and_crafts:tinore"

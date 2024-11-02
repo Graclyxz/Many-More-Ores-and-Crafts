@@ -43,6 +43,7 @@ import com.graclyxz.manymoreoresandcrafts.block.DeepslateadamantiteoreBlock;
 import com.graclyxz.manymoreoresandcrafts.block.CobaltoreBlock;
 import com.graclyxz.manymoreoresandcrafts.block.CobaltblockBlock;
 import com.graclyxz.manymoreoresandcrafts.block.AdamantiteblockBlock;
+import com.graclyxz.manymoreoresandcrafts.ManyMoreOresAndCraftsMod;
 
 import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 

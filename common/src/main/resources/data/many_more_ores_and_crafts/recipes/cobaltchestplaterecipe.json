@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "many_more_ores_and_crafts:cobaltingot"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:cobaltarmor_chestplate",
+    "count": 1
+  }
+}

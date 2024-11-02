@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "${mod_id}",
+    "id": "mod_id",
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
@@ -12,11 +12,11 @@
         "sources": "https://github.com/FabricMC/fabric-example-mod"
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "assets/modid/${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-          "com.graclyxz.manymoreoresandcrafts.ManyMoreOresAndCraftsMod"
+          "com.graclyxz.manymoreoresandcrafts.ExampleMod"
         ]
     },
     "mixins": [
@@ -24,10 +24,10 @@
         "${mod_id}.fabric.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=${fabric_loader_version}",
-        "fabric-api": "*",
+        "fabricloader": ">=0.14",
+        "fabric": "*",
         "minecraft": "${minecraft_version}",
-        "java": ">=${java_version}"
+        "java": ">=17"
     },
     "suggests": {
         "another-mod": "*"

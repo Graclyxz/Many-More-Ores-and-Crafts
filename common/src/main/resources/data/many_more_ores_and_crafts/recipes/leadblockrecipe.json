@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "many_more_ores_and_crafts:leadingot"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:leadblock",
+    "count": 1
+  }
+}

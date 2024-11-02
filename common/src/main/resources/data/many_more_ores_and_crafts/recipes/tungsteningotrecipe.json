@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "many_more_ores_and_crafts:rawtungsten"
+  },
+  "result": "many_more_ores_and_crafts:tungsteningot"
+}
