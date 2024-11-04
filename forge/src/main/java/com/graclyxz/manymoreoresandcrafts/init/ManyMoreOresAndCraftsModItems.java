@@ -149,6 +149,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> TININGOT = REGISTRY.register("tiningot", () -> new TiningotItem());
 	public static final RegistryObject<Item> TITANIUMINGOT = REGISTRY.register("titaniumingot", () -> new TitaniumingotItem());
 	public static final RegistryObject<Item> TUNGSTENINGOT = REGISTRY.register("tungsteningot", () -> new TungsteningotItem());
+
 	public static final RegistryObject<Item> ADAMANTITENUGGET = REGISTRY.register("adamantitenugget", () -> new AdamantitenuggetItem());
 	public static final RegistryObject<Item> COBALTNUGGET = REGISTRY.register("cobaltnugget", () -> new CobaltnuggetItem());
 	public static final RegistryObject<Item> INFERNALNUGGET = REGISTRY.register("infernalnugget", () -> new InfernalnuggetItem());
@@ -162,6 +163,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> TINNUGGET = REGISTRY.register("tinnugget", () -> new TinnuggetItem());
 	public static final RegistryObject<Item> TITANIUMNUGGET = REGISTRY.register("titaniumnugget", () -> new TitaniumnuggetItem());
 	public static final RegistryObject<Item> TUNGSTENNUGGET = REGISTRY.register("tungstennugget", () -> new TungstennuggetItem());
+
 	public static final RegistryObject<Item> RAWADAMANTITE = REGISTRY.register("rawadamantite", () -> new RawadamantiteItem());
 	public static final RegistryObject<Item> RAWCOBALT = REGISTRY.register("rawcobalt", () -> new RawcobaltItem());
 	public static final RegistryObject<Item> RAWINFERNAL = REGISTRY.register("rawinfernal", () -> new RawinfernalItem());
@@ -174,8 +176,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> RAWTIN = REGISTRY.register("rawtin", () -> new RawtinItem());
 	public static final RegistryObject<Item> RAWTITANIUM = REGISTRY.register("rawtitanium", () -> new RawtitaniumItem());
 	public static final RegistryObject<Item> RAWTUNGSTEN = REGISTRY.register("rawtungsten", () -> new RawtungstenItem());
-	public static final RegistryObject<Item> ADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.ADAMANTITEBLOCK);
-	public static final RegistryObject<Item> RAWADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWADAMANTITEBLOCK);
+
 	public static final RegistryObject<Item> DEEPSLATEADAMANTITEORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEADAMANTITEORE);
 	public static final RegistryObject<Item> COBALTORE = block(ManyMoreOresAndCraftsModBlocks.COBALTORE);
 	public static final RegistryObject<Item> NETHERINFERNALORE = block(ManyMoreOresAndCraftsModBlocks.NETHERINFERNALORE);
@@ -188,6 +189,8 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> TINORE = block(ManyMoreOresAndCraftsModBlocks.TINORE);
 	public static final RegistryObject<Item> TITANIUMORE = block(ManyMoreOresAndCraftsModBlocks.TITANIUMORE);
 	public static final RegistryObject<Item> TUNGSTENORE = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENORE);
+
+	public static final RegistryObject<Item> ADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.ADAMANTITEBLOCK);
 	public static final RegistryObject<Item> COBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.COBALTBLOCK);
 	public static final RegistryObject<Item> INFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.INFERNALBLOCK);
 	public static final RegistryObject<Item> LEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.LEADBLOCK);
@@ -200,6 +203,8 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> TINBLOCK = block(ManyMoreOresAndCraftsModBlocks.TINBLOCK);
 	public static final RegistryObject<Item> TITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.TITANIUMBLOCK);
 	public static final RegistryObject<Item> TUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENBLOCK);
+
+	public static final RegistryObject<Item> RAWADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWADAMANTITEBLOCK);
 	public static final RegistryObject<Item> RAWCOBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWCOBALTBLOCK);
 	public static final RegistryObject<Item> RAWINFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWINFERNALBLOCK);
 	public static final RegistryObject<Item> RAWLEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWLEADBLOCK);
@@ -211,6 +216,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> RAWTINBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTINBLOCK);
 	public static final RegistryObject<Item> RAWTITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTITANIUMBLOCK);
 	public static final RegistryObject<Item> RAWTUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTUNGSTENBLOCK);
+
 	public static final RegistryObject<Item> ADAMANTITEARMOR_HELMET = REGISTRY.register("adamantitearmor_helmet", () -> new AdamantitearmorItem.Helmet());
 	public static final RegistryObject<Item> ADAMANTITEARMOR_CHESTPLATE = REGISTRY.register("adamantitearmor_chestplate", () -> new AdamantitearmorItem.Chestplate());
 	public static final RegistryObject<Item> ADAMANTITEARMOR_LEGGINGS = REGISTRY.register("adamantitearmor_leggings", () -> new AdamantitearmorItem.Leggings());
@@ -267,6 +273,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final RegistryObject<Item> TUNGSTENARMOR_CHESTPLATE = REGISTRY.register("tungstenarmor_chestplate", () -> new TungstenarmorItem.Chestplate());
 	public static final RegistryObject<Item> TUNGSTENARMOR_LEGGINGS = REGISTRY.register("tungstenarmor_leggings", () -> new TungstenarmorItem.Leggings());
 	public static final RegistryObject<Item> TUNGSTENARMOR_BOOTS = REGISTRY.register("tungstenarmor_boots", () -> new TungstenarmorItem.Boots());
+
 	public static final RegistryObject<Item> ADAMANTITESWORD = REGISTRY.register("adamantitesword", () -> new AdamantiteswordItem());
 	public static final RegistryObject<Item> ADAMANTITEPICKAXE = REGISTRY.register("adamantitepickaxe", () -> new AdamantitepickaxeItem());
 	public static final RegistryObject<Item> ADAMANTITEAXE = REGISTRY.register("adamantiteaxe", () -> new AdamantiteaxeItem());
