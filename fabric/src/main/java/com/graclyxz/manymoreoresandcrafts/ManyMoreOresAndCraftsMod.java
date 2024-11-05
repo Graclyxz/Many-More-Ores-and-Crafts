@@ -6,7 +6,6 @@ import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModTabs;
 import net.fabricmc.api.ModInitializer;
 
 public class ManyMoreOresAndCraftsMod implements ModInitializer {
-
 	@Override
 	public void onInitialize() {
 		CommonClass.init();

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:ingots/tin"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:tinarmor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 5,
+  "cookingtime": 300,
+  "ingredient": {
+    "tag": "c:raw_materials/cobalt"
+  },
+  "result": "many_more_ores_and_crafts:cobaltingot"
+}

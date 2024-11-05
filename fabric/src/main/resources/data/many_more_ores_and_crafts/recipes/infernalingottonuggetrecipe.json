@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:nuggets/infernal"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:infernalingot",
+    "count": 1
+  }
+}

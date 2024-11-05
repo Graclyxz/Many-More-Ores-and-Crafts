@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:ingots/lead"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:leadarmor_helmet",
+    "count": 1
+  }
+}

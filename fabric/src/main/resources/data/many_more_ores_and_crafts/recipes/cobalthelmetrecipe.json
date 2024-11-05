@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:ingots/cobalt"
+    }
+  },
+  "result": {
+    "item": "many_more_ores_and_crafts:cobaltarmor_helmet",
+    "count": 1
+  }
+}
