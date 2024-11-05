@@ -1,4 +1,4 @@
-package com.graclyxz.manymoreoresandcrafts.item.armors;
+package com.graclyxz.manymoreoresandcrafts.item.armor;
 
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;

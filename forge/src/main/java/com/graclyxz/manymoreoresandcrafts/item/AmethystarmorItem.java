@@ -66,7 +66,7 @@ public abstract class AmethystarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/amethyst_layer_1.png";
+			return "many_more_ores_and_crafts:textures/models/armor/amethystarmor_layer_1.png";
 		}
 	}
 
@@ -77,7 +77,7 @@ public abstract class AmethystarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/amethyst_layer_1.png";
+			return "many_more_ores_and_crafts:textures/models/armor/amethystarmor_layer_1.png";
 		}
 	}
 
@@ -88,7 +88,7 @@ public abstract class AmethystarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/amethyst_layer_2.png";
+			return "many_more_ores_and_crafts:textures/models/armor/amethystarmor_layer_2.png";
 		}
 	}
 
@@ -99,7 +99,7 @@ public abstract class AmethystarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "many_more_ores_and_crafts:textures/models/armor/amethyst_layer_1.png";
+			return "many_more_ores_and_crafts:textures/models/armor/amethystarmor_layer_1.png";
 		}
 	}
 }
