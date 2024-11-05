@@ -48,8 +48,7 @@ import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 
 public class ManyMoreOresAndCraftsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
-	public static final RegistryObject<Block> ADAMANTITEBLOCK = REGISTRY.register("adamantiteblock", () -> new AdamantiteblockBlock());
-	public static final RegistryObject<Block> RAWADAMANTITEBLOCK = REGISTRY.register("rawadamantiteblock", () -> new RawadamantiteblockBlock());
+
 	public static final RegistryObject<Block> DEEPSLATEADAMANTITEORE = REGISTRY.register("deepslateadamantiteore", () -> new DeepslateadamantiteoreBlock());
 	public static final RegistryObject<Block> COBALTORE = REGISTRY.register("cobaltore", () -> new CobaltoreBlock());
 	public static final RegistryObject<Block> NETHERINFERNALORE = REGISTRY.register("netherinfernalore", () -> new NetherinfernaloreBlock());
@@ -62,6 +61,9 @@ public class ManyMoreOresAndCraftsModBlocks {
 	public static final RegistryObject<Block> TINORE = REGISTRY.register("tinore", () -> new TinoreBlock());
 	public static final RegistryObject<Block> TITANIUMORE = REGISTRY.register("titaniumore", () -> new TitaniumoreBlock());
 	public static final RegistryObject<Block> TUNGSTENORE = REGISTRY.register("tungstenore", () -> new TungstenoreBlock());
+
+	public static final RegistryObject<Block> ADAMANTITEBLOCK = REGISTRY.register("adamantiteblock", () -> new AdamantiteblockBlock());
+	public static final RegistryObject<Block> RAWADAMANTITEBLOCK = REGISTRY.register("rawadamantiteblock", () -> new RawadamantiteblockBlock());
 	public static final RegistryObject<Block> COBALTBLOCK = REGISTRY.register("cobaltblock", () -> new CobaltblockBlock());
 	public static final RegistryObject<Block> INFERNALBLOCK = REGISTRY.register("infernalblock", () -> new InfernalblockBlock());
 	public static final RegistryObject<Block> LEADBLOCK = REGISTRY.register("leadblock", () -> new LeadblockBlock());
@@ -74,6 +76,7 @@ public class ManyMoreOresAndCraftsModBlocks {
 	public static final RegistryObject<Block> TINBLOCK = REGISTRY.register("tinblock", () -> new TinblockBlock());
 	public static final RegistryObject<Block> TITANIUMBLOCK = REGISTRY.register("titaniumblock", () -> new TitaniumblockBlock());
 	public static final RegistryObject<Block> TUNGSTENBLOCK = REGISTRY.register("tungstenblock", () -> new TungstenblockBlock());
+
 	public static final RegistryObject<Block> RAWCOBALTBLOCK = REGISTRY.register("rawcobaltblock", () -> new RawcobaltblockBlock());
 	public static final RegistryObject<Block> RAWINFERNALBLOCK = REGISTRY.register("rawinfernalblock", () -> new RawinfernalblockBlock());
 	public static final RegistryObject<Block> RAWLEADBLOCK = REGISTRY.register("rawleadblock", () -> new RawleadblockBlock());
