@@ -13,14 +13,12 @@ import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 @Mod(MOD_ID)
 public class ManyMoreOresAndCraftsMod {
 
-	public ManyMoreOresAndCraftsMod() {
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+	public ManyMoreOresAndCraftsMod(FMLJavaModLoadingContext context) {
+		IEventBus bus = context.getModEventBus();
 
-		ManyMoreOresAndCraftsModBlocks.REGISTRY.register(bus);
-
-		ManyMoreOresAndCraftsModItems.REGISTRY.register(bus);
-
-		ManyMoreOresAndCraftsModTabs.REGISTRY.register(bus);
+		ManyMoreOresAndCraftsModBlocks.init(bus);
+		ManyMoreOresAndCraftsModItems.init(bus);
+		ManyMoreOresAndCraftsModTabs.init(bus);
 
 		CommonClass.init();
 	}
