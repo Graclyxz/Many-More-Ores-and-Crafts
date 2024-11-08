@@ -1,338 +1,175 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
-import com.graclyxz.manymoreoresandcrafts.item.amethystItems.*;
-
+import com.graclyxz.manymoreoresandcrafts.items.ModMaterials;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
-
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstennuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungsteningotItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.TungstenarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.TitaniumarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TiningotItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.TinarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilverswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilvershovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilverpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilvernuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilveringotItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilverhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilveraxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.SilverarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.tungstenItems.RawtungstenItem;
-import com.graclyxz.manymoreoresandcrafts.item.titaniumItems.RawtitaniumItem;
-import com.graclyxz.manymoreoresandcrafts.item.tinItems.RawtinItem;
-import com.graclyxz.manymoreoresandcrafts.item.silverItems.RawsilverItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.RawplatinumItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.RawpalladiumItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.RaworichalcumItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.RawmythrilItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.RawleadItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.RawinfernalItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.RawcobaltItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.RawadamantiteItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.platinumItems.PlatinumarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.palladiumItems.PalladiumarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichlcumswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichlcumshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichlcumpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichlcumhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichlcumaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichalcumnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichalcumingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.orichalcumItems.OrichalcumarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidiannuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.obsidianItems.ObsidianarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.mythrilItems.MythrilarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.leadItems.LeadamorItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalhoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.infernalItems.InfernalarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltpickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltnuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobalthoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.cobaltItems.CobaltarmorItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteswordItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteshovelItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantitepickaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantitenuggetItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteingotItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantitehoeItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantiteaxeItem;
-import com.graclyxz.manymoreoresandcrafts.item.adamantiteItems.AdamantitearmorItem;
+import java.util.List;
+import java.util.function.Function;
 
 import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 
 public class ManyMoreOresAndCraftsModItems {
-	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MOD_ID);
-	public static final DeferredHolder<Item, Item> ADAMANTITEINGOT = REGISTRY.register("adamantiteingot", AdamantiteingotItem::new);
-	public static final DeferredHolder<Item, Item> COBALTINGOT = REGISTRY.register("cobaltingot", CobaltingotItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALINGOT = REGISTRY.register("infernalingot", InfernalingotItem::new);
-	public static final DeferredHolder<Item, Item> LEADINGOT = REGISTRY.register("leadingot", LeadingotItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILINGOT = REGISTRY.register("mythrilingot", MythrilingotItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANINGOT = REGISTRY.register("obsidianingot", ObsidianingotItem::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMINGOT = REGISTRY.register("orichalcumingot", OrichalcumingotItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMINGOT = REGISTRY.register("palladiumingot", PalladiumingotItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMINGOT = REGISTRY.register("platinumingot", PlatinumingotItem::new);
-	public static final DeferredHolder<Item, Item> SILVERINGOT = REGISTRY.register("silveringot", SilveringotItem::new);
-	public static final DeferredHolder<Item, Item> TININGOT = REGISTRY.register("tiningot", TiningotItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMINGOT = REGISTRY.register("titaniumingot", TitaniumingotItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENINGOT = REGISTRY.register("tungsteningot", TungsteningotItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITENUGGET = REGISTRY.register("adamantitenugget", AdamantitenuggetItem::new);
-	public static final DeferredHolder<Item, Item> COBALTNUGGET = REGISTRY.register("cobaltnugget", CobaltnuggetItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALNUGGET = REGISTRY.register("infernalnugget", InfernalnuggetItem::new);
-	public static final DeferredHolder<Item, Item> LEADNUGGET = REGISTRY.register("leadnugget", LeadnuggetItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILNUGGET = REGISTRY.register("mythrilnugget", MythrilnuggetItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANNUGGET = REGISTRY.register("obsidiannugget", ObsidiannuggetItem::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMNUGGET = REGISTRY.register("orichalcumnugget", OrichalcumnuggetItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMNUGGET = REGISTRY.register("palladiumnugget", PalladiumnuggetItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMNUGGET = REGISTRY.register("platinumnugget", PlatinumnuggetItem::new);
-	public static final DeferredHolder<Item, Item> SILVERNUGGET = REGISTRY.register("silvernugget", SilvernuggetItem::new);
-	public static final DeferredHolder<Item, Item> TINNUGGET = REGISTRY.register("tinnugget", TinnuggetItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMNUGGET = REGISTRY.register("titaniumnugget", TitaniumnuggetItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENNUGGET = REGISTRY.register("tungstennugget", TungstennuggetItem::new);
-	public static final DeferredHolder<Item, Item> RAWADAMANTITE = REGISTRY.register("rawadamantite", RawadamantiteItem::new);
-	public static final DeferredHolder<Item, Item> RAWCOBALT = REGISTRY.register("rawcobalt", RawcobaltItem::new);
-	public static final DeferredHolder<Item, Item> RAWINFERNAL = REGISTRY.register("rawinfernal", RawinfernalItem::new);
-	public static final DeferredHolder<Item, Item> RAWLEAD = REGISTRY.register("rawlead", RawleadItem::new);
-	public static final DeferredHolder<Item, Item> RAWMYTHRIL = REGISTRY.register("rawmythril", RawmythrilItem::new);
-	public static final DeferredHolder<Item, Item> RAWORICHALCUM = REGISTRY.register("raworichalcum", RaworichalcumItem::new);
-	public static final DeferredHolder<Item, Item> RAWPALLADIUM = REGISTRY.register("rawpalladium", RawpalladiumItem::new);
-	public static final DeferredHolder<Item, Item> RAWPLATINUM = REGISTRY.register("rawplatinum", RawplatinumItem::new);
-	public static final DeferredHolder<Item, Item> RAWSILVER = REGISTRY.register("rawsilver", RawsilverItem::new);
-	public static final DeferredHolder<Item, Item> RAWTIN = REGISTRY.register("rawtin", RawtinItem::new);
-	public static final DeferredHolder<Item, Item> RAWTITANIUM = REGISTRY.register("rawtitanium", RawtitaniumItem::new);
-	public static final DeferredHolder<Item, Item> RAWTUNGSTEN = REGISTRY.register("rawtungsten", RawtungstenItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.ADAMANTITEBLOCK);
-	public static final DeferredHolder<Item, Item> RAWADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWADAMANTITEBLOCK);
-	public static final DeferredHolder<Item, Item> DEEPSLATEADAMANTITEORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEADAMANTITEORE);
-	public static final DeferredHolder<Item, Item> COBALTORE = block(ManyMoreOresAndCraftsModBlocks.COBALTORE);
-	public static final DeferredHolder<Item, Item> NETHERINFERNALORE = block(ManyMoreOresAndCraftsModBlocks.NETHERINFERNALORE);
-	public static final DeferredHolder<Item, Item> LEADORE = block(ManyMoreOresAndCraftsModBlocks.LEADORE);
-	public static final DeferredHolder<Item, Item> DEEPSLATEMYTHRILORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEMYTHRILORE);
-	public static final DeferredHolder<Item, Item> DEEPSLATEORICHALCUMORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEORICHALCUMORE);
-	public static final DeferredHolder<Item, Item> PALLADIUMORE = block(ManyMoreOresAndCraftsModBlocks.PALLADIUMORE);
-	public static final DeferredHolder<Item, Item> PLATINUMORE = block(ManyMoreOresAndCraftsModBlocks.PLATINUMORE);
-	public static final DeferredHolder<Item, Item> SILVERORE = block(ManyMoreOresAndCraftsModBlocks.SILVERORE);
-	public static final DeferredHolder<Item, Item> TINORE = block(ManyMoreOresAndCraftsModBlocks.TINORE);
-	public static final DeferredHolder<Item, Item> TITANIUMORE = block(ManyMoreOresAndCraftsModBlocks.TITANIUMORE);
-	public static final DeferredHolder<Item, Item> TUNGSTENORE = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENORE);
-	public static final DeferredHolder<Item, Item> COBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.COBALTBLOCK);
-	public static final DeferredHolder<Item, Item> INFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.INFERNALBLOCK);
-	public static final DeferredHolder<Item, Item> LEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.LEADBLOCK);
-	public static final DeferredHolder<Item, Item> MYTHRILBLOCK = block(ManyMoreOresAndCraftsModBlocks.MYTHRILBLOCK);
-	public static final DeferredHolder<Item, Item> OBSIDIANBLOCK = block(ManyMoreOresAndCraftsModBlocks.OBSIDIANBLOCK);
-	public static final DeferredHolder<Item, Item> ORICHALCUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.ORICHALCUMBLOCK);
-	public static final DeferredHolder<Item, Item> PALLADIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.PALLADIUMBLOCK);
-	public static final DeferredHolder<Item, Item> PLATINUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.PLATINUMBLOCK);
-	public static final DeferredHolder<Item, Item> SILVERBLOCK = block(ManyMoreOresAndCraftsModBlocks.SILVERBLOCK);
-	public static final DeferredHolder<Item, Item> TINBLOCK = block(ManyMoreOresAndCraftsModBlocks.TINBLOCK);
-	public static final DeferredHolder<Item, Item> TITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.TITANIUMBLOCK);
-	public static final DeferredHolder<Item, Item> TUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENBLOCK);
-	public static final DeferredHolder<Item, Item> RAWCOBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWCOBALTBLOCK);
-	public static final DeferredHolder<Item, Item> RAWINFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWINFERNALBLOCK);
-	public static final DeferredHolder<Item, Item> RAWLEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWLEADBLOCK);
-	public static final DeferredHolder<Item, Item> RAWMYTHRILBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWMYTHRILBLOCK);
-	public static final DeferredHolder<Item, Item> RAWORICHALCUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWORICHALCUMBLOCK);
-	public static final DeferredHolder<Item, Item> RAWPALLADIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWPALLADIUMBLOCK);
-	public static final DeferredHolder<Item, Item> RAWPLATINUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWPLATINUMBLOCK);
-	public static final DeferredHolder<Item, Item> RAWSILVERBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWSILVERBLOCK);
-	public static final DeferredHolder<Item, Item> RAWTINBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTINBLOCK);
-	public static final DeferredHolder<Item, Item> RAWTITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTITANIUMBLOCK);
-	public static final DeferredHolder<Item, Item> RAWTUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTUNGSTENBLOCK);
-	public static final DeferredHolder<Item, Item> ADAMANTITEARMOR_HELMET = REGISTRY.register("adamantitearmor_helmet", AdamantitearmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEARMOR_CHESTPLATE = REGISTRY.register("adamantitearmor_chestplate", AdamantitearmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEARMOR_LEGGINGS = REGISTRY.register("adamantitearmor_leggings", AdamantitearmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEARMOR_BOOTS = REGISTRY.register("adamantitearmor_boots", AdamantitearmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> COBALTARMOR_HELMET = REGISTRY.register("cobaltarmor_helmet", CobaltarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> COBALTARMOR_CHESTPLATE = REGISTRY.register("cobaltarmor_chestplate", CobaltarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> COBALTARMOR_LEGGINGS = REGISTRY.register("cobaltarmor_leggings", CobaltarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> COBALTARMOR_BOOTS = REGISTRY.register("cobaltarmor_boots", CobaltarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTARMOR_HELMET = REGISTRY.register("amethystarmor_helmet", AmethystarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTARMOR_CHESTPLATE = REGISTRY.register("amethystarmor_chestplate", AmethystarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTARMOR_LEGGINGS = REGISTRY.register("amethystarmor_leggings", AmethystarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTARMOR_BOOTS = REGISTRY.register("amethystarmor_boots", AmethystarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> INFERNALARMOR_HELMET = REGISTRY.register("infernalarmor_helmet", InfernalarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> INFERNALARMOR_CHESTPLATE = REGISTRY.register("infernalarmor_chestplate", InfernalarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> INFERNALARMOR_LEGGINGS = REGISTRY.register("infernalarmor_leggings", InfernalarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> INFERNALARMOR_BOOTS = REGISTRY.register("infernalarmor_boots", InfernalarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> LEADARMOR_HELMET = REGISTRY.register("leadarmor_helmet", LeadamorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> LEADARMOR_CHESTPLATE = REGISTRY.register("leadarmor_chestplate", LeadamorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> LEADARMOR_LEGGINGS = REGISTRY.register("leadarmor_leggings", LeadamorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> LEADARMOR_BOOTS = REGISTRY.register("leadarmor_boots", LeadamorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> MYTHRILARMOR_HELMET = REGISTRY.register("mythrilarmor_helmet", MythrilarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> MYTHRILARMOR_CHESTPLATE = REGISTRY.register("mythrilarmor_chestplate", MythrilarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> MYTHRILARMOR_LEGGINGS = REGISTRY.register("mythrilarmor_leggings", MythrilarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> MYTHRILARMOR_BOOTS = REGISTRY.register("mythrilarmor_boots", MythrilarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANARMOR_HELMET = REGISTRY.register("obsidianarmor_helmet", ObsidianarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANARMOR_CHESTPLATE = REGISTRY.register("obsidianarmor_chestplate", ObsidianarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANARMOR_LEGGINGS = REGISTRY.register("obsidianarmor_leggings", ObsidianarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANARMOR_BOOTS = REGISTRY.register("obsidianarmor_boots", ObsidianarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMARMOR_HELMET = REGISTRY.register("orichalcumarmor_helmet", OrichalcumarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMARMOR_CHESTPLATE = REGISTRY.register("orichalcumarmor_chestplate", OrichalcumarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMARMOR_LEGGINGS = REGISTRY.register("orichalcumarmor_leggings", OrichalcumarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> ORICHALCUMARMOR_BOOTS = REGISTRY.register("orichalcumarmor_boots", OrichalcumarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMARMOR_HELMET = REGISTRY.register("palladiumarmor_helmet", PalladiumarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMARMOR_CHESTPLATE = REGISTRY.register("palladiumarmor_chestplate", PalladiumarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMARMOR_LEGGINGS = REGISTRY.register("palladiumarmor_leggings", PalladiumarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMARMOR_BOOTS = REGISTRY.register("palladiumarmor_boots", PalladiumarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> PLATINUMARMOR_HELMET = REGISTRY.register("platinumarmor_helmet", PlatinumarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> PLATINUMARMOR_CHESTPLATE = REGISTRY.register("platinumarmor_chestplate", PlatinumarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> PLATINUMARMOR_LEGGINGS = REGISTRY.register("platinumarmor_leggings", PlatinumarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> PLATINUMARMOR_BOOTS = REGISTRY.register("platinumarmor_boots", PlatinumarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> SILVERARMOR_HELMET = REGISTRY.register("silverarmor_helmet", SilverarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> SILVERARMOR_CHESTPLATE = REGISTRY.register("silverarmor_chestplate", SilverarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> SILVERARMOR_LEGGINGS = REGISTRY.register("silverarmor_leggings", SilverarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> SILVERARMOR_BOOTS = REGISTRY.register("silverarmor_boots", SilverarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> TINARMOR_HELMET = REGISTRY.register("tinarmor_helmet", TinarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> TINARMOR_CHESTPLATE = REGISTRY.register("tinarmor_chestplate", TinarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> TINARMOR_LEGGINGS = REGISTRY.register("tinarmor_leggings", TinarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> TINARMOR_BOOTS = REGISTRY.register("tinarmor_boots", TinarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> TITANIUMARMOR_HELMET = REGISTRY.register("titaniumarmor_helmet", TitaniumarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> TITANIUMARMOR_CHESTPLATE = REGISTRY.register("titaniumarmor_chestplate", TitaniumarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> TITANIUMARMOR_LEGGINGS = REGISTRY.register("titaniumarmor_leggings", TitaniumarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> TITANIUMARMOR_BOOTS = REGISTRY.register("titaniumarmor_boots", TitaniumarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENARMOR_HELMET = REGISTRY.register("tungstenarmor_helmet", TungstenarmorItem.Helmet::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENARMOR_CHESTPLATE = REGISTRY.register("tungstenarmor_chestplate", TungstenarmorItem.Chestplate::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENARMOR_LEGGINGS = REGISTRY.register("tungstenarmor_leggings", TungstenarmorItem.Leggings::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENARMOR_BOOTS = REGISTRY.register("tungstenarmor_boots", TungstenarmorItem.Boots::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITESWORD = REGISTRY.register("adamantitesword", AdamantiteswordItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEPICKAXE = REGISTRY.register("adamantitepickaxe", AdamantitepickaxeItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEAXE = REGISTRY.register("adamantiteaxe", AdamantiteaxeItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITESHOVEL = REGISTRY.register("adamantiteshovel", AdamantiteshovelItem::new);
-	public static final DeferredHolder<Item, Item> ADAMANTITEHOE = REGISTRY.register("adamantitehoe", AdamantitehoeItem::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTSWORD = REGISTRY.register("amethystsword", AmethystswordItem::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTPICKAXE = REGISTRY.register("amethystpickaxe", AmethystpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTAXE = REGISTRY.register("amethystaxe", AmethystaxeItem::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTSHOVEL = REGISTRY.register("amethystshovel", AmethystshovelItem::new);
-	public static final DeferredHolder<Item, Item> AMETHYSTHOE = REGISTRY.register("amethysthoe", AmethysthoeItem::new);
-	public static final DeferredHolder<Item, Item> COBALTSWORD = REGISTRY.register("cobaltsword", CobaltswordItem::new);
-	public static final DeferredHolder<Item, Item> COBALTPICKAXE = REGISTRY.register("cobaltpickaxe", CobaltpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> COBALTAXE = REGISTRY.register("cobaltaxe", CobaltaxeItem::new);
-	public static final DeferredHolder<Item, Item> COBALTSHOVEL = REGISTRY.register("cobaltshovel", CobaltshovelItem::new);
-	public static final DeferredHolder<Item, Item> COBALTHOE = REGISTRY.register("cobalthoe", CobalthoeItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALSWORD = REGISTRY.register("infernalsword", InfernalswordItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALPICKAXE = REGISTRY.register("infernalpickaxe", InfernalpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALAXE = REGISTRY.register("infernalaxe", InfernalaxeItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALSHOVEL = REGISTRY.register("infernalshovel", InfernalshovelItem::new);
-	public static final DeferredHolder<Item, Item> INFERNALHOE = REGISTRY.register("infernalhoe", InfernalhoeItem::new);
-	public static final DeferredHolder<Item, Item> LEADSWORD = REGISTRY.register("leadsword", LeadswordItem::new);
-	public static final DeferredHolder<Item, Item> LEADPICKAXE = REGISTRY.register("leadpickaxe", LeadpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> LEADAXE = REGISTRY.register("leadaxe", LeadaxeItem::new);
-	public static final DeferredHolder<Item, Item> LEADSHOVEL = REGISTRY.register("leadshovel", LeadshovelItem::new);
-	public static final DeferredHolder<Item, Item> LEADHOE = REGISTRY.register("leadhoe", LeadhoeItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILSWORD = REGISTRY.register("mythrilsword", MythrilswordItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILPICKAXE = REGISTRY.register("mythrilpickaxe", MythrilpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILAXE = REGISTRY.register("mythrilaxe", MythrilaxeItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILSHOVEL = REGISTRY.register("mythrilshovel", MythrilshovelItem::new);
-	public static final DeferredHolder<Item, Item> MYTHRILHOE = REGISTRY.register("mythrilhoe", MythrilhoeItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANSWORD = REGISTRY.register("obsidiansword", ObsidianswordItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANPICKAXE = REGISTRY.register("obsidianpickaxe", ObsidianpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANAXE = REGISTRY.register("obsidianaxe", ObsidianaxeItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANSHOVEL = REGISTRY.register("obsidianshovel", ObsidianshovelItem::new);
-	public static final DeferredHolder<Item, Item> OBSIDIANHOE = REGISTRY.register("obsidianhoe", ObsidianhoeItem::new);
-	public static final DeferredHolder<Item, Item> ORICHLCUMSWORD = REGISTRY.register("orichlcumsword", OrichlcumswordItem::new);
-	public static final DeferredHolder<Item, Item> ORICHLCUMPICKAXE = REGISTRY.register("orichlcumpickaxe", OrichlcumpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> ORICHLCUMAXE = REGISTRY.register("orichlcumaxe", OrichlcumaxeItem::new);
-	public static final DeferredHolder<Item, Item> ORICHLCUMSHOVEL = REGISTRY.register("orichlcumshovel", OrichlcumshovelItem::new);
-	public static final DeferredHolder<Item, Item> ORICHLCUMHOE = REGISTRY.register("orichlcumhoe", OrichlcumhoeItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMSWORD = REGISTRY.register("palladiumsword", PalladiumswordItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMPICKAXE = REGISTRY.register("palladiumpickaxe", PalladiumpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMAXE = REGISTRY.register("palladiumaxe", PalladiumaxeItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMSHOVEL = REGISTRY.register("palladiumshovel", PalladiumshovelItem::new);
-	public static final DeferredHolder<Item, Item> PALLADIUMHOE = REGISTRY.register("palladiumhoe", PalladiumhoeItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMSWORD = REGISTRY.register("platinumsword", PlatinumswordItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMPICKAXE = REGISTRY.register("platinumpickaxe", PlatinumpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMAXE = REGISTRY.register("platinumaxe", PlatinumaxeItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMSHOVEL = REGISTRY.register("platinumshovel", PlatinumshovelItem::new);
-	public static final DeferredHolder<Item, Item> PLATINUMHOE = REGISTRY.register("platinumhoe", PlatinumhoeItem::new);
-	public static final DeferredHolder<Item, Item> SILVERSWORD = REGISTRY.register("silversword", SilverswordItem::new);
-	public static final DeferredHolder<Item, Item> SILVERPICKAXE = REGISTRY.register("silverpickaxe", SilverpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> SILVERAXE = REGISTRY.register("silveraxe", SilveraxeItem::new);
-	public static final DeferredHolder<Item, Item> SILVERSHOVEL = REGISTRY.register("silvershovel", SilvershovelItem::new);
-	public static final DeferredHolder<Item, Item> SILVERHOE = REGISTRY.register("silverhoe", SilverhoeItem::new);
-	public static final DeferredHolder<Item, Item> TINSWORD = REGISTRY.register("tinsword", TinswordItem::new);
-	public static final DeferredHolder<Item, Item> TINPICKAXE = REGISTRY.register("tinpickaxe", TinpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> TINAXE = REGISTRY.register("tinaxe", TinaxeItem::new);
-	public static final DeferredHolder<Item, Item> TINSHOVEL = REGISTRY.register("tinshovel", TinshovelItem::new);
-	public static final DeferredHolder<Item, Item> TINHOE = REGISTRY.register("tinhoe", TinhoeItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMSWORD = REGISTRY.register("titaniumsword", TitaniumswordItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMPICKAXE = REGISTRY.register("titaniumpickaxe", TitaniumpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMAXE = REGISTRY.register("titaniumaxe", TitaniumaxeItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMSHOVEL = REGISTRY.register("titaniumshovel", TitaniumshovelItem::new);
-	public static final DeferredHolder<Item, Item> TITANIUMHOE = REGISTRY.register("titaniumhoe", TitaniumhoeItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENSWORD = REGISTRY.register("tungstensword", TungstenswordItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENPICKAXE = REGISTRY.register("tungstenpickaxe", TungstenpickaxeItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENAXE = REGISTRY.register("tungstenaxe", TungstenaxeItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENSHOVEL = REGISTRY.register("tungstenshovel", TungstenshovelItem::new);
-	public static final DeferredHolder<Item, Item> TUNGSTENHOE = REGISTRY.register("tungstenhoe", TungstenhoeItem::new);
 
-	private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MOD_ID);
+
+	public static final DeferredItem<Item> STEEL_INGOT = registerItem("steel_ingot", Item::new, new Item.Properties());
+
+	public static final DeferredItem<Item> ADAMANTITEINGOT = registerItem("adamantiteingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> COBALTINGOT = registerItem("cobaltingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> INFERNALINGOT = registerItem("infernalingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> LEADINGOT = registerItem("leadingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> MYTHRILINGOT = registerItem("mythrilingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> OBSIDIANINGOT = registerItem("obsidianingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> ORICHALCUMINGOT = registerItem("orichalcumingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> PALLADIUMINGOT = registerItem("palladiumingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> PLATINUMINGOT = registerItem("platinumingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> SILVERINGOT = registerItem("silveringot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TININGOT = registerItem("tiningot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TITANIUMINGOT = registerItem("titaniumingot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TUNGSTENINGOT = registerItem("tungsteningot", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> ADAMANTITENUGGET = registerItem("adamantitenugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> COBALTNUGGET = registerItem("cobaltnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> INFERNALNUGGET = registerItem("infernalnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> LEADNUGGET = registerItem("leadnugget",Item::new, new Item.Properties());
+	public static final DeferredItem<Item> MYTHRILNUGGET = registerItem("mythrilnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> OBSIDIANNUGGET = registerItem("obsidiannugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> ORICHALCUMNUGGET = registerItem("orichalcumnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> PALLADIUMNUGGET = registerItem("palladiumnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> PLATINUMNUGGET = registerItem("platinumnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> SILVERNUGGET = registerItem("silvernugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TINNUGGET = registerItem("tinnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TITANIUMNUGGET = registerItem("titaniumnugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> TUNGSTENNUGGET = registerItem("tungstennugget", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWADAMANTITE = registerItem("rawadamantite", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWCOBALT = registerItem("rawcobalt", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWINFERNAL = registerItem("rawinfernal", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWLEAD = registerItem("rawlead", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWMYTHRIL = registerItem("rawmythril", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWORICHALCUM = registerItem("raworichalcum", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWPALLADIUM = registerItem("rawpalladium", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWPLATINUM = registerItem("rawplatinum", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWSILVER = registerItem("rawsilver", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWTIN = registerItem("rawtin", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWTITANIUM = registerItem("rawtitanium", Item::new, new Item.Properties());
+	public static final DeferredItem<Item> RAWTUNGSTEN = registerItem("rawtungsten", Item::new, new Item.Properties());
+
+	/*public static final DeferredItem<Item> ADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.ADAMANTITEBLOCK);
+	public static final DeferredItem<Item> RAWADAMANTITEBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWADAMANTITEBLOCK);
+	public static final DeferredItem<Item> DEEPSLATEADAMANTITEORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEADAMANTITEORE);
+	public static final DeferredItem<Item> COBALTORE = block(ManyMoreOresAndCraftsModBlocks.COBALTORE);
+	public static final DeferredItem<Item> NETHERINFERNALORE = block(ManyMoreOresAndCraftsModBlocks.NETHERINFERNALORE);
+	public static final DeferredItem<Item> LEADORE = block(ManyMoreOresAndCraftsModBlocks.LEADORE);
+	public static final DeferredItem<Item> DEEPSLATEMYTHRILORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEMYTHRILORE);
+	public static final DeferredItem<Item> DEEPSLATEORICHALCUMORE = block(ManyMoreOresAndCraftsModBlocks.DEEPSLATEORICHALCUMORE);
+	public static final DeferredItem<Item> PALLADIUMORE = block(ManyMoreOresAndCraftsModBlocks.PALLADIUMORE);
+	public static final DeferredItem<Item> PLATINUMORE = block(ManyMoreOresAndCraftsModBlocks.PLATINUMORE);
+	public static final DeferredItem<Item> SILVERORE = block(ManyMoreOresAndCraftsModBlocks.SILVERORE);
+	public static final DeferredItem<Item> TINORE = block(ManyMoreOresAndCraftsModBlocks.TINORE);
+	public static final DeferredItem<Item> TITANIUMORE = block(ManyMoreOresAndCraftsModBlocks.TITANIUMORE);
+	public static final DeferredItem<Item> TUNGSTENORE = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENORE);
+	public static final DeferredItem<Item> COBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.COBALTBLOCK);
+	public static final DeferredItem<Item> INFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.INFERNALBLOCK);
+	public static final DeferredItem<Item> LEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.LEADBLOCK);
+	public static final DeferredItem<Item> MYTHRILBLOCK = block(ManyMoreOresAndCraftsModBlocks.MYTHRILBLOCK);
+	public static final DeferredItem<Item> OBSIDIANBLOCK = block(ManyMoreOresAndCraftsModBlocks.OBSIDIANBLOCK);
+	public static final DeferredItem<Item> ORICHALCUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.ORICHALCUMBLOCK);
+	public static final DeferredItem<Item> PALLADIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.PALLADIUMBLOCK);
+	public static final DeferredItem<Item> PLATINUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.PLATINUMBLOCK);
+	public static final DeferredItem<Item> SILVERBLOCK = block(ManyMoreOresAndCraftsModBlocks.SILVERBLOCK);
+	public static final DeferredItem<Item> TINBLOCK = block(ManyMoreOresAndCraftsModBlocks.TINBLOCK);
+	public static final DeferredItem<Item> TITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.TITANIUMBLOCK);
+	public static final DeferredItem<Item> TUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.TUNGSTENBLOCK);
+	public static final DeferredItem<Item> RAWCOBALTBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWCOBALTBLOCK);
+	public static final DeferredItem<Item> RAWINFERNALBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWINFERNALBLOCK);
+	public static final DeferredItem<Item> RAWLEADBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWLEADBLOCK);
+	public static final DeferredItem<Item> RAWMYTHRILBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWMYTHRILBLOCK);
+	public static final DeferredItem<Item> RAWORICHALCUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWORICHALCUMBLOCK);
+	public static final DeferredItem<Item> RAWPALLADIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWPALLADIUMBLOCK);
+	public static final DeferredItem<Item> RAWPLATINUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWPLATINUMBLOCK);
+	public static final DeferredItem<Item> RAWSILVERBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWSILVERBLOCK);
+	public static final DeferredItem<Item> RAWTINBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTINBLOCK);
+	public static final DeferredItem<Item> RAWTITANIUMBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTITANIUMBLOCK);
+	public static final DeferredItem<Item> RAWTUNGSTENBLOCK = block(ManyMoreOresAndCraftsModBlocks.RAWTUNGSTENBLOCK);*/
+
+	public static final List<DeferredItem<Item>> ADAMANTITE_ARMOR = registerArmor(ModMaterials.Armor.ADAMANTITE, new Item.Properties());
+	public static final List<DeferredItem<Item>> COBALT_ARMOR = registerArmor(ModMaterials.Armor.COBALT, new Item.Properties());
+	public static final List<DeferredItem<Item>> AMETHYST_ARMOR = registerArmor(ModMaterials.Armor.AMETHYST, new Item.Properties());
+	public static final List<DeferredItem<Item>> INFERNAL_ARMOR = registerArmor(ModMaterials.Armor.INFERNAL, new Item.Properties());
+	public static final List<DeferredItem<Item>> LEAD_ARMOR = registerArmor(ModMaterials.Armor.LEAD, new Item.Properties());
+	public static final List<DeferredItem<Item>> MYTHRIL_ARMOR = registerArmor(ModMaterials.Armor.MYTHRIL, new Item.Properties());
+	public static final List<DeferredItem<Item>> OBSIDIAN_ARMOR = registerArmor(ModMaterials.Armor.OBSIDIAN, new Item.Properties());
+	public static final List<DeferredItem<Item>> ORICHALCUM_ARMOR = registerArmor(ModMaterials.Armor.ORICHALCUM, new Item.Properties());
+	public static final List<DeferredItem<Item>> PALLADIUM_ARMOR = registerArmor(ModMaterials.Armor.PALLADIUM, new Item.Properties());
+	public static final List<DeferredItem<Item>> PLATINUM_ARMOR = registerArmor(ModMaterials.Armor.PLATINUM, new Item.Properties());
+	public static final List<DeferredItem<Item>> SILVER_ARMOR = registerArmor(ModMaterials.Armor.SILVER, new Item.Properties());
+	public static final List<DeferredItem<Item>> TIN_ARMOR = registerArmor(ModMaterials.Armor.TIN, new Item.Properties());
+	public static final List<DeferredItem<Item>> TITANIUM_ARMOR = registerArmor(ModMaterials.Armor.TITANIUM, new Item.Properties());
+	public static final List<DeferredItem<Item>> TUNGSTEN_ARMOR = registerArmor(ModMaterials.Armor.TUNGSTEN, new Item.Properties());
+
+	public static final List<DeferredItem<Item>> ADAMANTITE_TOOLS = registerTools("adamantite", ModMaterials.Tool.ADAMANTITE,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> COBALT_TOOLS = registerTools("amethyst", ModMaterials.Tool.COBALT,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> AMETHYST_TOOLS = registerTools("cobalt", ModMaterials.Tool.AMETHYST,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> INFERNAL_TOOLS = registerTools("infernal", ModMaterials.Tool.INFERNAL,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> LEAD_TOOLS = registerTools("lead", ModMaterials.Tool.LEAD,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> MYTHRIL_TOOLS = registerTools("mythril", ModMaterials.Tool.MYTHRIL,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> OBSIDIAN_TOOLS = registerTools("obsidian", ModMaterials.Tool.OBSIDIAN,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> ORICHALCUM_TOOLS = registerTools("orichalcum", ModMaterials.Tool.ORICHALCUM,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> PALLADIUM_TOOLS = registerTools("palladium", ModMaterials.Tool.PALLADIUM,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> PLATINUM_TOOLS = registerTools("platinum", ModMaterials.Tool.PLATINUM,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> SILVER_TOOLS = registerTools("silver", ModMaterials.Tool.SILVER,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> TIN_TOOLS = registerTools("tin", ModMaterials.Tool.TIN,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> TITANIUM_TOOLS = registerTools("titanium", ModMaterials.Tool.TITANIUM,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+	public static final List<DeferredItem<Item>> TUNGSTEN_TOOLS = registerTools("tungsten", ModMaterials.Tool.TUNGSTEN,
+			new float[]{6f, -3f, -2f, -1f}, new Item.Properties().rarity(Rarity.RARE));
+
+
+	public static DeferredItem<Item> registerItem(String name, Function<Item.Properties, Item> function, Item.Properties itemProp) {
+		return REGISTRY.register(name, () -> function.apply(itemProp.setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)))));
 	}
+
+	private static List<DeferredItem<Item>> registerArmor(ArmorMaterial material, Item.Properties itemProp) {
+		String name = material.modelId().getPath();
+		return List.of(
+				registerItem(name + "_helmet", (p) -> new ArmorItem(material, ArmorType.HELMET, p), itemProp),
+				registerItem(name + "_chestplate", (p) -> new ArmorItem(material, ArmorType.CHESTPLATE, p), itemProp),
+				registerItem(name + "_leggings", (p) -> new ArmorItem(material, ArmorType.LEGGINGS, p), itemProp),
+				registerItem(name + "_boots", (p) -> new ArmorItem(material, ArmorType.BOOTS, p), itemProp)
+		);
+	}
+
+	private static List<DeferredItem<Item>> registerTools(String name, ToolMaterial material, float[] attr, Item.Properties itemProp) {
+		return List.of(
+				registerItem(name + "sword", (p) -> new SwordItem(material, 3f, -2.4f, p), itemProp),
+				registerItem(name + "pickaxe", (p) -> new PickaxeItem(material, 1f, -2.8f, p), itemProp),
+				registerItem(name + "axe", (p) -> new AxeItem(material, attr[0], attr[1], p), itemProp),
+				registerItem(name + "shovel", (p) -> new ShovelItem(material, 1.5f, -3f, p), itemProp),
+				registerItem(name + "hoe", (p) -> new HoeItem(material, attr[2], attr[3], p), itemProp)
+		);
+	}
+
+	public static void init(IEventBus bus) {
+		REGISTRY.register(bus);
+	}
+
 }
