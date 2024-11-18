@@ -12,17 +12,9 @@ import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 @Mod(MOD_ID)
 public class ManyMoreOresAndCraftsMod {
 	public ManyMoreOresAndCraftsMod(IEventBus modEventBus) {
-
 		ManyMoreOresAndCraftsModBlocks.init(modEventBus);
 		ManyMoreOresAndCraftsModItems.init(modEventBus);
 		ManyMoreOresAndCraftsModTabs.init(modEventBus);
-
-		/*ManyMoreOresAndCraftsModBlocks.REGISTRY.register(modEventBus);
-
-		ManyMoreOresAndCraftsModItems.REGISTRY.register(modEventBus);
-
-		ManyMoreOresAndCraftsModTabs.REGISTRY.register(modEventBus);*/
-
 		CommonClass.init();
 	}
 }
