@@ -35,6 +35,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final DeferredItem<Item> TININGOT = registerItem("tiningot", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> TITANIUMINGOT = registerItem("titaniumingot", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> TUNGSTENINGOT = registerItem("tungsteningot", Item::new, new Item.Properties());
+
 	public static final DeferredItem<Item> ADAMANTITENUGGET = registerItem("adamantitenugget", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> COBALTNUGGET = registerItem("cobaltnugget", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> INFERNALNUGGET = registerItem("infernalnugget", Item::new, new Item.Properties());
@@ -48,6 +49,7 @@ public class ManyMoreOresAndCraftsModItems {
 	public static final DeferredItem<Item> TINNUGGET = registerItem("tinnugget", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> TITANIUMNUGGET = registerItem("titaniumnugget", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> TUNGSTENNUGGET = registerItem("tungstennugget", Item::new, new Item.Properties());
+
 	public static final DeferredItem<Item> RAWADAMANTITE = registerItem("rawadamantite", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> RAWCOBALT = registerItem("rawcobalt", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> RAWINFERNAL = registerItem("rawinfernal", Item::new, new Item.Properties());

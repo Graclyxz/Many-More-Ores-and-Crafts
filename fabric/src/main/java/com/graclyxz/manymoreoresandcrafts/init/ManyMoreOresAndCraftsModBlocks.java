@@ -1,91 +1,185 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
-import com.graclyxz.manymoreoresandcrafts.block.AdamantiteblockBlock;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
-import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
-import dev.turtywurty.tutorialmod.TutorialMod;
-import dev.turtywurty.tutorialmod.block.*;
-import dev.turtywurty.tutorialmod.init.worldgen.ConfiguredFeatureInit;
-import dev.turtywurty.tutorialmod.list.BlockSetTypeList;
-import dev.turtywurty.tutorialmod.list.WoodTypeList;
-import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.component.type.SuspiciousStewEffectsComponent;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.function.Function;
 
-import static jdk.internal.misc.TerminatingThreadLocal.register;
+import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
+import static com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems.registerItem;
 
 public class ManyMoreOresAndCraftsModBlocks {
 
-	public static final Block EXAMPLE_BLOCK = registerWithItem("example_block", new Block(AbstractBlock.Settings.create()
-			.strength(1.5F, 6.0F)
-			.requiresTool()));
+	public static final Block DEEPSLATEADAMANTITEORE = registerBlock("deepslateadamantiteore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(8f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block COBALTORE = registerBlock("cobaltore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block NETHERINFERNALORE = registerBlock("netherinfernalore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.NETHER_ORE).strength(8f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block LEADORE = registerBlock("leadore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block DEEPSLATEMYTHRILORE = registerBlock("deepslatemythrilore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(10f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block DEEPSLATEORICHALCUMORE = registerBlock("deepslateorichalcumore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(8f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block PALLADIUMORE = registerBlock("palladiumore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block PLATINUMORE = registerBlock("platinumore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block SILVERORE = registerBlock("silverore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TINORE = registerBlock("tinore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TITANIUMORE = registerBlock("titaniumore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(10f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TUNGSTENORE = registerBlock("tungstenore", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block ADAMANTITEBLOCK = registerBlock("adamantiteblock", Block::new,
+			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block COBALTBLOCK = registerBlock("cobaltblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block INFERNALBLOCK = registerBlock("infernalblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(2f, 8f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block LEADBLOCK = registerBlock("leadblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block MYTHRILBLOCK = registerBlock("mythrilblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 8f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block OBSIDIANBLOCK = registerBlock("obsidianblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f, 10f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block ORICHALCUMBLOCK = registerBlock("orichalcumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block PALLADIUMBLOCK = registerBlock("palladiumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block PLATINUMBLOCK = registerBlock("platinumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block SILVERBLOCK = registerBlock("silverblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TINBLOCK = registerBlock("tinblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TITANIUMBLOCK = registerBlock("titaniumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block TUNGSTENBLOCK = registerBlock("tungstenblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWADAMANTITEBLOCK = registerBlock("rawadamantiteblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWCOBALTBLOCK = registerBlock("rawcobaltblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWINFERNALBLOCK = registerBlock("rawinfernalblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWLEADBLOCK = registerBlock("rawleadblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWMYTHRILBLOCK = registerBlock("rawmythrilblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWORICHALCUMBLOCK = registerBlock("raworichalcumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWPALLADIUMBLOCK = registerBlock("rawpalladiumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWPLATINUMBLOCK = registerBlock("rawplatinumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWSILVERBLOCK = registerBlock("rawsilverblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWTINBLOCK = registerBlock("rawtinblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWTITANIUMBLOCK = registerBlock("rawtitaniumblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
+
+	public static final Block RAWTUNGSTENBLOCK = registerBlock("rawtungstenblock", Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops(),
+			new Item.Properties());
 
 
-	public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
-		T registered = register(name, block);
-		ItemInit.register(name, new BlockItem(registered, settings));
-		return registered;
+	public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties blockProp, Item.Properties itemProp) {
+		var blockReg = registerBlock(name, function, blockProp);
+		registerItem(name, (p) -> new BlockItem(blockReg, p), itemProp.useBlockDescriptionPrefix());
+		return blockReg;
 	}
 
-	public static <T extends Block> T registerWithItem(String name, T block) {
-		return registerWithItem(name, block, new Item.Settings());
+	public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties blockProp) {
+		return Registry.register(BuiltInRegistries.BLOCK, ResourceKey.create(Registries.BLOCK,
+				ResourceLocation.fromNamespaceAndPath(MOD_ID, name)), function.apply(blockProp.setId(ResourceKey.create(Registries.BLOCK,
+				ResourceLocation.fromNamespaceAndPath(MOD_ID, name)))));
 	}
 
-	/*public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
-	public static final RegistryObject<Block> ADAMANTITEBLOCK = REGISTRY.register("adamantiteblock", () -> new AdamantiteblockBlock());
-	public static final RegistryObject<Block> RAWADAMANTITEBLOCK = REGISTRY.register("rawadamantiteblock", () -> new RawadamantiteblockBlock());
-	public static final RegistryObject<Block> DEEPSLATEADAMANTITEORE = REGISTRY.register("deepslateadamantiteore", () -> new DeepslateadamantiteoreBlock());
-	public static final RegistryObject<Block> COBALTORE = REGISTRY.register("cobaltore", () -> new CobaltoreBlock());
-	public static final RegistryObject<Block> NETHERINFERNALORE = REGISTRY.register("netherinfernalore", () -> new NetherinfernaloreBlock());
-	public static final RegistryObject<Block> LEADORE = REGISTRY.register("leadore", () -> new LeadoreBlock());
-	public static final RegistryObject<Block> DEEPSLATEMYTHRILORE = REGISTRY.register("deepslatemythrilore", () -> new DeepslatemythriloreBlock());
-	public static final RegistryObject<Block> DEEPSLATEORICHALCUMORE = REGISTRY.register("deepslateorichalcumore", () -> new DeepslateorichalcumoreBlock());
-	public static final RegistryObject<Block> PALLADIUMORE = REGISTRY.register("palladiumore", () -> new PalladiumoreBlock());
-	public static final RegistryObject<Block> PLATINUMORE = REGISTRY.register("platinumore", () -> new PlatinumoreBlock());
-	public static final RegistryObject<Block> SILVERORE = REGISTRY.register("silverore", () -> new SilveroreBlock());
-	public static final RegistryObject<Block> TINORE = REGISTRY.register("tinore", () -> new TinoreBlock());
-	public static final RegistryObject<Block> TITANIUMORE = REGISTRY.register("titaniumore", () -> new TitaniumoreBlock());
-	public static final RegistryObject<Block> TUNGSTENORE = REGISTRY.register("tungstenore", () -> new TungstenoreBlock());
-	public static final RegistryObject<Block> COBALTBLOCK = REGISTRY.register("cobaltblock", () -> new CobaltblockBlock());
-	public static final RegistryObject<Block> INFERNALBLOCK = REGISTRY.register("infernalblock", () -> new InfernalblockBlock());
-	public static final RegistryObject<Block> LEADBLOCK = REGISTRY.register("leadblock", () -> new LeadblockBlock());
-	public static final RegistryObject<Block> MYTHRILBLOCK = REGISTRY.register("mythrilblock", () -> new MythrilblockBlock());
-	public static final RegistryObject<Block> OBSIDIANBLOCK = REGISTRY.register("obsidianblock", () -> new ObsidianblockBlock());
-	public static final RegistryObject<Block> ORICHALCUMBLOCK = REGISTRY.register("orichalcumblock", () -> new OrichalcumblockBlock());
-	public static final RegistryObject<Block> PALLADIUMBLOCK = REGISTRY.register("palladiumblock", () -> new PalladiumblockBlock());
-	public static final RegistryObject<Block> PLATINUMBLOCK = REGISTRY.register("platinumblock", () -> new PlatinumblockBlock());
-	public static final RegistryObject<Block> SILVERBLOCK = REGISTRY.register("silverblock", () -> new SilverblockBlock());
-	public static final RegistryObject<Block> TINBLOCK = REGISTRY.register("tinblock", () -> new TinblockBlock());
-	public static final RegistryObject<Block> TITANIUMBLOCK = REGISTRY.register("titaniumblock", () -> new TitaniumblockBlock());
-	public static final RegistryObject<Block> TUNGSTENBLOCK = REGISTRY.register("tungstenblock", () -> new TungstenblockBlock());
-	public static final RegistryObject<Block> RAWCOBALTBLOCK = REGISTRY.register("rawcobaltblock", () -> new RawcobaltblockBlock());
-	public static final RegistryObject<Block> RAWINFERNALBLOCK = REGISTRY.register("rawinfernalblock", () -> new RawinfernalblockBlock());
-	public static final RegistryObject<Block> RAWLEADBLOCK = REGISTRY.register("rawleadblock", () -> new RawleadblockBlock());
-	public static final RegistryObject<Block> RAWMYTHRILBLOCK = REGISTRY.register("rawmythrilblock", () -> new RawmythrilblockBlock());
-	public static final RegistryObject<Block> RAWORICHALCUMBLOCK = REGISTRY.register("raworichalcumblock", () -> new RaworichalcumblockBlock());
-	public static final RegistryObject<Block> RAWPALLADIUMBLOCK = REGISTRY.register("rawpalladiumblock", () -> new RawpalladiumblockBlock());
-	public static final RegistryObject<Block> RAWPLATINUMBLOCK = REGISTRY.register("rawplatinumblock", () -> new RawplatinumblockBlock());
-	public static final RegistryObject<Block> RAWSILVERBLOCK = REGISTRY.register("rawsilverblock", () -> new RawsilverblockBlock());
-	public static final RegistryObject<Block> RAWTINBLOCK = REGISTRY.register("rawtinblock", () -> new RawtinblockBlock());
-	public static final RegistryObject<Block> RAWTITANIUMBLOCK = REGISTRY.register("rawtitaniumblock", () -> new RawtitaniumblockBlock());
-	public static final RegistryObject<Block> RAWTUNGSTENBLOCK = REGISTRY.register("rawtungstenblock", () -> new RawtungstenblockBlock());*/
+	//public static void init() {System.out.println("Registrando Items para " + MOD_ID);}
 }

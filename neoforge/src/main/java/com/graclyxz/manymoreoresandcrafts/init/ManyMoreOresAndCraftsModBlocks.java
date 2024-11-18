@@ -182,7 +182,5 @@ public class ManyMoreOresAndCraftsModBlocks {
 		return REGISTRY.register(name, () -> function.apply(blockProp.setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)))));
 	}
 
-	public static void init(IEventBus bus) {
-		REGISTRY.register(bus);
-	}
+	//public static void init(IEventBus bus) {REGISTRY.register(bus);}
 }
