@@ -20,8 +20,6 @@ public class ManyMoreOresAndCraftsModItems {
 
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MOD_ID);
 
-	public static final DeferredItem<Item> STEEL_INGOT = registerItem("steel_ingot", Item::new, new Item.Properties());
-
 	public static final DeferredItem<Item> ADAMANTITEINGOT = registerItem("adamantiteingot", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> COBALTINGOT = registerItem("cobaltingot", Item::new, new Item.Properties());
 	public static final DeferredItem<Item> INFERNALINGOT = registerItem("infernalingot", Item::new, new Item.Properties());
