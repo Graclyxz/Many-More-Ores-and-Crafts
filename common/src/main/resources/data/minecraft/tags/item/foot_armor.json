@@ -1,19 +1,6 @@
 {
   "replace": false,
   "values": [
-    "many_more_ores_and_crafts:tungstenarmor_boots",
-    "many_more_ores_and_crafts:titaniumarmor_boots",
-    "many_more_ores_and_crafts:tinarmor_boots",
-    "many_more_ores_and_crafts:silverarmor_boots",
-    "many_more_ores_and_crafts:platinumarmor_boots",
-    "many_more_ores_and_crafts:palladiumarmor_boots",
-    "many_more_ores_and_crafts:orichalcumarmor_boots",
-    "many_more_ores_and_crafts:obsidianarmor_boots",
-    "many_more_ores_and_crafts:mythrilarmor_boots",
-    "many_more_ores_and_crafts:leadarmor_boots",
-    "many_more_ores_and_crafts:infernalarmor_boots",
-    "many_more_ores_and_crafts:amethystarmor_boots",
-    "many_more_ores_and_crafts:cobaltarmor_boots",
-    "many_more_ores_and_crafts:adamantitearmor_boots"
+    "many_more_ores_and_crafts:tin_boots"
   ]
 }
