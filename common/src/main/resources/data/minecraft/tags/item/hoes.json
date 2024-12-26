@@ -1,19 +1,6 @@
 {
   "replace": false,
   "values": [
-    "many_more_ores_and_crafts:tungstenhoe",
-    "many_more_ores_and_crafts:titaniumhoe",
-    "many_more_ores_and_crafts:tinhoe",
-    "many_more_ores_and_crafts:silverhoe",
-    "many_more_ores_and_crafts:platinumhoe",
-    "many_more_ores_and_crafts:palladiumhoe",
-    "many_more_ores_and_crafts:orichlcumhoe",
-    "many_more_ores_and_crafts:obsidianhoe",
-    "many_more_ores_and_crafts:mythrilhoe",
-    "many_more_ores_and_crafts:leadhoe",
-    "many_more_ores_and_crafts:infernalhoe",
-    "many_more_ores_and_crafts:cobalthoe",
-    "many_more_ores_and_crafts:amethysthoe",
-    "many_more_ores_and_crafts:adamantitehoe"
+    "many_more_ores_and_crafts:tin_hoe"
   ]
 }

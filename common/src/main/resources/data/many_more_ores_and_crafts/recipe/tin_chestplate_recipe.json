@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "#c:ingots/tin"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:tin_chestplate",
+    "count": 1
+  }
+}
