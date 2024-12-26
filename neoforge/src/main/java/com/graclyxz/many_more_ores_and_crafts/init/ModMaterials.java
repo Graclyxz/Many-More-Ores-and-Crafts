@@ -34,8 +34,61 @@ public class ModMaterials {
     }
 
     public interface Tool {
-        ToolMaterial TIN = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+
+        ToolMaterial ADAMANTITE = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+                1561, 9f, 0f, 22,
+                ModTags.Items.ADAMANTITE_INGOT);
+
+        /*ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
                 250, 6f, 0f, 14,
+                ModTags.Items.AMETHYST_INGOT);*/
+
+        ToolMaterial COBALT = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                1561, 8f, 0f, 15,
+                ModTags.Items.COBALT_INGOT);
+
+        ToolMaterial INFERNAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+                2031, 9f, 0f, 15,
+                ModTags.Items.INFERNAL_INGOT);
+
+        ToolMaterial LEAD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                250, 6f, 0f, 14,
+                ModTags.Items.LEAD_INGOT);
+
+        ToolMaterial MYTHRIL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+                2031, 12f, 0f, 23,
+                ModTags.Items.MYTHRIL_INGOT);
+
+        /*ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+                2031, 7f, 0f, 22,
+                ModTags.Items.OBSIDIAN_INGOT);*/
+
+        ToolMaterial ORICHALCUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+                1561, 9f, 0f, 22,
+                ModTags.Items.ORICHALCUM_INGOT);
+
+        ToolMaterial PALLADIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                1561, 8f, 0f, 15,
+                ModTags.Items.PALLADIUM_INGOT);
+
+        ToolMaterial PLATINUM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                250, 8f, 0f, 15,
+                ModTags.Items.PLATINUM_INGOT);
+
+        ToolMaterial SILVER = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+                250, 8f, 0f, 16,
+                ModTags.Items.SILVER_INGOT);
+
+        ToolMaterial TIN = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+                131, 4f, 0f, 5,
                 ModTags.Items.TIN_INGOT);
+
+        ToolMaterial TITANIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+                2031, 9f, 0f, 10,
+                ModTags.Items.TITANIUM_INGOT);
+
+        ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+                250, 8f, 0f, 16,
+                ModTags.Items.TUNGSTEM_INGOT);
     }
 }

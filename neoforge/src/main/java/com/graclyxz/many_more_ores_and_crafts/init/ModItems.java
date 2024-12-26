@@ -29,47 +29,83 @@ public class ModItems {
 
     /*-*-*-*-*-*-*-*-* Item and Blocks creation *-*-*-*-*-*-*-*-*/
 
-    public static final List<DeferredItem<Item>> ADAMANTITE_ITEMS = registerAllItems("adamantite", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> ADAMANTITE_BLOCKS = registerAllBlocks("adamantite",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> ADAMANTITE_ITEMS = registerAllItems("adamantite", Tool.ADAMANTITE, Armor.TIN,
+            new Item.Properties().rarity(Rarity.RARE));
+    public static final List<DeferredBlock<Block>> ADAMANTITE_BLOCKS = registerAllBlocks("adamantite",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.RARE));
 
     /*public static final List<DeferredItem<Item>> AMETHYST_ITEMS = registerAllItems("amethyst", Tool.TIN, Armor.TIN, new Item.Properties());
     public static final List<DeferredBlock<Block>> AMETHYST_BLOCKS = registerAllBlocks("amethyst",  new float[]{4f, 6f}, SoundType.STONE);*/
 
-    public static final List<DeferredItem<Item>> COBALT_ITEMS = registerAllItems("cobalt", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> COBALT_BLOCKS = registerAllBlocks("cobalt",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> COBALT_ITEMS = registerAllItems("cobalt", Tool.COBALT, Armor.TIN,
+            new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final List<DeferredBlock<Block>> COBALT_BLOCKS = registerAllBlocks("cobalt",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.UNCOMMON));
 
-    public static final List<DeferredItem<Item>> INFERNAL_ITEMS = registerAllItems("infernal", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> INFERNAL_BLOCKS = registerAllBlocks("infernal",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> INFERNAL_ITEMS = registerAllItems("infernal", Tool.INFERNAL, Armor.TIN,
+            new Item.Properties().fireResistant().rarity(Rarity.RARE));
+    public static final List<DeferredBlock<Block>> INFERNAL_BLOCKS = registerAllBlocks("infernal",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().fireResistant().rarity(Rarity.RARE));
 
-    public static final List<DeferredItem<Item>> LEAD_ITEMS = registerAllItems("lead", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> LEAD_BLOCKS = registerAllBlocks("lead",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> LEAD_ITEMS = registerAllItems("lead", Tool.LEAD, Armor.TIN,
+            new Item.Properties());
+    public static final List<DeferredBlock<Block>> LEAD_BLOCKS = registerAllBlocks("lead",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties());
 
-    public static final List<DeferredItem<Item>> MYTHRIL_ITEMS = registerAllItems("mythril", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> MYTHRIL_BLOCKS = registerAllBlocks("mythril",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> MYTHRIL_ITEMS = registerAllItems("mythril", Tool.MYTHRIL, Armor.TIN,
+            new Item.Properties().rarity(Rarity.EPIC));
+    public static final List<DeferredBlock<Block>> MYTHRIL_BLOCKS = registerAllBlocks("mythril",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.EPIC));
 
-    /*public static final List<DeferredItem<Item>> OBSIDIAN_ITEMS = registerAllItems("obsidian", Tool.TIN, Armor.TIN, new Item.Properties());
+    /*public static final List<DeferredItem<Item>> OBSIDIAN_ITEMS = registerAllItems("obsidian", Tool.TIN, Armor.TIN, new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON));
     public static final List<DeferredBlock<Block>> OBSIDIAN_BLOCKS = registerAllBlocks("obsidian",  new float[]{4f, 6f}, SoundType.STONE);*/
 
-    public static final List<DeferredItem<Item>> ORICHALCUM_ITEMS = registerAllItems("orichalcum", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> ORICHALCUM_BLOCKS = registerAllBlocks("orichalcum",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> ORICHALCUM_ITEMS = registerAllItems("orichalcum", Tool.ORICHALCUM, Armor.TIN,
+            new Item.Properties().rarity(Rarity.RARE));
+    public static final List<DeferredBlock<Block>> ORICHALCUM_BLOCKS = registerAllBlocks("orichalcum",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.RARE));
 
-    public static final List<DeferredItem<Item>> PALLADIUM_ITEMS = registerAllItems("palladium", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> PALLADIUM_BLOCKS = registerAllBlocks("palladium",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> PALLADIUM_ITEMS = registerAllItems("palladium", Tool.PALLADIUM, Armor.TIN,
+            new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final List<DeferredBlock<Block>> PALLADIUM_BLOCKS = registerAllBlocks("palladium",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.UNCOMMON));
 
-    public static final List<DeferredItem<Item>> PLATINUM_ITEMS = registerAllItems("platinum", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> PLATINUM_BLOCKS = registerAllBlocks("platinum",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> PLATINUM_ITEMS = registerAllItems("platinum", Tool.PLATINUM, Armor.TIN,
+            new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final List<DeferredBlock<Block>> PLATINUM_BLOCKS = registerAllBlocks("platinum",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.UNCOMMON));
 
-    public static final List<DeferredItem<Item>> SILVER_ITEMS = registerAllItems("silver", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> SILVER_BLOCKS = registerAllBlocks("silver",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> SILVER_ITEMS = registerAllItems("silver", Tool.SILVER, Armor.TIN,
+            new Item.Properties());
+    public static final List<DeferredBlock<Block>> SILVER_BLOCKS = registerAllBlocks("silver",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties());
 
-    public static final List<DeferredItem<Item>> TIN_ITEMS = registerAllItems("tin", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> TIN_BLOCKS = registerAllBlocks("tin",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> TIN_ITEMS = registerAllItems("tin", Tool.TIN, Armor.TIN,
+            new Item.Properties());
+    public static final List<DeferredBlock<Block>> TIN_BLOCKS = registerAllBlocks("tin",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties());
 
-    public static final List<DeferredItem<Item>> TITANIUM_ITEMS = registerAllItems("titanium", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> TITANIUM_BLOCKS = registerAllBlocks("titanium",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> TITANIUM_ITEMS = registerAllItems("titanium", Tool.TITANIUM, Armor.TIN,
+            new Item.Properties().rarity(Rarity.EPIC));
+    public static final List<DeferredBlock<Block>> TITANIUM_BLOCKS = registerAllBlocks("titanium",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.EPIC));
 
-    public static final List<DeferredItem<Item>> TUNGSTEM_ITEMS = registerAllItems("tungsten", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<DeferredBlock<Block>> TUNGSTEM_BLOCKS = registerAllBlocks("tungsten",  new float[]{4f, 6f}, SoundType.STONE);
+    public static final List<DeferredItem<Item>> TUNGSTEM_ITEMS = registerAllItems("tungsten", Tool.TUNGSTEM, Armor.TIN,
+            new Item.Properties());
+    public static final List<DeferredBlock<Block>> TUNGSTEM_BLOCKS = registerAllBlocks("tungsten",  new float[]{4f, 6f}, SoundType.STONE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties());
 
     /*-*-*-*-*-*-*-*-* item and blocks registration *-*-*-*-*-*-*-*-*/
     public static DeferredItem<Item> registerItem(String name, Function<Item.Properties, Item> function, Item.Properties itemProp) {
@@ -107,19 +143,16 @@ public class ModItems {
     }
 
     /*-*-*-*-*-*-*-*-* Blocks list *-*-*-*-*-*-*-*-*/
-    private static List<DeferredBlock<Block>> registerAllBlocks(String name, float[] strengthattr, SoundType soundblock) {
+    private static List<DeferredBlock<Block>> registerAllBlocks(String name, float[] strengthattr, SoundType soundblock, BlockBehaviour.Properties blockProp, Item.Properties itemProp) {
         return List.of(
-                registerBlock(name + "_block", Block::new, BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
-                        .strength(4f, 6f).sound(SoundType.METAL),
-                        new Item.Properties()),
+                registerBlock(name + "_block", Block::new, blockProp.requiresCorrectToolForDrops()
+                        .strength(4f, 6f).sound(SoundType.METAL), itemProp),
 
-                registerBlock(name + "_ore", Block::new, BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
-                                .strength(strengthattr[0],strengthattr[1]).sound(soundblock),
-                        new Item.Properties()),
+                registerBlock(name + "_ore", Block::new, blockProp.requiresCorrectToolForDrops()
+                                .strength(strengthattr[0],strengthattr[1]).sound(soundblock), itemProp),
 
-                registerBlock("raw_" + name + "_block", Block::new, BlockBehaviour.Properties.of().requiresCorrectToolForDrops()
-                                .strength(4f, 6f).sound(SoundType.STONE),
-                        new Item.Properties())
+                registerBlock("raw_" + name + "_block", Block::new, blockProp.requiresCorrectToolForDrops()
+                                .strength(4f, 6f).sound(SoundType.STONE), itemProp)
         );
     }
 
