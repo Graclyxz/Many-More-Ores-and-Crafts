@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.graclyxz.manymoreoresandcrafts.mixin",
+  "package": "com.graclyxz.many_more_ores_and_crafts.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
