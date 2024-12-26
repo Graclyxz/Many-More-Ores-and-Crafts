@@ -43,9 +43,9 @@ public class ModMaterials {
                 24, SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.1f,
                 ModTags.Items.MYTHRIL_INGOT, createAsset("mythril"));
 
-        /*ArmorMaterial OBSIDIAN = new ArmorMaterial(14, createMap(new int[]{2, 6, 5, 2, 6}),
-                22, SoundEvents.ARMOR_EQUIP_DIAMONT, 2f, 0.4f,
-                ModTags.Items.TIN_INGOT, createAsset("obsidian"));*/
+        ArmorMaterial OBSIDIAN = new ArmorMaterial(14, createMap(new int[]{2, 6, 5, 2, 6}),
+                22, SoundEvents.ARMOR_EQUIP_ELYTRA, 2f, 0.4f,
+                ModTags.Items.TIN_INGOT, createAsset("obsidian"));
 
         ArmorMaterial ORICHALCUM = new ArmorMaterial(25, createMap(new int[]{2, 6, 5, 2, 6}),
                 22, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.2f,
@@ -112,9 +112,9 @@ public class ModMaterials {
                 2031, 12f, 0f, 24,
                 ModTags.Items.MYTHRIL_INGOT);
 
-        /*ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+        ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                 2031, 7f, 0f, 22,
-                ModTags.Items.OBSIDIAN_INGOT);*/
+                ModTags.Items.OBSIDIAN_INGOT);
 
         ToolMaterial ORICHALCUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                 1561, 9f, 0f, 22,

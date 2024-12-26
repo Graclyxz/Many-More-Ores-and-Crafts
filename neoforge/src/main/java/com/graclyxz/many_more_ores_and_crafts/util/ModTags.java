@@ -14,7 +14,7 @@ public class ModTags {
         TagKey<Item> INFERNAL_INGOT = createTag(ResourceLocation.parse("c:ingots/infernal"));
         TagKey<Item> LEAD_INGOT = createTag(ResourceLocation.parse("c:ingots/lead"));
         TagKey<Item> MYTHRIL_INGOT = createTag(ResourceLocation.parse("c:ingots/mythril"));
-        //TagKey<Item> OBSIDIAN_INGOT = createTag(ResourceLocation.parse("c:ingots/obsidian"));
+        TagKey<Item> OBSIDIAN_INGOT = createTag(ResourceLocation.parse("c:ingots/obsidian"));
         TagKey<Item> ORICHALCUM_INGOT = createTag(ResourceLocation.parse("c:ingots/orichalcum"));
         TagKey<Item> PALLADIUM_INGOT = createTag(ResourceLocation.parse("c:ingots/palladium"));
         TagKey<Item> PLATINUM_INGOT = createTag(ResourceLocation.parse("c:ingots/platinum"));
