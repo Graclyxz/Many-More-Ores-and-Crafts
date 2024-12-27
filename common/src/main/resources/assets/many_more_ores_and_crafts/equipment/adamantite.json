@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "many_more_ores_and_crafts:adamantite"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "many_more_ores_and_crafts:adamantite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "many_more_ores_and_crafts:adamantite"
+      }
+    ]
+  }
+}
