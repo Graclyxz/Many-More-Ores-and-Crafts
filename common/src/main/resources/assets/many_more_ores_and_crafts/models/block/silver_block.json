@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "many_more_ores_and_crafts:block/silver_block"
+  }
+}

@@ -10,7 +10,19 @@
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {
-        "tin": "many_more_ores_and_crafts:trims/color_palettes/tin"
+        "adamantite": "many_more_ores_and_crafts:trims/color_palettes/adamantite",
+        "cobalt": "many_more_ores_and_crafts:trims/color_palettes/cobalt",
+        "infernal": "many_more_ores_and_crafts:trims/color_palettes/infernal",
+        "lead": "many_more_ores_and_crafts:trims/color_palettes/lead",
+        "mythril": "many_more_ores_and_crafts:trims/color_palettes/mythril",
+        "obsidian": "many_more_ores_and_crafts:trims/color_palettes/obsidian",
+        "orichalcum": "many_more_ores_and_crafts:trims/color_palettes/orichalcum",
+        "palladium": "many_more_ores_and_crafts:trims/color_palettes/palladium",
+        "platinum": "many_more_ores_and_crafts:trims/color_palettes/platinum",
+        "silver": "many_more_ores_and_crafts:trims/color_palettes/silver",
+        "tin": "many_more_ores_and_crafts:trims/color_palettes/tin",
+        "titanium": "many_more_ores_and_crafts:trims/color_palettes/titanium",
+        "tungsten": "many_more_ores_and_crafts:trims/color_palettes/tungsten"
       }
     }
   ]
