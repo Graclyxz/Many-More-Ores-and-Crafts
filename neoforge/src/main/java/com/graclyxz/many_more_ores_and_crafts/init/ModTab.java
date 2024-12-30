@@ -18,7 +18,7 @@ public class ModTab {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     public static final Supplier<CreativeModeTab> TAB_MANY_MORE_ORES_AND_CRAFTS = TABS.register("tab_many_more_ores_and_crafts", () -> CreativeModeTab.builder()
-            .icon(() -> new ItemStack(ModItems.TIN_ITEMS.get(1).asItem()))
+            .icon(() -> new ItemStack(ModItems.ADAMANTITE_ITEMS.get(1).asItem()))
             .displayItems((features, event) -> {
                 for (DeferredHolder<Item, ? extends Item> item : ModItems.ITEMS.getEntries())
                     event.accept(item.get());
