@@ -1,8 +1,30 @@
 {
   "replace": false,
   "values": [
+    "many_more_ores_and_crafts:raw_tungsten_block",
+    "many_more_ores_and_crafts:raw_titanium_block",
+    "many_more_ores_and_crafts:raw_tin_block",
+    "many_more_ores_and_crafts:raw_silver_block",
+    "many_more_ores_and_crafts:raw_platinum_block",
+    "many_more_ores_and_crafts:raw_palladium_block",
+    "many_more_ores_and_crafts:raw_orichalcum_block",
+    "many_more_ores_and_crafts:raw_mythril_block",
+    "many_more_ores_and_crafts:raw_infernal_block",
+    "many_more_ores_and_crafts:raw_lead_block",
+    "many_more_ores_and_crafts:raw_cobalt_block",
+    "many_more_ores_and_crafts:raw_adamantite_block",
+    "many_more_ores_and_crafts:tungsten_block",
+    "many_more_ores_and_crafts:titanium_block",
     "many_more_ores_and_crafts:tin_block",
-    "many_more_ores_and_crafts:tin_ore",
-    "many_more_ores_and_crafts:raw_tin_block"
+    "many_more_ores_and_crafts:silver_block",
+    "many_more_ores_and_crafts:platinum_block",
+    "many_more_ores_and_crafts:palladium_block",
+    "many_more_ores_and_crafts:orichalcum_block",
+    "many_more_ores_and_crafts:mythril_block",
+    "many_more_ores_and_crafts:lead_block",
+    "many_more_ores_and_crafts:cobalt_block",
+    "many_more_ores_and_crafts:adamantite_block",
+    "many_more_ores_and_crafts:lead_ore",
+    "many_more_ores_and_crafts:tin_ore"
   ]
 }

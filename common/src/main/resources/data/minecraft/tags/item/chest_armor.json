@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
-    "many_more_ores_and_crafts:tin_chestplate"
+    "many_more_ores_and_crafts:adamantite_chestplate",
+    "many_more_ores_and_crafts:cobalt_chestplate",
+    "many_more_ores_and_crafts:infernal_chestplate",
+    "many_more_ores_and_crafts:lead_chestplate",
+    "many_more_ores_and_crafts:mythril_chestplate",
+    "many_more_ores_and_crafts:obsidian_chestplate",
+    "many_more_ores_and_crafts:orichalcum_chestplate",
+    "many_more_ores_and_crafts:palladium_chestplate",
+    "many_more_ores_and_crafts:platinum_chestplate",
+    "many_more_ores_and_crafts:silver_chestplate",
+    "many_more_ores_and_crafts:tin_chestplate",
+    "many_more_ores_and_crafts:titanium_chestplate",
+    "many_more_ores_and_crafts:tungsten_chestplate"
   ]
 }
