@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "#c:raw_materials/platinum"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:raw_platinum_block",
+    "count": 1
+  }
+}

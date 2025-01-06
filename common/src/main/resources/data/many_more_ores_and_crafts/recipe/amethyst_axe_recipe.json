@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": "minecraft:amethyst_shard",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:amethyst_axe",
+    "count": 1
+  }
+}

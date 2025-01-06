@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "#c:ingots/orichalcum"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:orichalcum_nugget",
+    "count": 9
+  }
+}

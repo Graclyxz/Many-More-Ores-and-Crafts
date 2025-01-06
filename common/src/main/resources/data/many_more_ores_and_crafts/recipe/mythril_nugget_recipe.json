@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "#c:ingots/mythril"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:mythril_nugget",
+    "count": 9
+  }
+}
