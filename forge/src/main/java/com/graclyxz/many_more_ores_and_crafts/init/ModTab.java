@@ -17,13 +17,13 @@ import static com.graclyxz.many_more_ores_and_crafts.Constants.MOD_ID;
 public class ModTab {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
-    public static final Supplier<CreativeModeTab> TAB_TIN_ORES_AND_CRAFTS = TABS.register("tab_tinoresandcrafts", () -> CreativeModeTab.builder()
-            .icon(() -> new ItemStack(ModItems.TIN_ITEMS.get(1).get()))
+    public static final Supplier<CreativeModeTab> TAB_TIN_ORES_AND_CRAFTS = TABS.register("tab_many_more_ores_and_crafts", () -> CreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModItems.ADAMANTITE_ITEMS.get(1).get()))
             .displayItems((features, event) -> {
                 for (RegistryObject<Item> item : ModItems.ITEMS.getEntries())
                     event.accept(item.get());
             })
-            .title(Component.translatable("item_group.tinoresandcrafts.tab_tinoresandcrafts"))
+            .title(Component.translatable("item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts")).withSearchBar()
             .build());
 
 
