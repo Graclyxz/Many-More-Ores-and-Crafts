@@ -6,12 +6,10 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/silver"
-    }
+    "a": "#c:ingots/silver"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:silverarmor_helmet",
+    "id": "many_more_ores_and_crafts:silver_helmet",
     "count": 1
   }
 }

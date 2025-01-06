@@ -7,12 +7,10 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/tungsten"
-    }
+    "a": "#c:ingots/tungsten"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:tungstenarmor_leggings",
+    "id": "many_more_ores_and_crafts:tungsten_leggings",
     "count": 1
   }
 }

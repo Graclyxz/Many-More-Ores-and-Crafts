@@ -6,12 +6,10 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/obsidian"
-    }
+    "a": "c:ingots/obsidian"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:obsidianarmor_helmet",
+    "id": "many_more_ores_and_crafts:obsidian_helmet",
     "count": 1
   }
 }

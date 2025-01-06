@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "c:nuggets/orichalcum"
-    }
+    "a": "#c:nuggets/orichalcum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:orichalcumingot",
+    "id": "many_more_ores_and_crafts:orichalcum_ingot",
     "count": 1
   }
 }

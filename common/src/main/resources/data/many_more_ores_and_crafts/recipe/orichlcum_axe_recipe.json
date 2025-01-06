@@ -7,15 +7,11 @@
     " b"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/orichalcum"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "#c:ingots/orichalcum",
+    "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:orichlcumaxe",
+    "id": "many_more_ores_and_crafts:orichlcum_axe",
     "count": 1
   }
 }

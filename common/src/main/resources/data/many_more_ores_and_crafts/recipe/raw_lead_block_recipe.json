@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:rawlead"
-    }
+    "a": "#c:raw_materials/lead"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:rawleadblock",
+    "id": "many_more_ores_and_crafts:raw_lead_block",
     "count": 1
   }
 }

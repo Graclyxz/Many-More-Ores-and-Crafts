@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:raworichalcum"
-    }
+    "a": "#c:raw_materials/orichalcum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:raworichalcumblock",
+    "id": "many_more_ores_and_crafts:raw_orichalcum_block",
     "count": 1
   }
 }

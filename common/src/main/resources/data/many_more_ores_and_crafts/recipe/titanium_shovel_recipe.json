@@ -7,15 +7,11 @@
     "b"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/titanium"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "#c:ingots/titanium",
+    "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:titaniumshovel",
+    "id": "many_more_ores_and_crafts:titanium_shovel",
     "count": 1
   }
 }

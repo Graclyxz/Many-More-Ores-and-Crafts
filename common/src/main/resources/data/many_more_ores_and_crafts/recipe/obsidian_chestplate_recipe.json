@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/obsidian"
-    }
+    "a": "#c:ingots/obsidian"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:obsidianarmor_chestplate",
+    "id": "many_more_ores_and_crafts:obsidian_chestplate",
     "count": 1
   }
 }

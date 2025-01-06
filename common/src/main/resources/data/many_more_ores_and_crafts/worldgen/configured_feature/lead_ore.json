@@ -10,7 +10,7 @@
           "tag": "stone_ore_replaceables"
         },
         "state": {
-          "Name": "many_more_ores_and_crafts:leadore"
+          "Name": "many_more_ores_and_crafts:lead_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "tag": "c:stones"
         },
         "state": {
-          "Name": "many_more_ores_and_crafts:leadore"
+          "Name": "many_more_ores_and_crafts:lead_ore"
         }
       }
     ]

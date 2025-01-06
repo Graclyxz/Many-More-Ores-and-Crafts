@@ -7,15 +7,11 @@
     " b"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/platinum"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "#c:ingots/platinum",
+    "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:platinumhoe",
+    "id": "many_more_ores_and_crafts:platinum_hoe",
     "count": 1
   }
 }

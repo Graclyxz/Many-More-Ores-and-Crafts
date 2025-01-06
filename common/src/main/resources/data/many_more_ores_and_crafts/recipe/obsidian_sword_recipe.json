@@ -7,15 +7,11 @@
     "b"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/obsidian"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "#c:ingots/obsidian",
+    "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:obsidiansword",
+    "id": "many_more_ores_and_crafts:obsidian_sword",
     "count": 1
   }
 }

@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/palladium"
-    }
+    "a": "#c:ingots/palladium"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:palladiumarmor_chestplate",
+    "id": "many_more_ores_and_crafts:palladium_chestplate",
     "count": 1
   }
 }

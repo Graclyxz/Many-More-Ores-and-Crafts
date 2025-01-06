@@ -7,15 +7,11 @@
     "b"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/silver"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "#c:ingots/silver",
+    "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:silversword",
+    "id": "many_more_ores_and_crafts:silver_sword",
     "count": 1
   }
 }

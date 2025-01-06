@@ -3,10 +3,8 @@
   "category": "misc",
   "experience": 3,
   "cookingtime": 200,
-  "ingredient": {
-    "tag": "c:raw_materials/tungsten"
-  },
+  "ingredient": "#c:raw_materials/tungsten",
   "result": {
-    "id": "many_more_ores_and_crafts:tungsteningot"
+    "id": "many_more_ores_and_crafts:tungsten_ingot"
   }
 }

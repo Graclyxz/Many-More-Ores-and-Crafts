@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:tungsteningot"
-    }
+    "a": "#c:ingots/tungsten"
   },
   "result": {
     "id": "many_more_ores_and_crafts:tungstenblock",

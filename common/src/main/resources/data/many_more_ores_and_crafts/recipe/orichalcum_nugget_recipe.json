@@ -5,12 +5,10 @@
     "a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/orichalcum"
-    }
+    "a": "#c:ingots/orichalcum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:orichalcumnugget",
+    "id": "many_more_ores_and_crafts:orichalcum_nugget",
     "count": 9
   }
 }

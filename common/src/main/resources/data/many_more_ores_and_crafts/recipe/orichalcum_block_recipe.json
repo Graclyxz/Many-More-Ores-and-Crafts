@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:orichalcumingot"
-    }
+    "a": "#c:ingots/orichalcum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:orichalcumblock",
+    "id": "many_more_ores_and_crafts:orichalcum_block",
     "count": 1
   }
 }

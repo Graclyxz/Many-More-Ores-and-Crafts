@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "c:nuggets/tungsten"
-    }
+    "a": "#c:nuggets/tungsten"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:tungsteningot",
+    "id": "many_more_ores_and_crafts:tungsten_ingot",
     "count": 1
   }
 }

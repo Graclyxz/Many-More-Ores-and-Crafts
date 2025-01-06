@@ -6,12 +6,10 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/titanium"
-    }
+    "a": "#c:ingots/titanium"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:titaniumarmor_helmet",
+    "id": "many_more_ores_and_crafts:titanium_helmet",
     "count": 1
   }
 }

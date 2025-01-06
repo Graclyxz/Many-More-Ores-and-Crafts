@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/tungsten"
-    }
+    "a": "#c:ingots/tungsten"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:tungstenarmor_chestplate",
+    "id": "many_more_ores_and_crafts:tungsten_chestplate",
     "count": 1
   }
 }

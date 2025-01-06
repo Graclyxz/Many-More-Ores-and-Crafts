@@ -6,12 +6,10 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/orichalcum"
-    }
+    "a": "#c:ingots/orichalcum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:orichalcumarmor_helmet",
+    "id": "many_more_ores_and_crafts:orichalcum_helmet",
     "count": 1
   }
 }

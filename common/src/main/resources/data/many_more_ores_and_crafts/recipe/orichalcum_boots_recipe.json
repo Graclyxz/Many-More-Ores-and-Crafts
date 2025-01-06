@@ -6,9 +6,7 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "tag": "c:ingots/orichalcum"
-    }
+    "a": "#c:ingots/orichalcum"
   },
   "result": {
     "id": "many_more_ores_and_crafts:orichalcumarmor_boots",

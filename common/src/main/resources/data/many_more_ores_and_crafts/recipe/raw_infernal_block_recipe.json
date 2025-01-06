@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:rawinfernal"
-    }
+    "a": "#c:raw_materials/infernal"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:rawinfernalblock",
+    "id": "many_more_ores_and_crafts:raw_infernal_block",
     "count": 1
   }
 }

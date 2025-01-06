@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:rawplatinum"
-    }
+    "a": "#c:raw_materials/platinum"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:rawplatinumblock",
+    "id": "many_more_ores_and_crafts:raw_platinum_block",
     "count": 1
   }
 }

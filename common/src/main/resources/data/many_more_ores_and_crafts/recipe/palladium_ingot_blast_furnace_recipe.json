@@ -3,10 +3,8 @@
   "category": "misc",
   "experience": 5,
   "cookingtime": 150,
-  "ingredient": {
-    "tag": "c:raw_materials/palladium"
-  },
+  "ingredient": "#c:raw_materials/palladium",
   "result": {
-    "id": "many_more_ores_and_crafts:palladiumingot"
+    "id": "many_more_ores_and_crafts:palladium_ingot"
   }
 }

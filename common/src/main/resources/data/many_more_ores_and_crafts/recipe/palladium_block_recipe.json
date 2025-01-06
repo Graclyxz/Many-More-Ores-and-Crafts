@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:palladiumingot"
-    }
+    "a": "#c:ingots/palladium"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:palladiumblock",
+    "id": "many_more_ores_and_crafts:palladium_block",
     "count": 1
   }
 }

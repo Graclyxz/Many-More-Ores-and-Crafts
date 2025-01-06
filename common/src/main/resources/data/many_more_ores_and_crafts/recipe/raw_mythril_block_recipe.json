@@ -7,12 +7,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "many_more_ores_and_crafts:rawmythril"
-    }
+    "a": "#c:raw_materials/mythril"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:rawmythrilblock",
+    "id": "many_more_ores_and_crafts:raw_mythril_block",
     "count": 1
   }
 }
