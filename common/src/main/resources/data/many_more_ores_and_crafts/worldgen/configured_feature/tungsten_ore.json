@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 8,
     "discard_chance_on_air_exposure": 0.0,
+    "size": 8,
     "targets": [
       {
-        "target": {
-          "predicate_type": "tag_match",
-          "tag": "stone_ore_replaceables"
-        },
         "state": {
           "Name": "many_more_ores_and_crafts:tungsten_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       }
     ]
