@@ -19,10 +19,10 @@ public class ModTab {
                 for (Item item : ModItems.ITEMS)
                     event.accept(item);
             })
-            .title(Component.translatable("item_group.tinoresandcrafts.tab_tinoresandcrafts"))
+            .title(Component.translatable("item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts"))
             .build();
 
     public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_tinoresandcrafts"), TAB_TIN_ORES_AND_CRAFTS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_many_more_ores_and_crafts"), TAB_TIN_ORES_AND_CRAFTS);
     }
 }
