@@ -13,8 +13,8 @@ import net.minecraft.world.item.ItemStack;
 import static com.graclyxz.many_more_ores_and_crafts.Constants.MOD_ID;
 
 public class ModTab {
-    public static final CreativeModeTab TAB_TIN_ORES_AND_CRAFTS = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ModItems.TIN_ITEMS.get(1)))
+    public static final CreativeModeTab TAB_MANY_MORE_ORES_AND_CRAFTS = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModItems.ADAMANTITE_ITEMS.get(1)))
             .displayItems((features, event) -> {
                 for (Item item : ModItems.ITEMS)
                     event.accept(item);
@@ -23,6 +23,7 @@ public class ModTab {
             .build();
 
     public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_many_more_ores_and_crafts"), TAB_TIN_ORES_AND_CRAFTS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_many_more_ores_and_crafts"), TAB_MANY_MORE_ORES_AND_CRAFTS)
+                .getSearchTabDisplayItems();
     }
 }

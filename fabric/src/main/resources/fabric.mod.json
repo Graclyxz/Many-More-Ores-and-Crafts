@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.graclyxz.tinoresandcrafts.TinoresandcraftsMod"
+      "com.graclyxz.many_more_ores_and_crafts.ManyMoreOresandCraftsMod"
     ]
   },
   "mixins": [
