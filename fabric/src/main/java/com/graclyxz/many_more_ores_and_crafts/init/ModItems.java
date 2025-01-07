@@ -27,14 +27,14 @@ public class ModItems {
 
     /*-*-*-*-*-*-*-*-* Item and Blocks creation *-*-*-*-*-*-*-*-*/
 
-    /***** Items Register ****/
+    /* **** Items Register ****/
     /* 1. Items Name 
        2. Items ToolMaterial 
        3. Items ArmorMaterial 
        4. Tools attributes float[]: sword, pickaxe, axe, hoe, shovel 
        5. Item propeties */
 
-    /***** Blocks Register ****/
+    /* **** Blocks Register ****/
     /* 1. Blocks Name 
        2. Strength ore ottribute 
        3. Ore Sound
