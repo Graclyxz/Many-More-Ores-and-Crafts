@@ -1,6 +1,7 @@
 package com.graclyxz.many_more_ores_and_crafts.init;
 
 import com.graclyxz.many_more_ores_and_crafts.util.ModTags;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
@@ -23,10 +24,6 @@ public class ModMaterials {
                 22, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f,
                 ModTags.Items.ADAMANTITE_INGOT, createAsset("adamantite"));
 
-        /*ArmorMaterial AMETHYST = new ArmorMaterial(15, createMap(new int[]{2, 5, 3, 2, 5}),
-                25, SoundEvents.ARMOR_EQUIP_Chain, 0f, 0f,
-                ModTags.Items.AMETHYST_INGOT, createAsset("amethyst"));*/
-
         ArmorMaterial COBALT = new ArmorMaterial(20, createMap(new int[]{2, 7, 5, 2, 7}),
                 15, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f,
                 ModTags.Items.COBALT_INGOT, createAsset("cobalt"));
@@ -43,7 +40,7 @@ public class ModMaterials {
                 24, SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.1f,
                 ModTags.Items.MYTHRIL_INGOT, createAsset("mythril"));
 
-        ArmorMaterial OBSIDIAN = new ArmorMaterial(14, createMap(new int[]{2, 6, 5, 2, 6}),
+        ArmorMaterial OBSIDIAN = new ArmorMaterial(18, createMap(new int[]{2, 6, 5, 2, 6}),
                 22, SoundEvents.ARMOR_EQUIP_ELYTRA, 2f, 0.4f,
                 ModTags.Items.TIN_INGOT, createAsset("obsidian"));
 
@@ -59,7 +56,7 @@ public class ModMaterials {
                 15, SoundEvents.ARMOR_EQUIP_GOLD, 0.2f, 0f,
                 ModTags.Items.PLATINUM_INGOT, createAsset("platinum"));
 
-        ArmorMaterial SILVER = new ArmorMaterial(15, createMap(new int[]{2, 5, 4, 2, 5}),
+        ArmorMaterial SILVER = new ArmorMaterial(18, createMap(new int[]{2, 5, 4, 2, 5}),
                 16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f,
                 ModTags.Items.SILVER_INGOT, createAsset("silver"));
 
@@ -71,9 +68,13 @@ public class ModMaterials {
                 14, SoundEvents.ARMOR_EQUIP_TURTLE, 3f, 0.2f,
                 ModTags.Items.TITANIUM_INGOT, createAsset("titanium"));
 
-        ArmorMaterial TUNGSTEM = new ArmorMaterial(15, createMap(new int[]{2, 5, 4, 2, 5}),
+        ArmorMaterial TUNGSTEM = new ArmorMaterial(18, createMap(new int[]{2, 5, 4, 2, 5}),
                 16, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
                 ModTags.Items.TUNGSTEM_INGOT, createAsset("tungsten"));
+
+        ArmorMaterial AMETHYST = new ArmorMaterial(16, createMap(new int[]{2, 4, 3, 2, 4}),
+                25, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
+                ModTags.Items.AMETHYST_SHARD, createAsset("amethyst"));
 
         private static ResourceKey<EquipmentAsset> createAsset(String name) {
             return ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
@@ -91,10 +92,6 @@ public class ModMaterials {
         ToolMaterial ADAMANTITE = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                 1561, 9f, 0f, 22,
                 ModTags.Items.ADAMANTITE_INGOT);
-
-        /*ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                250, 6f, 0f, 14,
-                ModTags.Items.AMETHYST_INGOT);*/
 
         ToolMaterial COBALT = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 1561, 8f, 0f, 15,
@@ -143,5 +140,9 @@ public class ModMaterials {
         ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
                 250, 8f, 0f, 16,
                 ModTags.Items.TUNGSTEM_INGOT);
+
+        ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+                250, 6f, 0f, 25,
+                ModTags.Items.AMETHYST_SHARD);
     }
 }

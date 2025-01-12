@@ -9,7 +9,6 @@ public class ModTags {
     public interface Items {
 
         TagKey<Item> ADAMANTITE_INGOT = createTag(ResourceLocation.parse("c:ingots/adamantite"));
-        //TagKey<Item> AMETHYST_INGOT = createTag(ResourceLocation.parse("c:ingots/amethyst"));
         TagKey<Item> COBALT_INGOT = createTag(ResourceLocation.parse("c:ingots/cobalt"));
         TagKey<Item> INFERNAL_INGOT = createTag(ResourceLocation.parse("c:ingots/infernal"));
         TagKey<Item> LEAD_INGOT = createTag(ResourceLocation.parse("c:ingots/lead"));
@@ -21,7 +20,9 @@ public class ModTags {
         TagKey<Item> SILVER_INGOT = createTag(ResourceLocation.parse("c:ingots/silver"));
         TagKey<Item> TIN_INGOT = createTag(ResourceLocation.parse("c:ingots/tin"));
         TagKey<Item> TITANIUM_INGOT = createTag(ResourceLocation.parse("c:ingots/titanium"));
-        TagKey<Item> TUNGSTEM_INGOT = createTag(ResourceLocation.parse("c:ingots/tungsten"));;
+        TagKey<Item> TUNGSTEM_INGOT = createTag(ResourceLocation.parse("c:ingots/tungsten"));
+
+        TagKey<Item> AMETHYST_SHARD = createTag(ResourceLocation.parse("c:items/amethyst_shard"));
 
         private static TagKey<Item> createTag(ResourceLocation name) {
             return TagKey.create(Registries.ITEM, name);

@@ -5,6 +5,6 @@
   "cookingtime": 200,
   "ingredient": "#c:raw_materials/silver",
   "result": {
-    "id": "many_more_ores_and_crafts:platinum_ingot"
+    "id": "many_more_ores_and_crafts:silver_ingot"
   }
 }

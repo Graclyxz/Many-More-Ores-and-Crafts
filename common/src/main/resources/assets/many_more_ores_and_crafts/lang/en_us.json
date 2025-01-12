@@ -208,6 +208,15 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "Tungsten Ore",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "Raw Tungsten Block",
 
+  "item.many_more_ores_and_crafts.amethyst_sword": "Amethyst Sword",
+  "item.many_more_ores_and_crafts.amethyst_pickaxe": "Amethyst Pickaxe",
+  "item.many_more_ores_and_crafts.amethyst_axe": "Amethyst Axe",
+  "item.many_more_ores_and_crafts.amethyst_hoe": "Amethyst Hoe",
+  "item.many_more_ores_and_crafts.amethyst_shovel": "Amethyst Shovel",
+  "item.many_more_ores_and_crafts.amethyst_helmet": "Amethyst Helmet",
+  "item.many_more_ores_and_crafts.amethyst_chestplate": "Amethyst Chestplate",
+  "item.many_more_ores_and_crafts.amethyst_leggings": "Amethyst Leggings",
+  "item.many_more_ores_and_crafts.amethyst_boots": "Amethyst Boots",
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "You have more materials in your world",

@@ -20,7 +20,7 @@ public class ModTab {
     public static final Supplier<CreativeModeTab> TAB_TIN_ORES_AND_CRAFTS = TABS.register("tab_many_more_ores_and_crafts", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.ADAMANTITE_ITEMS.get(1).get()))
             .displayItems((features, event) -> {
-                for (RegistryObject<Item> item : ModItems.ITEMS.getEntries())
+                for (RegistryObject<Item> item : ModRegisters.ITEMS.getEntries())
                     event.accept(item.get());
             })
             .title(Component.translatable("item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts")).withSearchBar()

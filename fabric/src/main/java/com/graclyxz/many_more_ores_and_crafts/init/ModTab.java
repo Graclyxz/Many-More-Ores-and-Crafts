@@ -16,7 +16,7 @@ public class ModTab {
     public static final CreativeModeTab TAB_MANY_MORE_ORES_AND_CRAFTS = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.ADAMANTITE_ITEMS.get(1)))
             .displayItems((features, event) -> {
-                for (Item item : ModItems.ITEMS)
+                for (Item item : ModRegisters.ITEMS)
                     event.accept(item);
             })
             .title(Component.translatable("item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts"))

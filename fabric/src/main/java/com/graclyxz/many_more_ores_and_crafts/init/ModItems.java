@@ -1,29 +1,18 @@
 package com.graclyxz.many_more_ores_and_crafts.init;
 
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.equipment.ArmorMaterial;
-import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 
-import static com.graclyxz.many_more_ores_and_crafts.Constants.MOD_ID;
 import static com.graclyxz.many_more_ores_and_crafts.init.ModMaterials.Armor;
 import static com.graclyxz.many_more_ores_and_crafts.init.ModMaterials.Tool;
+import static com.graclyxz.many_more_ores_and_crafts.init.ModRegisters.*;
 
 
 public class ModItems {
-
-    public static final List<Item> ITEMS = new ArrayList<>();
 
     /*-*-*-*-*-*-*-*-* Item and Blocks creation *-*-*-*-*-*-*-*-*/
 
@@ -47,9 +36,6 @@ public class ModItems {
     public static final List<Block> ADAMANTITE_BLOCKS = registerAllBlocks("adamantite",  new float[]{8f, 10f}, SoundType.DEEPSLATE,
             BlockBehaviour.Properties.of(),
             new Item.Properties().rarity(Rarity.RARE));
-
-    /*public static final List<Item> AMETHYST_ITEMS = registerAllItems("amethyst", Tool.TIN, Armor.TIN, new Item.Properties());
-    public static final List<Block> AMETHYST_BLOCKS = registerAllBlocks("amethyst",  new float[]{4f, 6f}, SoundType.STONE);*/
 
     public static final List<Item> COBALT_ITEMS = registerAllItems("cobalt", Tool.COBALT, Armor.COBALT,
             new float[]{6f, -2f}, new float[]{3f, -2.8f}, new float[]{8f, -3.1f}, new float[]{0, 0f}, new float[]{4.5f, -3f},
@@ -135,61 +121,9 @@ public class ModItems {
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
-    /*-*-*-*-*-*-*-*-* item and blocks registration *-*-*-*-*-*-*-*-*/
-    public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties blockProp, Item.Properties itemProp) {
-        var blockReg = registerBlock(name, function, blockProp);
-        registerItem(name, (p) -> new BlockItem(blockReg, p), itemProp.useBlockDescriptionPrefix());
-        return blockReg;
-    }
-
-    public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties blockProp) {
-        return Registry.register(BuiltInRegistries.BLOCK, ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)), function.apply(blockProp.setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)))));
-    }
-
-    public static Item registerItem(String name, Function<Item.Properties, Item> function, Item.Properties itemProp) {
-        var itemReg = Registry.register(BuiltInRegistries.ITEM, ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)), function.apply(itemProp.setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)))));
-        ITEMS.add(itemReg);
-        return itemReg;
-    }
-
-    /*-*-*-*-*-*-*-*-* Items list *-*-*-*-*-*-*-*-*/
-    private static List<Item> registerAllItems(String name, ToolMaterial toolmaterial, ArmorMaterial armormaterial,
-                                                             float[] swordattr, float[] pickaxeattr, float[] axeattr, float[] hoeattr, float[] shovelattr,
-                                                             Item.Properties itemProp) {
-        return List.of(
-                registerItem( "raw_" + name, Item::new, itemProp),
-                registerItem( name +"_ingot", Item::new, itemProp),
-                registerItem( name +"_nugget", Item::new, itemProp),
-
-                registerItem(name + "_sword", (p) -> new SwordItem(toolmaterial,  swordattr[0], swordattr[1], p), itemProp),
-                registerItem(name + "_pickaxe", (p) -> new PickaxeItem(toolmaterial,  pickaxeattr[0], pickaxeattr[1], p), itemProp),
-                registerItem(name + "_axe", (p) -> new AxeItem(toolmaterial,  axeattr[0], axeattr[1], p), itemProp),
-                registerItem(name + "_hoe", (p) -> new HoeItem(toolmaterial,  hoeattr[0], hoeattr[1], p), itemProp),
-                registerItem( name + "_shovel", (p) -> new ShovelItem(toolmaterial,  shovelattr[0], shovelattr[1], p), itemProp),
-
-                registerItem(name + "_helmet", (p) -> new ArmorItem(armormaterial, ArmorType.HELMET, p), itemProp),
-                registerItem(name + "_chestplate", (p) -> new ArmorItem(armormaterial, ArmorType.CHESTPLATE, p), itemProp),
-                registerItem(name + "_leggings", (p) -> new ArmorItem(armormaterial, ArmorType.LEGGINGS, p), itemProp),
-                registerItem(name + "_boots", (p) -> new ArmorItem(armormaterial, ArmorType.BOOTS, p), itemProp)
-        );
-    }
-
-    /*-*-*-*-*-*-*-*-* Blocks list *-*-*-*-*-*-*-*-*/
-    private static List<Block> registerAllBlocks(String name, float[] strengthattr, SoundType soundblock, BlockBehaviour.Properties blockProp, Item.Properties itemProp) {
-        return List.of(
-                registerBlock(name + "_block", Block::new, blockProp.requiresCorrectToolForDrops()
-                        .strength(4f, 6f).sound(SoundType.METAL),
-                        itemProp),
-
-                registerBlock(name + "_ore", Block::new, blockProp.requiresCorrectToolForDrops()
-                                .strength(strengthattr[0],strengthattr[1]).sound(soundblock),
-                        itemProp),
-
-                registerBlock("raw_" + name + "_block", Block::new, blockProp.requiresCorrectToolForDrops()
-                                .strength(4f, 6f).sound(SoundType.STONE),
-                        itemProp)
-        );
-    }
+    public static final List<Item> AMETHYST_ITEMS = registerItems("amethyst", Tool.AMETHYST, Armor.AMETHYST,
+            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new Item.Properties());
 
     public static void init() {
     }
