@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "Minério de Tungstênio",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "Bloco de Tungstênio Bruto",
 
+  "item.many_more_ores_and_crafts.amethyst_sword": "Espada de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_pickaxe": "Picareta de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_axe": "Machado de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_hoe": "Enxada de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_shovel": "Pá de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_helmet": "Elmo de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_chestplate": "Peitoral de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_leggings": "Perneiras de Ametista",
+  "item.many_more_ores_and_crafts.amethyst_boots": "Botas de Ametista",
+
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "Você tem mais materiais no seu mundo",

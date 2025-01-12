@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "钨矿石",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "原矿钨块",
 
+  "item.many_more_ores_and_crafts.amethyst_sword": "紫水晶剑",
+  "item.many_more_ores_and_crafts.amethyst_pickaxe": "紫水晶镐",
+  "item.many_more_ores_and_crafts.amethyst_axe": "紫水晶斧",
+  "item.many_more_ores_and_crafts.amethyst_hoe": "紫水晶锄",
+  "item.many_more_ores_and_crafts.amethyst_shovel": "紫水晶铲",
+  "item.many_more_ores_and_crafts.amethyst_helmet": "紫水晶头盔",
+  "item.many_more_ores_and_crafts.amethyst_chestplate": "紫水晶胸甲",
+  "item.many_more_ores_and_crafts.amethyst_leggings": "紫水晶护腿",
+  "item.many_more_ores_and_crafts.amethyst_boots": "紫水晶靴子",
+
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "你的世界中有更多材料",

@@ -68,7 +68,9 @@
         "many_more_ores_and_crafts:trims/entity/humanoid/titanium",
         "many_more_ores_and_crafts:trims/entity/humanoid_leggings/titanium",
         "many_more_ores_and_crafts:trims/entity/humanoid/tungsten",
-        "many_more_ores_and_crafts:trims/entity/humanoid_leggings/tungsten"
+        "many_more_ores_and_crafts:trims/entity/humanoid_leggings/tungsten",
+        "many_more_ores_and_crafts:trims/entity/humanoid/amethyst",
+        "many_more_ores_and_crafts:trims/entity/humanoid_leggings/amethyst"
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {
@@ -99,7 +101,7 @@
         "silver": "many_more_ores_and_crafts:trims/color_palettes/silver",
         "tin": "many_more_ores_and_crafts:trims/color_palettes/tin",
         "titanium": "many_more_ores_and_crafts:trims/color_palettes/titanium",
-        "tungsten": "many_more_ores_and_crafts:trims/color_palettes/tungsten"
+        "tungsten": "many_more_ores_and_crafts:trims/color_palettes/tungsten",
       }
     }
   ]

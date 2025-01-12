@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "Вольфрамовая руда",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "Сырой вольфрамовый блок",
 
+  "item.many_more_ores_and_crafts.amethyst_sword": "Аметистовый меч",
+  "item.many_more_ores_and_crafts.amethyst_pickaxe": "Аметистовая кирка",
+  "item.many_more_ores_and_crafts.amethyst_axe": "Аметистовый топор",
+  "item.many_more_ores_and_crafts.amethyst_hoe": "Аметистовая мотыга",
+  "item.many_more_ores_and_crafts.amethyst_shovel": "Аметистовая лопата",
+  "item.many_more_ores_and_crafts.amethyst_helmet": "Аметистовый шлем",
+  "item.many_more_ores_and_crafts.amethyst_chestplate": "Аметистовый нагрудник",
+  "item.many_more_ores_and_crafts.amethyst_leggings": "Аметистовые поножи",
+  "item.many_more_ores_and_crafts.amethyst_boots": "Аметистовые ботинки",
+
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "У вас есть больше материалов в вашем мире",
