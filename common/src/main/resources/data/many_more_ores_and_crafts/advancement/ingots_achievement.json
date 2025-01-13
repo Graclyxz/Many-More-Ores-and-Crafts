@@ -227,5 +227,5 @@
   "rewards": {
     "experience": 20
   },
-  "parent": "many_more_ores_and_crafts:oresachievement"
+  "parent": "many_more_ores_and_crafts:ores_achievement"
 }

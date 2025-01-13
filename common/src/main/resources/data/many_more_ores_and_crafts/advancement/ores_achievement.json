@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "oresachievement_0": {
+    "ores_achievement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -31,7 +31,7 @@
         ]
       }
     },
-    "oresachievement_1": {
+    "ores_achievement_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -47,7 +47,7 @@
         ]
       }
     },
-    "oresachievement_2": {
+    "ores_achievement_2": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -63,7 +63,7 @@
         ]
       }
     },
-    "oresachievement_3": {
+    "ores_achievement_3": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -79,7 +79,7 @@
         ]
       }
     },
-    "oresachievement_4": {
+    "ores_achievement_4": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -95,7 +95,7 @@
         ]
       }
     },
-    "oresachievement_5": {
+    "ores_achievement_5": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -111,7 +111,7 @@
         ]
       }
     },
-    "oresachievement_6": {
+    "ores_achievement_6": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -127,7 +127,7 @@
         ]
       }
     },
-    "oresachievement_7": {
+    "ores_achievement_7": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -143,7 +143,7 @@
         ]
       }
     },
-    "oresachievement_8": {
+    "ores_achievement_8": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -159,7 +159,7 @@
         ]
       }
     },
-    "oresachievement_9": {
+    "ores_achievement_9": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -175,7 +175,7 @@
         ]
       }
     },
-    "oresachievement_10": {
+    "ores_achievement_10": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -191,7 +191,7 @@
         ]
       }
     },
-    "oresachievement_11": {
+    "ores_achievement_11": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
