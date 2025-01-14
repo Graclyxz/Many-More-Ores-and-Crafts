@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "pattern": [
     "a",
-    "b",
+    "a",
     "b"
   ],
   "key": {
@@ -11,7 +11,7 @@
     "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:cobalt_shovel",
+    "id": "many_more_ores_and_crafts:cobalt_sword",
     "count": 1
   }
 }

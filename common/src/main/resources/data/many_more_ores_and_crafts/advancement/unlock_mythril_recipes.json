@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_mythril_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/mythril"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:mythril_sword_recipe",
+      "many_more_ores_and_crafts:mythril_pickaxe_recipe",
+      "many_more_ores_and_crafts:mythril_axe_recipe",
+      "many_more_ores_and_crafts:mythril_hoe_recipe",
+      "many_more_ores_and_crafts:mythril_shovel_recipe",
+      "many_more_ores_and_crafts:mythril_helmet_recipe",
+      "many_more_ores_and_crafts:mythril_chestplate_recipe",
+      "many_more_ores_and_crafts:mythril_leggings_recipe",
+      "many_more_ores_and_crafts:mythril_boots_recipe",
+      "many_more_ores_and_crafts:mythril_nugget_recipe",
+      "many_more_ores_and_crafts:mythril_block_recipe"
+    ]
+  }
+}

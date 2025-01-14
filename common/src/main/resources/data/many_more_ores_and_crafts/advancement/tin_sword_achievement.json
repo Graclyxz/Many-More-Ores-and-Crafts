@@ -33,7 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 1
+    "experience": 2
   },
   "parent": "many_more_ores_and_crafts:swords_achievement"
 }
