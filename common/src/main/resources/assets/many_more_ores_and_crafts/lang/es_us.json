@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "Mineral de Tungsteno",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "Bloque de Tungsteno en Bruto",
 
+  "item.many_more_ores_and_crafts.copper_sword": "Espada de Cobre",
+  "item.many_more_ores_and_crafts.copper_pickaxe": "Pico de Cobre",
+  "item.many_more_ores_and_crafts.copper_axe": "Hacha de Cobre",
+  "item.many_more_ores_and_crafts.copper_hoe": "Azada de Cobre",
+  "item.many_more_ores_and_crafts.copper_shovel": "Pala de Cobre",
+  "item.many_more_ores_and_crafts.copper_helmet": "Yelmo de Cobre",
+  "item.many_more_ores_and_crafts.copper_chestplate": "Pechera de Cobre",
+  "item.many_more_ores_and_crafts.copper_leggings": "Grebas de Cobre",
+  "item.many_more_ores_and_crafts.copper_boots": "Botas de Cobre",
+
   "item.many_more_ores_and_crafts.amethyst_sword": "Espada de Amatista",
   "item.many_more_ores_and_crafts.amethyst_pickaxe": "Pico de Amatista",
   "item.many_more_ores_and_crafts.amethyst_axe": "Hacha de Amatista",
@@ -217,6 +227,16 @@
   "item.many_more_ores_and_crafts.amethyst_chestplate": "Pechera de Amatista",
   "item.many_more_ores_and_crafts.amethyst_leggings": "Grebas de Amatista",
   "item.many_more_ores_and_crafts.amethyst_boots": "Botas de Amatista",
+
+  "item.many_more_ores_and_crafts.emerald_sword": "Espada de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_pickaxe": "Pico de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_axe": "Hacha de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_hoe": "Azada de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_shovel": "Pala de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_helmet": "Yelmo de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_chestplate": "Pechera de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_leggings": "Grebas de Esmeralda",
+  "item.many_more_ores_and_crafts.emerald_boots": "Botas de Esmeralda",
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "Tienes más materiales en tu mundo",

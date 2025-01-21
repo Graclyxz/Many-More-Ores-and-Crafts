@@ -72,9 +72,18 @@ public class ModMaterials {
                 16, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
                 ModTags.Items.TUNGSTEM_INGOT, createAsset("tungsten"));
 
+        ArmorMaterial COPPER = new ArmorMaterial(10, createMap(new int[]{2, 3, 2, 1, 3}),
+                6, Holder.direct(SoundEvents.COPPER_HIT), 0f, 0f,
+                ModTags.Items.COPPER, createAsset("copper"));
+
         ArmorMaterial AMETHYST = new ArmorMaterial(16, createMap(new int[]{2, 4, 3, 2, 4}),
                 25, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
                 ModTags.Items.AMETHYST_SHARD, createAsset("amethyst"));
+
+        ArmorMaterial EMERALD = new ArmorMaterial(15, createMap(new int[]{2, 3, 2, 2, 4}),
+                6, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f,
+                ModTags.Items.EMERALD, createAsset("emerald"));
+
 
         private static ResourceKey<EquipmentAsset> createAsset(String name) {
             return ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
@@ -141,8 +150,16 @@ public class ModMaterials {
                 250, 8f, 0f, 16,
                 ModTags.Items.TUNGSTEM_INGOT);
 
+        ToolMaterial COPPER = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                250, 6f, 0f, 14,
+                ModTags.Items.COPPER);
+
         ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
                 250, 6f, 0f, 25,
                 ModTags.Items.AMETHYST_SHARD);
+
+        ToolMaterial EMERALD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                250, 6f, 0f, 14,
+                ModTags.Items.EMERALD);
     }
 }

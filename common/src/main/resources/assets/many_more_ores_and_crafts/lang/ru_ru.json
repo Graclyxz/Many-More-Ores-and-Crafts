@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "Вольфрамовая руда",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "Сырой вольфрамовый блок",
 
+  "item.many_more_ores_and_crafts.copper_sword": "Медный меч",
+  "item.many_more_ores_and_crafts.copper_pickaxe": "Медная кирка",
+  "item.many_more_ores_and_crafts.copper_axe": "Медный топор",
+  "item.many_more_ores_and_crafts.copper_hoe": "Медная мотыга",
+  "item.many_more_ores_and_crafts.copper_shovel": "Медная лопата",
+  "item.many_more_ores_and_crafts.copper_helmet": "Медный шлем",
+  "item.many_more_ores_and_crafts.copper_chestplate": "Медный нагрудник",
+  "item.many_more_ores_and_crafts.copper_leggings": "Медные поножи",
+  "item.many_more_ores_and_crafts.copper_boots": "Медные ботинки",
+
   "item.many_more_ores_and_crafts.amethyst_sword": "Аметистовый меч",
   "item.many_more_ores_and_crafts.amethyst_pickaxe": "Аметистовая кирка",
   "item.many_more_ores_and_crafts.amethyst_axe": "Аметистовый топор",
@@ -218,6 +228,15 @@
   "item.many_more_ores_and_crafts.amethyst_leggings": "Аметистовые поножи",
   "item.many_more_ores_and_crafts.amethyst_boots": "Аметистовые ботинки",
 
+  "item.many_more_ores_and_crafts.emerald_sword": "Изумрудный меч",
+  "item.many_more_ores_and_crafts.emerald_pickaxe": "Изумрудная кирка",
+  "item.many_more_ores_and_crafts.emerald_axe": "Изумрудный топор",
+  "item.many_more_ores_and_crafts.emerald_hoe": "Изумрудная мотыга",
+  "item.many_more_ores_and_crafts.emerald_shovel": "Изумрудная лопата",
+  "item.many_more_ores_and_crafts.emerald_helmet": "Изумрудный шлем",
+  "item.many_more_ores_and_crafts.emerald_chestplate": "Изумрудный нагрудник",
+  "item.many_more_ores_and_crafts.emerald_leggings": "Изумрудные поножи",
+  "item.many_more_ores_and_crafts.emerald_boots": "Изумрудные ботинки",
 
   "advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "У вас есть больше материалов в вашем мире",

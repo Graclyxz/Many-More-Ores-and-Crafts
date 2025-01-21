@@ -22,7 +22,9 @@ public class ModTags {
         TagKey<Item> TITANIUM_INGOT = createTag(ResourceLocation.parse("c:ingots/titanium"));
         TagKey<Item> TUNGSTEM_INGOT = createTag(ResourceLocation.parse("c:ingots/tungsten"));
 
+        TagKey<Item> COPPER = createTag(ResourceLocation.parse("c:ingots/copper"));
         TagKey<Item> AMETHYST_SHARD = createTag(ResourceLocation.parse("c:items/amethyst_shard"));
+        TagKey<Item> EMERALD = createTag(ResourceLocation.parse("c:items/emerald"));
 
         private static TagKey<Item> createTag(ResourceLocation name) {
             return TagKey.create(Registries.ITEM, name);
