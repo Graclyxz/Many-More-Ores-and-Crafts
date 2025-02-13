@@ -315,6 +315,9 @@
   "advancements.emerald_armor_achievement.title": "翡翠守护者",
   "advancements.emerald_armor_achievement.descr": "获得一套完整的翡翠盔甲",
 
+  "advancements.many_more_items_achievement.title": "以及更多物品",
+  "advancements.many_more_items_achievement.descr": "制造更多物品",
+
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
   "item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts": "Many More Ores and Crafts"
 }

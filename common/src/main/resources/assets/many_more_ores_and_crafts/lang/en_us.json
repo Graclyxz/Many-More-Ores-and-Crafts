@@ -310,10 +310,12 @@
   "advancements.copper_armor_achievement.title": "Copper Champion",
   "advancements.copper_armor_achievement.descr": "Obtain full copper armor",
   "advancements.emerald_sword_achievement.title": "Emerald Sword",
-  "advancements.emerald_sword_achievement.descr": "Obtain an emerald sword",
+  "advancements.emerald_sword_achievement.descr": "Obtain a emerald sword",
   "advancements.emerald_armor_achievement.title": "Emerald Protector",
   "advancements.emerald_armor_achievement.descr": "Obtain full emerald armor",
 
+  "advancements.many_more_items_achievement.title": "And many more items",
+  "advancements.many_more_items_achievement.descr": "Creates many more items",
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
   "item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts": "Many More Ores and Crafts"

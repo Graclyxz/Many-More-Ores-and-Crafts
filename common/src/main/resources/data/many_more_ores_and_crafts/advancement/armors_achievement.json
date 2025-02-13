@@ -53,7 +53,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_chestplate"
+              "many_more_ores_and_crafts:infernal_chestplate"
             ],
             "count": {
               "min": 1,
@@ -69,7 +69,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:infernal_chestplate"
+              "many_more_ores_and_crafts:lead_chestplate"
             ],
             "count": {
               "min": 1,
@@ -85,7 +85,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:lead_chestplate"
+              "many_more_ores_and_crafts:mythril_chestplate"
             ],
             "count": {
               "min": 1,
@@ -101,7 +101,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:mythril_chestplate"
+              "many_more_ores_and_crafts:obsidian_chestplate"
             ],
             "count": {
               "min": 1,
@@ -117,7 +117,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:obsidian_chestplate"
+              "many_more_ores_and_crafts:orichalcum_chestplate"
             ],
             "count": {
               "min": 1,
@@ -133,7 +133,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:orichalcum_chestplate"
+              "many_more_ores_and_crafts:palladium_chestplate"
             ],
             "count": {
               "min": 1,
@@ -149,7 +149,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:palladium_chestplate"
+              "many_more_ores_and_crafts:platinum_chestplate"
             ],
             "count": {
               "min": 1,
@@ -165,7 +165,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:platinum_chestplate"
+              "many_more_ores_and_crafts:silver_chestplate"
             ],
             "count": {
               "min": 1,
@@ -181,7 +181,7 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:silver_chestplate"
+              "many_more_ores_and_crafts:tin_chestplate"
             ],
             "count": {
               "min": 1,
@@ -197,22 +197,6 @@
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:tin_chestplate"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "armors_achievement_12": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
               "many_more_ores_and_crafts:titanium_chestplate"
             ],
             "count": {
@@ -223,7 +207,7 @@
         ]
       }
     },
-    "armors_achievement_13": {
+    "armors_achievement_12": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
