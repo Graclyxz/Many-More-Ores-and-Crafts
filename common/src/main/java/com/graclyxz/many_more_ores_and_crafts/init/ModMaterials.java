@@ -80,8 +80,8 @@ public class ModMaterials {
                 25, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
                 ModTags.Items.AMETHYST_SHARD, createAsset("amethyst"));
 
-        ArmorMaterial EMERALD = new ArmorMaterial(15, createMap(new int[]{2, 3, 2, 2, 4}),
-                6, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f,
+        ArmorMaterial EMERALD = new ArmorMaterial(15, createMap(new int[]{3, 6, 5, 3, 4}),
+                9, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f,
                 ModTags.Items.EMERALD, createAsset("emerald"));
 
 
@@ -159,7 +159,7 @@ public class ModMaterials {
                 ModTags.Items.AMETHYST_SHARD);
 
         ToolMaterial EMERALD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                250, 6f, 0f, 14,
+                1200, 7f, 1f, 9,
                 ModTags.Items.EMERALD);
     }
 }
