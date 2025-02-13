@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:amethyst_chestplate"
+      "id": "many_more_ores_and_crafts:emerald_chestplate"
     },
     "title": {
-      "translate": "advancements.amethyst_armor_achievement.title"
+      "translate": "advancements.emerald_armor_achievement.title"
     },
     "description": {
-      "translate": "advancements.amethyst_armor_achievement.descr"
+      "translate": "advancements.emerald_armor_achievement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "amethyst_armor_achievement_0": {
+    "emerald_armor_achievement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_helmet"
+              "many_more_ores_and_crafts:emerald_helmet"
             ],
             "count": {
               "min": 1,
@@ -31,13 +31,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_1": {
+    "emerald_armor_achievement_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_chestplate"
+              "many_more_ores_and_crafts:emerald_chestplate"
             ],
             "count": {
               "min": 1,
@@ -47,13 +47,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_2": {
+    "emerald_armor_achievement_2": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_leggings"
+              "many_more_ores_and_crafts:emerald_leggings"
             ],
             "count": {
               "min": 1,
@@ -63,13 +63,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_3": {
+    "emerald_armor_achievement_3": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_boots"
+              "many_more_ores_and_crafts:emerald_boots"
             ],
             "count": {
               "min": 1,
@@ -81,7 +81,7 @@
     }
   },
   "rewards": {
-    "experience": 6
+    "experience": 8
   },
   "parent": "many_more_ores_and_crafts:armors_achievement"
 }

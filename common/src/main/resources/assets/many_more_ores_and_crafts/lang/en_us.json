@@ -300,10 +300,19 @@
   "advancements.swords_achievement.descr": "Obtain all the swords",
   "advancements.armors_achievement.title": "Maximum protection!!!",
   "advancements.armors_achievement.descr": "Obtain all Armors",
+
   "advancements.amethyst_sword_achievement.title": "Sharp Amethyst",
   "advancements.amethyst_sword_achievement.descr": "Obtain a Amethyst sword",
   "advancements.amethyst_armor_achievement.title": "Full Amethyst Armor",
   "advancements.amethyst_armor_achievement.descr": "Obtain full Amethyst Armor",
+  "advancements.copper_sword_achievement.title": "Copper Warrior",
+  "advancements.copper_sword_achievement.descr": "Obtain a copper sword",
+  "advancements.copper_armor_achievement.title": "Copper Champion",
+  "advancements.copper_armor_achievement.descr": "Obtain full copper armor",
+  "advancements.emerald_sword_achievement.title": "Emerald Sword",
+  "advancements.emerald_sword_achievement.descr": "Obtain an emerald sword",
+  "advancements.emerald_armor_achievement.title": "Emerald Protector",
+  "advancements.emerald_armor_achievement.descr": "Obtain full emerald armor",
 
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",

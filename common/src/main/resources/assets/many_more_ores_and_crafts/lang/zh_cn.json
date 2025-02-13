@@ -301,10 +301,19 @@
   "advancements.swords_achievement.descr": "获得所有的剑",
   "advancements.armors_achievement.title": "更多的铠甲",
   "advancements.armors_achievement.descr": "获得所有的铠甲",
+
   "advancements.amethyst_sword_achievement.title": "锐利的紫水晶",
   "advancements.amethyst_sword_achievement.descr": "获得一把紫水晶剑",
   "advancements.amethyst_armor_achievement.title": "完整的紫水晶铠甲",
   "advancements.amethyst_armor_achievement.descr": "获得完整的紫水晶铠甲",
+  "advancements.copper_sword_achievement.title": "铜剑勇士",
+  "advancements.copper_sword_achievement.descr": "获得一把铜剑",
+  "advancements.copper_armor_achievement.title": "铜之冠军",
+  "advancements.copper_armor_achievement.descr": "获得一套完整的铜 armor",
+  "advancements.emerald_sword_achievement.title": "翡翠剑",
+  "advancements.emerald_sword_achievement.descr": "获得一把翡翠剑",
+  "advancements.emerald_armor_achievement.title": "翡翠守护者",
+  "advancements.emerald_armor_achievement.descr": "获得一套完整的翡翠盔甲",
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
   "item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts": "Many More Ores and Crafts"

@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:amethyst_chestplate"
+      "id": "many_more_ores_and_crafts:copper_chestplate"
     },
     "title": {
-      "translate": "advancements.amethyst_armor_achievement.title"
+      "translate": "advancements.copper_armor_achievement.title"
     },
     "description": {
-      "translate": "advancements.amethyst_armor_achievement.descr"
+      "translate": "advancements.copper_armor_achievement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "amethyst_armor_achievement_0": {
+    "copper_armor_achievement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_helmet"
+              "many_more_ores_and_crafts:copper_helmet"
             ],
             "count": {
               "min": 1,
@@ -31,13 +31,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_1": {
+    "copper_armor_achievement_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_chestplate"
+              "many_more_ores_and_crafts:copper_chestplate"
             ],
             "count": {
               "min": 1,
@@ -47,13 +47,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_2": {
+    "copper_armor_achievement_2": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_leggings"
+              "many_more_ores_and_crafts:copper_leggings"
             ],
             "count": {
               "min": 1,
@@ -63,13 +63,13 @@
         ]
       }
     },
-    "amethyst_armor_achievement_3": {
+    "copper_armor_achievement_3": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "many_more_ores_and_crafts:amethyst_boots"
+              "many_more_ores_and_crafts:copper_boots"
             ],
             "count": {
               "min": 1,

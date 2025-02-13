@@ -300,10 +300,19 @@
   "advancements.swords_achievement.descr": "Obtén todas las espadas",
   "advancements.armors_achievement.title": "Protección al máximo!!!",
   "advancements.armors_achievement.descr": "Obtén todas las armaduras",
+
   "advancements.amethyst_sword_achievement.title": "Amatista Afilada",
   "advancements.amethyst_sword_achievement.descr": "Obtén una espada de amatista",
   "advancements.amethyst_armor_achievement.title": "Armadura Completa de Amatista",
   "advancements.amethyst_armor_achievement.descr": "Obtén la armadura completa de amatista",
+  "advancements.copper_sword_achievement.title": "Guerrero de Cobre",
+  "advancements.copper_sword_achievement.descr": "Obtén una espada de cobre",
+  "advancements.copper_armor_achievement.title": "Campeón de Cobre",
+  "advancements.copper_armor_achievement.descr": "Obtén una armadura completa de cobre",
+  "advancements.emerald_sword_achievement.title": "Espada Esmeralda",
+  "advancements.emerald_sword_achievement.descr": "Obtén una espada de esmeralda",
+  "advancements.emerald_armor_achievement.title": "Protector Esmeralda",
+  "advancements.emerald_armor_achievement.descr": "Obtén una armadura completa de esmeralda",
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
   "item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts": "Many More Ores and Crafts"

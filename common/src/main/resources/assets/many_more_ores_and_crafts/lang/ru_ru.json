@@ -300,10 +300,19 @@
   "advancements.swords_achievement.descr": "Получите все мечи",
   "advancements.armors_achievement.title": "Много бронь",
   "advancements.armors_achievement.descr": "Получите всю броню",
+
   "advancements.amethyst_sword_achievement.title": "Острый аметист",
   "advancements.amethyst_sword_achievement.descr": "Получите аметистовый меч",
   "advancements.amethyst_armor_achievement.title": "Полная аметистовая броня",
   "advancements.amethyst_armor_achievement.descr": "Получите полную аметистовую броню",
+  "advancements.copper_sword_achievement.title": "Воин из меди",
+  "advancements.copper_sword_achievement.descr": "Получите медный меч",
+  "advancements.copper_armor_achievement.title": "Чемпион из меди",
+  "advancements.copper_armor_achievement.descr": "Получите полную медную броню",
+  "advancements.emerald_sword_achievement.title": "Изумрудный меч",
+  "advancements.emerald_sword_achievement.descr": "Получите изумрудный меч",
+  "advancements.emerald_armor_achievement.title": "Изумрудный защитник",
+  "advancements.emerald_armor_achievement.descr": "Получите полную изумрудную броню",
 
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
