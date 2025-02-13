@@ -208,6 +208,16 @@
   "block.many_more_ores_and_crafts.tungsten_ore": "钨矿石",
   "block.many_more_ores_and_crafts.raw_tungsten_block": "原矿钨块",
 
+  "item.many_more_ores_and_crafts.copper_sword": "铜剑",
+  "item.many_more_ores_and_crafts.copper_pickaxe": "铜镐",
+  "item.many_more_ores_and_crafts.copper_axe": "铜斧",
+  "item.many_more_ores_and_crafts.copper_hoe": "铜锄",
+  "item.many_more_ores_and_crafts.copper_shovel": "铜铲",
+  "item.many_more_ores_and_crafts.copper_helmet": "铜头盔",
+  "item.many_more_ores_and_crafts.copper_chestplate": "铜胸甲",
+  "item.many_more_ores_and_crafts.copper_leggings": "铜护腿",
+  "item.many_more_ores_and_crafts.copper_boots": "铜靴",
+
   "item.many_more_ores_and_crafts.amethyst_sword": "紫水晶剑",
   "item.many_more_ores_and_crafts.amethyst_pickaxe": "紫水晶镐",
   "item.many_more_ores_and_crafts.amethyst_axe": "紫水晶斧",
@@ -218,8 +228,18 @@
   "item.many_more_ores_and_crafts.amethyst_leggings": "紫水晶护腿",
   "item.many_more_ores_and_crafts.amethyst_boots": "紫水晶靴子",
 
+  "item.many_more_ores_and_crafts.emerald_sword": "翡翠剑",
+  "item.many_more_ores_and_crafts.emerald_pickaxe": "翡翠镐",
+  "item.many_more_ores_and_crafts.emerald_axe": "翡翠斧",
+  "item.many_more_ores_and_crafts.emerald_hoe": "翡翠锄",
+  "item.many_more_ores_and_crafts.emerald_shovel": "翡翠铲",
+  "item.many_more_ores_and_crafts.emerald_helmet": "翡翠头盔",
+  "item.many_more_ores_and_crafts.emerald_chestplate": "翡翠胸甲",
+  "item.many_more_ores_and_crafts.emerald_leggings": "翡翠护腿",
+  "item.many_more_ores_and_crafts.emerald_boots": "翡翠靴",
 
-  "advancements.mod_achievement.title": "Many More ores and Crafts",
+
+"advancements.mod_achievement.title": "Many More ores and Crafts",
   "advancements.mod_achievement.descr": "你的世界中有更多材料",
   "advancements.adamantite_sword_achievement.title": "亚当钢剑",
   "advancements.adamantite_sword_achievement.descr": "获得一把亚当钢剑",
@@ -281,10 +301,22 @@
   "advancements.swords_achievement.descr": "获得所有的剑",
   "advancements.armors_achievement.title": "更多的铠甲",
   "advancements.armors_achievement.descr": "获得所有的铠甲",
+
   "advancements.amethyst_sword_achievement.title": "锐利的紫水晶",
   "advancements.amethyst_sword_achievement.descr": "获得一把紫水晶剑",
   "advancements.amethyst_armor_achievement.title": "完整的紫水晶铠甲",
   "advancements.amethyst_armor_achievement.descr": "获得完整的紫水晶铠甲",
+  "advancements.copper_sword_achievement.title": "铜剑勇士",
+  "advancements.copper_sword_achievement.descr": "获得一把铜剑",
+  "advancements.copper_armor_achievement.title": "铜之冠军",
+  "advancements.copper_armor_achievement.descr": "获得一套完整的铜 armor",
+  "advancements.emerald_sword_achievement.title": "翡翠剑",
+  "advancements.emerald_sword_achievement.descr": "获得一把翡翠剑",
+  "advancements.emerald_armor_achievement.title": "翡翠守护者",
+  "advancements.emerald_armor_achievement.descr": "获得一套完整的翡翠盔甲",
+
+  "advancements.many_more_items_achievement.title": "以及更多物品",
+  "advancements.many_more_items_achievement.descr": "制造更多物品",
 
   "itemGroup.tab_many_more_ores_and_crafts": "Many More Ores and Crafts",
   "item_group.many_more_ores_and_crafts.tab_many_more_ores_and_crafts": "Many More Ores and Crafts"

@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "pattern": [
     "a",
-    "a",
+    "b",
     "b"
   ],
   "key": {
-    "a": "#c:ingots/cobalt",
+    "a": "minecraft:copper_ingot",
     "b": "minecraft:stick"
   },
   "result": {
-    "id": "many_more_ores_and_crafts:cobalt_sword",
+    "id": "many_more_ores_and_crafts:copper_shovel",
     "count": 1
   }
 }

@@ -23,7 +23,6 @@ public class ModTab {
             .build();
 
     public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_many_more_ores_and_crafts"), TAB_MANY_MORE_ORES_AND_CRAFTS)
-                .getSearchTabDisplayItems();
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "tab_many_more_ores_and_crafts"), TAB_MANY_MORE_ORES_AND_CRAFTS);
     }
 }

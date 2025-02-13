@@ -1,4 +1,19 @@
 {
+  "display": {
+    "icon": {
+      "id": "many_more_ores_and_crafts:amethyst_chestplate"
+    },
+    "title": {
+      "translate": "advancements.amethyst_armor_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.amethyst_armor_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
   "criteria": {
     "amethyst_armor_achievement_0": {
       "trigger": "minecraft:inventory_changed",
@@ -66,7 +81,7 @@
     }
   },
   "rewards": {
-    "experience": 5
+    "experience": 6
   },
-  "parent": "many_more_ores_and_crafts:armors_achievement"
+  "parent": "many_more_ores_and_crafts:many_more_items_achievement"
 }

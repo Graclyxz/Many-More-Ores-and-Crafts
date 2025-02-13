@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_titanium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/titanium"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:titanium_sword_recipe",
+      "many_more_ores_and_crafts:titanium_pickaxe_recipe",
+      "many_more_ores_and_crafts:titanium_axe_recipe",
+      "many_more_ores_and_crafts:titanium_hoe_recipe",
+      "many_more_ores_and_crafts:titanium_shovel_recipe",
+      "many_more_ores_and_crafts:titanium_helmet_recipe",
+      "many_more_ores_and_crafts:titanium_chestplate_recipe",
+      "many_more_ores_and_crafts:titanium_leggings_recipe",
+      "many_more_ores_and_crafts:titanium_boots_recipe",
+      "many_more_ores_and_crafts:titanium_nugget_recipe",
+      "many_more_ores_and_crafts:titanium_block_recipe"
+    ]
+  }
+}

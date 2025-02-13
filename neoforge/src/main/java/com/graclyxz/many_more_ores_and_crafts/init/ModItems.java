@@ -126,7 +126,15 @@ public class ModItems {
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
+    public static final List<DeferredItem<Item>> COPPER_ITEMS =  registerItems("copper", Tool.COPPER, Armor.COPPER,
+            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new Item.Properties());
+
     public static final List<DeferredItem<Item>> AMETHYST_ITEMS =  registerItems("amethyst", Tool.AMETHYST, Armor.AMETHYST,
+            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new Item.Properties());
+
+    public static final List<DeferredItem<Item>> EMERALD_ITEMS =  registerItems("emerald", Tool.EMERALD, Armor.EMERALD,
             new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
 

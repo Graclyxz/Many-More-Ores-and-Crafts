@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "minecraft:emerald"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:emerald_boots",
+    "count": 1
+  }
+}

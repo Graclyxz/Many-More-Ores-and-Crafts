@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "many_more_ores_and_crafts:cobaltarmor_chestplate"
+      "id": "many_more_ores_and_crafts:cobalt_chestplate"
     },
     "title": {
       "translate": "advancements.cobalt_armor_achievement.title"
@@ -81,7 +81,7 @@
     }
   },
   "rewards": {
-    "experience": 5
+    "experience": 8
   },
   "parent": "many_more_ores_and_crafts:armors_achievement"
 }
