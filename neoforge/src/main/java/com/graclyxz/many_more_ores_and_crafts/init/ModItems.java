@@ -76,6 +76,9 @@ public class ModItems {
     public static final DeferredBlock<Block> OBSIDIAN_BLOCK =  registerBlock("obsidian_block", Block::new, BlockBehaviour.Properties.of()
             .requiresCorrectToolForDrops().strength(4f, 6f).sound(SoundType.METAL),
             new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON));
+    public static final DeferredBlock<Block> RAW_OBSIDIAN_BLOCK =  registerBlock("raw_obsidian_block", Block::new, BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops().strength(4f, 6f).sound(SoundType.METAL),
+            new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON));
 
     public static final List<DeferredItem<Item>> ORICHALCUM_ITEMS =  registerAllItems("orichalcum", Tool.ORICHALCUM, Armor.ORICHALCUM,
             new float[]{7.5f, -2f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{0, -1f}, new float[]{4.5f, -3f},
