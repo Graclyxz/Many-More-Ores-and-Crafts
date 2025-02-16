@@ -47,28 +47,28 @@ public class ModItems {
             new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final List<RegistryObject<Item>> INFERNAL_ITEMS = registerAllItems("infernal", Tool.INFERNAL, Armor.INFERNAL,
-            new float[]{7f, -1.8f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{0, -1f}, new float[]{4.5f, -3f},
+            new float[]{7f, -1.8f}, new float[]{4f, -2.8f}, new float[]{8f, -2.6f}, new float[]{0, -1f}, new float[]{4.5f, -3f},
             new Item.Properties().fireResistant().rarity(Rarity.RARE));
     public static final List<RegistryObject<Block>> INFERNAL_BLOCKS = registerAllBlocks("infernal",  new float[]{8f, 10f}, SoundType.NETHER_ORE,
             BlockBehaviour.Properties.of(),
             new Item.Properties().fireResistant().rarity(Rarity.RARE));
 
     public static final List<RegistryObject<Item>> LEAD_ITEMS = registerAllItems("lead", Tool.LEAD, Armor.LEAD,
-            new float[]{4f, -2.6f}, new float[]{3f, -2.8f}, new float[]{8f, -3.1f}, new float[]{0, -1f}, new float[]{3.5f, -3f},
+            new float[]{4f, -2.6f}, new float[]{3f, -2.8f}, new float[]{6f, -3.1f}, new float[]{0, -1f}, new float[]{3.5f, -3f},
             new Item.Properties());
     public static final List<RegistryObject<Block>> LEAD_BLOCKS = registerAllBlocks("lead",  new float[]{4f, 6f}, SoundType.STONE,
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
     public static final List<RegistryObject<Item>> MYTHRIL_ITEMS = registerAllItems("mythril", Tool.MYTHRIL, Armor.MYTHRIL,
-            new float[]{8f, -2.4f}, new float[]{5f, -2.8f}, new float[]{9f, -3f}, new float[]{1, -2f}, new float[]{5.5f, -3f},
+            new float[]{8f, -2.8f}, new float[]{5f, -2.8f}, new float[]{9f, -2.8f}, new float[]{1, -2f}, new float[]{5.5f, -3f},
             new Item.Properties().rarity(Rarity.EPIC));
     public static final List<RegistryObject<Block>> MYTHRIL_BLOCKS = registerAllBlocks("mythril",  new float[]{10f, 12f}, SoundType.DEEPSLATE,
             BlockBehaviour.Properties.of(),
             new Item.Properties().rarity(Rarity.EPIC));
 
     public static final List<RegistryObject<Item>> OBSIDIAN_ITEMS = registerAllItems("obsidian", Tool.OBSIDIAN, Armor.OBSIDIAN,
-            new float[]{9f, -3f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{1, -1f}, new float[]{4.5f, -3f},
+            new float[]{9f, -3.2f}, new float[]{4f, -2.8f}, new float[]{10f, -3.6f}, new float[]{1, -1f}, new float[]{4.5f, -3f},
             new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON));
     public static final RegistryObject<Block> OBSIDIAN_BLOCK = registerBlock("obsidian_block", Block::new, BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops().strength(4f, 6f).sound(SoundType.METAL),
@@ -92,21 +92,21 @@ public class ModItems {
             new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final List<RegistryObject<Item>> PLATINUM_ITEMS = registerAllItems("platinum", Tool.PLATINUM, Armor.PLATINUM,
-            new float[]{6f, -2.4f}, new float[]{1f, -2.8f}, new float[]{6f, -3f}, new float[]{0f, -3f}, new float[]{1.5f, -3f},
+            new float[]{6f, -2.4f}, new float[]{1f, -2.8f}, new float[]{7f, -3f}, new float[]{0f, -3f}, new float[]{1.5f, -3f},
             new Item.Properties().rarity(Rarity.UNCOMMON));
     public static final List<RegistryObject<Block>> PLATINUM_BLOCKS = registerAllBlocks("platinum",  new float[]{4f, 6f}, SoundType.STONE,
             BlockBehaviour.Properties.of(),
             new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final List<RegistryObject<Item>> SILVER_ITEMS = registerAllItems("silver", Tool.SILVER, Armor.SILVER,
-            new float[]{5f, -2f}, new float[]{3f, -2.8f}, new float[]{8f, -3.1f}, new float[]{0, 0f}, new float[]{3.5f, -3f},
+            new float[]{5f, -2f}, new float[]{3f, -2.8f}, new float[]{6f, -3.1f}, new float[]{0, 0f}, new float[]{3.5f, -3f},
             new Item.Properties());
     public static final List<RegistryObject<Block>> SILVER_BLOCKS = registerAllBlocks("silver",  new float[]{4f, 6f}, SoundType.STONE,
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
     public static final List<RegistryObject<Item>> TIN_ITEMS = registerAllItems("tin", Tool.TIN, Armor.TIN,
-            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
     public static final List<RegistryObject<Block>> TIN_BLOCKS = registerAllBlocks("tin",  new float[]{4f, 6f}, SoundType.STONE,
             BlockBehaviour.Properties.of(),
@@ -120,22 +120,22 @@ public class ModItems {
             new Item.Properties().rarity(Rarity.EPIC));
 
     public static final List<RegistryObject<Item>> TUNGSTEM_ITEMS = registerAllItems("tungsten", Tool.TUNGSTEM, Armor.TUNGSTEM,
-            new float[]{5f, -2.4f}, new float[]{3f, -2.8f}, new float[]{8f, -3.1f}, new float[]{0, -1f}, new float[]{3.5f, -3f},
+            new float[]{5f, -2.4f}, new float[]{3f, -2.8f}, new float[]{6f, -3.1f}, new float[]{0, -1f}, new float[]{3.5f, -3f},
             new Item.Properties());
     public static final List<RegistryObject<Block>> TUNGSTEM_BLOCKS = registerAllBlocks("tungsten",  new float[]{4f, 6f}, SoundType.STONE,
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
     public static final List<RegistryObject<Item>> COPPER_ITEMS =  registerItems("copper", Tool.COPPER, Armor.COPPER,
-            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new float[]{4f, -2.5f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
 
     public static final List<RegistryObject<Item>> AMETHYST_ITEMS = registerItems("amethyst", Tool.AMETHYST, Armor.AMETHYST,
-            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new float[]{5f, -2.4f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
 
     public static final List<RegistryObject<Item>> EMERALD_ITEMS =  registerItems("emerald", Tool.EMERALD, Armor.EMERALD,
-            new float[]{4f, -2.4f}, new float[]{2f, -2.8f}, new float[]{8f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
+            new float[]{6f, -2.4f}, new float[]{2f, -2.8f}, new float[]{7f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
 
 

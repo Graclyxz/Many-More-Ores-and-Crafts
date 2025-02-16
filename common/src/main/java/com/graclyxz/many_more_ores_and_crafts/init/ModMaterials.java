@@ -135,7 +135,7 @@ public class ModMaterials {
                 ModTags.Items.PLATINUM_INGOT);
 
         ToolMaterial SILVER = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                250, 8f, 0f, 16,
+                350, 8f, 0f, 16,
                 ModTags.Items.SILVER_INGOT);
 
         ToolMaterial TIN = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
@@ -147,7 +147,7 @@ public class ModMaterials {
                 ModTags.Items.TITANIUM_INGOT);
 
         ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                250, 8f, 0f, 16,
+                300, 8f, 0f, 16,
                 ModTags.Items.TUNGSTEM_INGOT);
 
         ToolMaterial COPPER = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
@@ -159,7 +159,7 @@ public class ModMaterials {
                 ModTags.Items.AMETHYST_SHARD);
 
         ToolMaterial EMERALD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                1200, 7f, 1f, 9,
+                600, 7f, 0f, 9,
                 ModTags.Items.EMERALD);
     }
 }
