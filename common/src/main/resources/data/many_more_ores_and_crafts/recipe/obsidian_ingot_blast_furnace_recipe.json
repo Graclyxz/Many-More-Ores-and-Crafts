@@ -3,7 +3,7 @@
   "category": "misc",
   "experience": 8,
   "cookingtime": 1000,
-  "ingredient": "minecraft:obsidian",
+  "ingredient": "#c:raw_materials/obsidian",
   "result": {
     "id": "many_more_ores_and_crafts:obsidian_ingot"
   }
