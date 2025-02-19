@@ -3,7 +3,7 @@
   "category": "misc",
   "experience": 8,
   "cookingtime": 900,
-  "ingredient": "#c:raw_materials/infernal",
+  "ingredient": "#c:ores/infernal",
   "result": {
     "id": "many_more_ores_and_crafts:infernal_ingot"
   }
