@@ -1,8 +1,9 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "experience": 8,
-  "cookingtime": 2000,
+  "experience": 7,
+  "cookingtime": 2400,
+  "group": "obsidian_ingot",
   "ingredient": "#c:raw_materials/obsidian",
   "result": {
     "id": "many_more_ores_and_crafts:obsidian_ingot"

@@ -2,7 +2,8 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "experience": 8,
-  "cookingtime": 600,
+  "cookingtime": 900,
+  "group": "infernal_ingot",
   "ingredient": "#c:raw_materials/infernal",
   "result": {
     "id": "many_more_ores_and_crafts:infernal_ingot"

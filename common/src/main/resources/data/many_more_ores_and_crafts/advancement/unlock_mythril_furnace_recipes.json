@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "get_mythril_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:raw_materials/mythril"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:mythril_ingot_blast_furnace_recipe",
+      "many_more_ores_and_crafts:mythril_ingot_furnace_recipe",
+      "many_more_ores_and_crafts:mythril_ore_blast_furnace_recipe",
+      "many_more_ores_and_crafts:mythril_ore_furnace_recipe"
+    ]
+  }
+}

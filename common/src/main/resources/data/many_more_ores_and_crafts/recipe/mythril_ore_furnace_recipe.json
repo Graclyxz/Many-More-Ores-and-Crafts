@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 8,
+  "cookingtime": 400,
+  "group": "mythril_ingot",
+  "ingredient": "#c:ores/mythril",
+  "result": {
+    "id": "many_more_ores_and_crafts:mythril_ingot"
+  }
+}
