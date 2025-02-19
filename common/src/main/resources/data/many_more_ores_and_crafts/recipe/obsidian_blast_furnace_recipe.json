@@ -3,6 +3,7 @@
   "category": "misc",
   "experience": 6,
   "cookingtime": 3500,
+  "group": "raw_obsidian",
   "ingredient": "minecraft:obsidian",
   "result": {
     "id": "many_more_ores_and_crafts:raw_obsidian"

@@ -3,6 +3,7 @@
   "category": "misc",
   "experience": 4,
   "cookingtime": 100,
+  "group": "platinum_ingot",
   "ingredient": "#c:ores/platinum",
   "result": {
     "id": "many_more_ores_and_crafts:platinum_ingot"
