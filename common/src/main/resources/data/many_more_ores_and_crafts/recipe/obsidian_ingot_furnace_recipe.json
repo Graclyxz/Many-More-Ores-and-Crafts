@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "experience": 8,
+  "experience": 7,
   "cookingtime": 2000,
   "ingredient": "#c:raw_materials/obsidian",
   "result": {

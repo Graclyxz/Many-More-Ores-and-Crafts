@@ -12,26 +12,16 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "many_more_ores_and_crafts:raw_obsidian",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "many_more_ores_and_crafts:raw_obsidian",
-              "functions": [
-                {
-                  "add": false,
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "max": 0.5,
-                    "min": 0.0
-                  },
-                  "function": "minecraft:set_count"
-                }
-              ]
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
             }
           ]
         }

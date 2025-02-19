@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "experience": 8,
+  "experience": 7,
   "cookingtime": 1000,
   "ingredient": "#c:raw_materials/obsidian",
   "result": {
