@@ -146,7 +146,7 @@ public class ModMaterials {
                 2031, 9f, 0f, 10,
                 ModTags.Items.TITANIUM_INGOT);
 
-        ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
+        ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 300, 8f, 0f, 16,
                 ModTags.Items.TUNGSTEM_INGOT);
 
