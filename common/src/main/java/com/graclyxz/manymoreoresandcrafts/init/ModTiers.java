@@ -4,26 +4,28 @@ import com.graclyxz.manymoreoresandcrafts.util.ModTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
-    ADAMANTITE(BlockTags.INCORRECT_FOR_IRON_TOOL, 501, 6.5f, 2f, 14, () -> Ingredient.of(ModTags.Items.ADAMANTITE_INGOT));
-
-    /*STEEL(BlockTags.INCORRECT_FOR_IRON_TOOL, 501, 6.5f, 2f, 14, () -> Ingredient.of(ModTags.Items.STEEL_INGOTS)),
-    BRONZE(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 7f, 2f, 16, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS)),
-    STONE_PICK_HAMMER(Tiers.STONE, 1, 1),
-    IRON_PICK_HAMMER(Tiers.IRON, 1, 1),
-    GOLD_PICK_HAMMER(Tiers.GOLD, 5, 1),
-    DIAMOND_PICK_HAMMER(Tiers.DIAMOND, 1, 1),
-    NETHERITE_PICK_HAMMER(Tiers.NETHERITE, 1, 1),
-    STEEL_PICK_HAMMER(ModTiers.STEEL, 1, 1),
-    BRONZE_PICK_HAMMER(ModTiers.BRONZE, 1, 1),
-    ZURITE_PICK_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1320, 9.5f, 4f, 16, () -> Ingredient.of(ModTags.Items.ZURITE_INGOTS)),
-    ENDERITE_PICK_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4096, 16f, 5f, 17, () -> Ingredient.of(ModTags.Items.ENDERITE_INGOTS));*/
+    ADAMANTITE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1561, 9f, 0f, 22, () -> Ingredient.of(ModTags.Items.ADAMANTITE_INGOT)),
+    COBALT(BlockTags.INCORRECT_FOR_IRON_TOOL, 1561, 8f, 0f, 15, () -> Ingredient.of(ModTags.Items.COBALT_INGOT)),
+    INFERNAL(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 9f, 0f, 15, () -> Ingredient.of(ModTags.Items.INFERNAL_INGOT)),
+    LEAD(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6f, 0f, 14, () -> Ingredient.of(ModTags.Items.LEAD_INGOT)),
+    MYTHRIL(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 12f, 0f, 24, () -> Ingredient.of(ModTags.Items.MYTHRIL_INGOT)),
+    OBSIDIAN(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2031, 7f, 0f, 22,() -> Ingredient.of(ModTags.Items.OBSIDIAN_INGOT)),
+    ORICHALCUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1561, 9f, 0f, 22, () -> Ingredient.of(ModTags.Items.ORICHALCUM_INGOT)),
+    PALLADIUM(BlockTags.INCORRECT_FOR_IRON_TOOL, 1561, 8f, 0f, 15, () -> Ingredient.of(ModTags.Items.PALLADIUM_INGOT)),
+    PLATINUM(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 8f, 0f, 15, () -> Ingredient.of(ModTags.Items.PLATINUM_INGOT)),
+    SILVER(BlockTags.INCORRECT_FOR_IRON_TOOL, 1561, 9f, 0f, 22, () -> Ingredient.of(ModTags.Items.SILVER_INGOT)),
+    TIN(BlockTags.INCORRECT_FOR_STONE_TOOL, 131, 4f, 0f, 6, () -> Ingredient.of(ModTags.Items.TIN_INGOT)),
+    TITANIUM(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 9f, 0f, 10, () -> Ingredient.of(ModTags.Items.TITANIUM_INGOT)),
+    TUNGSTEM(BlockTags.INCORRECT_FOR_STONE_TOOL, 300, 8f, 0f, 16, () -> Ingredient.of(ModTags.Items.TUNGSTEM_INGOT)),
+    COPPER(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6f, 0f, 14, () -> Ingredient.of(ModTags.Items.COPPER)),
+    AMETHYST(BlockTags.INCORRECT_FOR_STONE_TOOL, 250, 6f, 0f, 25, () -> Ingredient.of(ModTags.Items.AMETHYST_SHARD)),
+    EMERALD(BlockTags.INCORRECT_FOR_GOLD_TOOL, 600, 7f, 0f, 9, () -> Ingredient.of(ModTags.Items.EMERALD));
 
     private final TagKey<Block> incorrect;
     private final int uses;

@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_infernal_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/infernal"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:infernal_sword_recipe",
+      "many_more_ores_and_crafts:infernal_pickaxe_recipe",
+      "many_more_ores_and_crafts:infernal_axe_recipe",
+      "many_more_ores_and_crafts:infernal_hoe_recipe",
+      "many_more_ores_and_crafts:infernal_shovel_recipe",
+      "many_more_ores_and_crafts:infernal_helmet_recipe",
+      "many_more_ores_and_crafts:infernal_chestplate_recipe",
+      "many_more_ores_and_crafts:infernal_leggings_recipe",
+      "many_more_ores_and_crafts:infernal_boots_recipe",
+      "many_more_ores_and_crafts:infernal_nugget_recipe",
+      "many_more_ores_and_crafts:infernal_block_recipe"
+    ]
+  }
+}

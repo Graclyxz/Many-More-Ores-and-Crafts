@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "#c:raw_materials/silver"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:raw_silver_block",
+    "count": 1
+  }
+}

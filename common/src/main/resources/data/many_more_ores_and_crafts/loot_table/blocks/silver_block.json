@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "many_more_ores_and_crafts:blocks/silver_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "many_more_ores_and_crafts:silver_block"
+        }
+      ]
+    }
+  ]
+}

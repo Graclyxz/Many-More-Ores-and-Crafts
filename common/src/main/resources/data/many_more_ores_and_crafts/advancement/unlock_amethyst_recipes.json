@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "get_amethyst_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:amethyst_sword_recipe",
+      "many_more_ores_and_crafts:amethyst_pickaxe_recipe",
+      "many_more_ores_and_crafts:amethyst_axe_recipe",
+      "many_more_ores_and_crafts:amethyst_hoe_recipe",
+      "many_more_ores_and_crafts:amethyst_shovel_recipe",
+      "many_more_ores_and_crafts:amethyst_helmet_recipe",
+      "many_more_ores_and_crafts:amethyst_chestplate_recipe",
+      "many_more_ores_and_crafts:amethyst_leggings_recipe",
+      "many_more_ores_and_crafts:amethyst_boots_recipe"
+    ]
+  }
+}

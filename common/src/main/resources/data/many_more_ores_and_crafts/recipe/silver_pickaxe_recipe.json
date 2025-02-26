@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": "#c:ingots/silver",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:silver_pickaxe",
+    "count": 1
+  }
+}

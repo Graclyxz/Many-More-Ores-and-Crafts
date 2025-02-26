@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "#c:ingots/tungsten"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:tungsten_block",
+    "count": 1
+  }
+}

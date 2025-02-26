@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "group": "silver_ingot",
+  "ingredient": "#c:ores/silver",
+  "result": {
+    "id": "many_more_ores_and_crafts:silver_ingot"
+  }
+}
