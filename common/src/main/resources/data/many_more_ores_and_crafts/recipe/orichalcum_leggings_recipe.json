@@ -7,7 +7,9 @@
     "a a"
   ],
   "key": {
-    "a": "#c:ingots/orichalcum"
+    "a": {
+      "tag": "c:ingots/orichalcum"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:orichalcum_leggings",

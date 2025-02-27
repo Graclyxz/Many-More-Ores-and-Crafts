@@ -7,8 +7,12 @@
     " b"
   ],
   "key": {
-    "a": "minecraft:emerald",
-    "b": "minecraft:stick"
+    "a": {
+      "item": "minecraft:emerald"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:emerald_axe",

@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:raw_materials/tin"
+    "a": {
+      "tag": "c:raw_materials/tin"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:raw_tin_block",

@@ -4,7 +4,9 @@
   "experience": 8,
   "cookingtime": 900,
   "group": "infernal_ingot",
-  "ingredient": "#c:raw_materials/infernal",
+  "ingredient": {
+    "tag": "c:raw_materials/infernal"
+  },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_ingot"
   }

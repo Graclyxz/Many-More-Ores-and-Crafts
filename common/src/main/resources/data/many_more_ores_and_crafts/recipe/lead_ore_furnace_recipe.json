@@ -4,7 +4,9 @@
   "experience": 3,
   "cookingtime": 200,
   "group": "lead_ingot",
-  "ingredient": "#c:ores/lead",
+  "ingredient": {
+    "tag": "c:ores/lead"
+  },
   "result": {
     "id": "many_more_ores_and_crafts:lead_ingot"
   }

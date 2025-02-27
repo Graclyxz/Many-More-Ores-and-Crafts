@@ -4,7 +4,9 @@
   "experience": 5,
   "cookingtime": 300,
   "group": "cobalt_ingot",
-  "ingredient": "#c:ores/cobalt",
+  "ingredient": {
+    "tag": "c:ores/cobalt"
+  },
   "result": {
     "id": "many_more_ores_and_crafts:cobalt_ingot"
   }

@@ -4,7 +4,9 @@
   "experience": 8,
   "cookingtime": 200,
   "group": "titanium_ingot",
-  "ingredient": "#c:raw_materials/titanium",
+  "ingredient": {
+    "tag": "c:raw_materials/titanium"
+  },
   "result": {
     "id": "many_more_ores_and_crafts:titanium_ingot"
   }

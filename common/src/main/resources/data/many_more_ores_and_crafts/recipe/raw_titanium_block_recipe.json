@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:raw_materials/titanium"
+    "a": {
+      "tag": "c:raw_materials/titanium"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:raw_titanium_block",

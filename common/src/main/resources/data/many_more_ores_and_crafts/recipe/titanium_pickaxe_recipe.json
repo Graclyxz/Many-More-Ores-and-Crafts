@@ -7,8 +7,12 @@
     " b "
   ],
   "key": {
-    "a": "#c:ingots/titanium",
-    "b": "minecraft:stick"
+    "a": {
+      "tag": "c:ingots/titanium"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:titanium_pickaxe",

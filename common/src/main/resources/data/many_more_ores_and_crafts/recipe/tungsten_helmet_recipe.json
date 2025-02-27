@@ -6,7 +6,9 @@
     "a a"
   ],
   "key": {
-    "a": "#c:ingots/tungsten"
+    "a": {
+      "tag": "c:ingots/tungsten"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:tungsten_helmet",

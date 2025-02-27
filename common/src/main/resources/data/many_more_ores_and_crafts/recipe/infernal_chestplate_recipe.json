@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:ingots/infernal"
+    "a": {
+      "tag": "c:ingots/infernal"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_chestplate",

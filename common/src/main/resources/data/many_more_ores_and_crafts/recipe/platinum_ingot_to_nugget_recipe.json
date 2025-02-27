@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:nuggets/platinum"
+    "a": {
+      "tag": "c:nuggets/platinum"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:platinum_ingot",

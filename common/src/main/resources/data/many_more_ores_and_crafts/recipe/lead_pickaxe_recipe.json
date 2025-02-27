@@ -7,8 +7,12 @@
     " b "
   ],
   "key": {
-    "a": "#c:ingots/lead",
-    "b": "minecraft:stick"
+    "a": {
+      "tag": "c:ingots/lead"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:lead_pickaxe",

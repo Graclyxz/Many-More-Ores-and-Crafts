@@ -7,8 +7,12 @@
     " b "
   ],
   "key": {
-    "a": "minecraft:copper_ingot",
-    "b": "minecraft:stick"
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:copper_pickaxe",

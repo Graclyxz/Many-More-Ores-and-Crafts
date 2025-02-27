@@ -5,7 +5,9 @@
     "a"
   ],
   "key": {
-    "a": "#c:ingots/silver"
+    "a": {
+      "tag": "c:ingots/silver"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:silver_nugget",

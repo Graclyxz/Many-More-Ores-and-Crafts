@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:nuggets/palladium"
+    "a": {
+      "tag": "c:nuggets/palladium"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:palladium_ingot",

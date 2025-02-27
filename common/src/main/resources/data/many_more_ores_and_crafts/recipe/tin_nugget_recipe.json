@@ -5,7 +5,9 @@
     "a"
   ],
   "key": {
-    "a": "#c:ingots/tin"
+    "a": {
+      "tag": "c:ingots/tin"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:tin_nugget",

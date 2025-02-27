@@ -6,7 +6,9 @@
     "a a"
   ],
   "key": {
-    "a": "#c:ingots/mythril"
+    "a": {
+      "tag": "c:ingots/mythril"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:mythril_boots",

@@ -5,7 +5,9 @@
     "a"
   ],
   "key": {
-    "a": "many_more_ores_and_crafts:raw_adamantite_block"
+    "a": {
+      "item": "many_more_ores_and_crafts:raw_adamantite_block"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:raw_adamantite",

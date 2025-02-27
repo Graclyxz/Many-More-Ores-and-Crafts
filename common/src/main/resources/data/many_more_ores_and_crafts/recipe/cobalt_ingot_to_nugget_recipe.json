@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:nuggets/cobalt"
+    "a": {
+      "tag": "c:nuggets/cobalt"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:cobalt_ingot",

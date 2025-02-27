@@ -7,8 +7,12 @@
     " b"
   ],
   "key": {
-    "a": "#c:ingots/tungsten",
-    "b": "minecraft:stick"
+    "a": {
+      "tag": "c:ingots/tungsten"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:tungsten_hoe",

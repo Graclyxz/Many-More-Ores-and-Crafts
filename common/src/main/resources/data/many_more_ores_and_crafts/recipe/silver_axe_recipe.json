@@ -7,8 +7,12 @@
     " b"
   ],
   "key": {
-    "a": "#c:ingots/silver",
-    "b": "minecraft:stick"
+    "a": {
+      "tag": "c:ingots/silver"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:silver_axe",

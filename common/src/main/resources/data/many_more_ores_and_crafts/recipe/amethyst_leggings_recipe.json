@@ -7,7 +7,9 @@
     "a a"
   ],
   "key": {
-    "a": "minecraft:amethyst_shard"
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:amethyst_leggings",

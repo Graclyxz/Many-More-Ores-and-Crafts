@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:nuggets/infernal"
+    "a": {
+      "tag": "c:nuggets/infernal"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_ingot",

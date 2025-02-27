@@ -6,7 +6,9 @@
     "a a"
   ],
   "key": {
-    "a": "minecraft:copper_ingot"
+    "a": {
+      "item": "minecraft:copper_ingot"
+    }
   },
   "result": {
     "id": "many_more_ores_and_crafts:copper_helmet",
