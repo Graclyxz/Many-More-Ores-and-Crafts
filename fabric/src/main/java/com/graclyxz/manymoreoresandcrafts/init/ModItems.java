@@ -25,17 +25,17 @@ public class ModItems {
 
 	/* **** Items Register ****/
     /* 1. Items Name
-       2. Items ToolMaterial
-       3. Items ArmorMaterial
-       4. Tools attributes float[]: sword, pickaxe, axe, hoe, shovel
-       5. Item propeties */
+       2. Items ModTier
+       3. Tools attributes float[]: sword, pickaxe, axe, hoe, shovel
+       4. Item propeties */
 
 	/* **** Blocks Register ****/
     /* 1. Blocks Name
        2. Strength ore ottribute
        3. Ore Sound
-       4. BlockBehaviour prpeties
-       5. Item propeties */
+       4. MapColor
+       5. BlockBehaviour prpeties
+       6. Item propeties */
 
 	public static final List<Item> ADAMANTITE_ITEMS = registerAllItems("adamantite", ModTiers.ADAMANTITE,
 			new float[]{7.5f, -2f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{0f, 0f}, new float[]{4.5f, -3f},
@@ -178,6 +178,10 @@ public class ModItems {
 	public static final List<Item> EMERALD_ARMOR = registerArmor(ModMaterials.EMERALD, 15,
 			new Item.Properties());
 
+
+	/*-******************************************************************************************************************-*/
+	/*--------------------------------                  REGISTERS               ------------------------------------------*/
+	/*-******************************************************************************************************************-*/
 
 
 	private static Block registerBlock(String name, Block block, Item.Properties itemProp) {
