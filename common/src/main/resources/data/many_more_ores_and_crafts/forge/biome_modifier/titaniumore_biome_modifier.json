@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "many_more_ores_and_crafts:titaniumore",
-  "step": "underground_ores"
-}
