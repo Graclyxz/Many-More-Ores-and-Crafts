@@ -25,13 +25,6 @@ public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, MOD_ID);
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, MOD_ID);
 
-	/*public static final List<RegistryObject<Item>> ADAMANTITE_ITEMS = registerAllItems("adamantite",
-			new Item.Properties());*/
-
-	/*public static final List<RegistryObject<Item>> ADAMANTITE_TOOLS = registerTools("adamantite",
-			ModTiers.ADAMANTITE, new float[]{6f, -3f, -2f, -1f},
-			new Item.Properties());*/
-
 	public static final List<RegistryObject<Item>> ADAMANTITE_ITEMS = registerAllItems("adamantite", ModTiers.ADAMANTITE,
 			new float[]{7.5f, -2f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{0f, 0f}, new float[]{4.5f, -3f},
 			new Item.Properties().rarity(Rarity.RARE));
