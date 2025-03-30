@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "get_platinum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:raw_materials/platinum"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:platinum_ingot_blast_furnace_recipe",
+      "many_more_ores_and_crafts:platinum_ingot_furnace_recipe",
+      "many_more_ores_and_crafts:platinum_ore_blast_furnace_recipe",
+      "many_more_ores_and_crafts:platinum_ore_furnace_recipe"
+    ]
+  }
+}

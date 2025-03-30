@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 8,
+  "cookingtime": 200,
+  "group": "titanium_ingot",
+  "ingredient": {
+    "tag": "c:ores/titanium"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:titanium_ingot"
+  }
+}

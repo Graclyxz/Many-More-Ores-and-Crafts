@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "many_more_ores_and_crafts:adamantite_helmet",
+    "many_more_ores_and_crafts:cobalt_helmet",
+    "many_more_ores_and_crafts:infernal_helmet",
+    "many_more_ores_and_crafts:lead_helmet",
+    "many_more_ores_and_crafts:mythril_helmet",
+    "many_more_ores_and_crafts:obsidian_helmet",
+    "many_more_ores_and_crafts:orichalcum_helmet",
+    "many_more_ores_and_crafts:palladium_helmet",
+    "many_more_ores_and_crafts:platinum_helmet",
+    "many_more_ores_and_crafts:silver_helmet",
+    "many_more_ores_and_crafts:tin_helmet",
+    "many_more_ores_and_crafts:titanium_helmet",
+    "many_more_ores_and_crafts:tungsten_helmet",
+
+    "many_more_ores_and_crafts:copper_helmet",
+    "many_more_ores_and_crafts:amethyst_helmet",
+    "many_more_ores_and_crafts:emerald_helmet"
+  ]
+}

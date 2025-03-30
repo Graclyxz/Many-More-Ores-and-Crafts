@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "many_more_ores_and_crafts:item/silver_axe"
+  }
+}

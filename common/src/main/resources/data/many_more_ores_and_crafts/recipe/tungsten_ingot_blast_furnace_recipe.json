@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "group": "tungsten_ingot",
+  "ingredient": {
+    "tag": "c:raw_materials/tungsten"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:tungsten_ingot"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_orichalcum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/orichalcum"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:orichalcum_sword_recipe",
+      "many_more_ores_and_crafts:orichalcum_pickaxe_recipe",
+      "many_more_ores_and_crafts:orichalcum_axe_recipe",
+      "many_more_ores_and_crafts:orichalcum_hoe_recipe",
+      "many_more_ores_and_crafts:orichalcum_shovel_recipe",
+      "many_more_ores_and_crafts:orichalcum_helmet_recipe",
+      "many_more_ores_and_crafts:orichalcum_chestplate_recipe",
+      "many_more_ores_and_crafts:orichalcum_leggings_recipe",
+      "many_more_ores_and_crafts:orichalcum_boots_recipe",
+      "many_more_ores_and_crafts:orichalcum_nugget_recipe",
+      "many_more_ores_and_crafts:orichalcum_block_recipe"
+    ]
+  }
+}

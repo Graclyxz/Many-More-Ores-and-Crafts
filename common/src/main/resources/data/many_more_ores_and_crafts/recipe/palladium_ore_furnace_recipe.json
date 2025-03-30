@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 5,
+  "cookingtime": 300,
+  "group": "palladium_ingot",
+  "ingredient": {
+    "tag": "c:ores/palladium"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:palladium_ingot"
+  }
+}
