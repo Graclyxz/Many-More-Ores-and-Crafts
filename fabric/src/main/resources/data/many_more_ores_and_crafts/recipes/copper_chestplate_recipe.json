@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:copper_chestplate",
+    "count": 1
+  }
+}

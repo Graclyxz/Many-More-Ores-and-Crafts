@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "many_more_ores_and_crafts:adamantite_pickaxe",
+    "many_more_ores_and_crafts:cobalt_pickaxe",
+    "many_more_ores_and_crafts:infernal_pickaxe",
+    "many_more_ores_and_crafts:lead_pickaxe",
+    "many_more_ores_and_crafts:mythril_pickaxe",
+    "many_more_ores_and_crafts:obsidian_pickaxe",
+    "many_more_ores_and_crafts:orichalcum_pickaxe",
+    "many_more_ores_and_crafts:palladium_pickaxe",
+    "many_more_ores_and_crafts:platinum_pickaxe",
+    "many_more_ores_and_crafts:silver_pickaxe",
+    "many_more_ores_and_crafts:tin_pickaxe",
+    "many_more_ores_and_crafts:titanium_pickaxe",
+    "many_more_ores_and_crafts:tungsten_pickaxe",
+
+    "many_more_ores_and_crafts:copper_pickaxe",
+    "many_more_ores_and_crafts:amethyst_pickaxe",
+    "many_more_ores_and_crafts:emerald_pickaxe"
+  ]
+}

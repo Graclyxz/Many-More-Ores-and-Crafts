@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_lead_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/lead"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:lead_sword_recipe",
+      "many_more_ores_and_crafts:lead_pickaxe_recipe",
+      "many_more_ores_and_crafts:lead_axe_recipe",
+      "many_more_ores_and_crafts:lead_hoe_recipe",
+      "many_more_ores_and_crafts:lead_shovel_recipe",
+      "many_more_ores_and_crafts:lead_helmet_recipe",
+      "many_more_ores_and_crafts:lead_chestplate_recipe",
+      "many_more_ores_and_crafts:lead_leggings_recipe",
+      "many_more_ores_and_crafts:lead_boots_recipe",
+      "many_more_ores_and_crafts:lead_nugget_recipe",
+      "many_more_ores_and_crafts:lead_block_recipe"
+    ]
+  }
+}

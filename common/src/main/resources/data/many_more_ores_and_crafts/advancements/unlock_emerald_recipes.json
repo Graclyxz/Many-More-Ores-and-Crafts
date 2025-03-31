@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "get_amethyst_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:emerald_sword_recipe",
+      "many_more_ores_and_crafts:emerald_pickaxe_recipe",
+      "many_more_ores_and_crafts:emerald_axe_recipe",
+      "many_more_ores_and_crafts:emerald_hoe_recipe",
+      "many_more_ores_and_crafts:emerald_shovel_recipe",
+      "many_more_ores_and_crafts:emerald_helmet_recipe",
+      "many_more_ores_and_crafts:emerald_chestplate_recipe",
+      "many_more_ores_and_crafts:emerald_leggings_recipe",
+      "many_more_ores_and_crafts:emerald_boots_recipe"
+    ]
+  }
+}

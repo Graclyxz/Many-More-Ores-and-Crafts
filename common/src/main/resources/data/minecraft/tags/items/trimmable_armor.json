@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    "many_more_ores_and_crafts:adamantite_helmet",
+    "many_more_ores_and_crafts:adamantite_chestplate",
+    "many_more_ores_and_crafts:adamantite_leggings",
+    "many_more_ores_and_crafts:adamantite_boots",
+
+    "many_more_ores_and_crafts:cobalt_helmet",
+    "many_more_ores_and_crafts:cobalt_chestplate",
+    "many_more_ores_and_crafts:cobalt_leggings",
+    "many_more_ores_and_crafts:cobalt_boots",
+
+    "many_more_ores_and_crafts:infernal_helmet",
+    "many_more_ores_and_crafts:infernal_chestplate",
+    "many_more_ores_and_crafts:infernal_leggings",
+    "many_more_ores_and_crafts:infernal_boots",
+
+    "many_more_ores_and_crafts:lead_helmet",
+    "many_more_ores_and_crafts:lead_chestplate",
+    "many_more_ores_and_crafts:lead_leggings",
+    "many_more_ores_and_crafts:lead_boots",
+
+    "many_more_ores_and_crafts:mythril_helmet",
+    "many_more_ores_and_crafts:mythril_chestplate",
+    "many_more_ores_and_crafts:mythril_leggings",
+    "many_more_ores_and_crafts:mythril_boots",
+
+    "many_more_ores_and_crafts:obsidian_helmet",
+    "many_more_ores_and_crafts:obsidian_chestplate",
+    "many_more_ores_and_crafts:obsidian_leggings",
+    "many_more_ores_and_crafts:obsidian_boots",
+
+    "many_more_ores_and_crafts:orichalcum_helmet",
+    "many_more_ores_and_crafts:orichalcum_chestplate",
+    "many_more_ores_and_crafts:orichalcum_leggings",
+    "many_more_ores_and_crafts:orichalcum_boots",
+
+    "many_more_ores_and_crafts:palladium_helmet",
+    "many_more_ores_and_crafts:palladium_chestplate",
+    "many_more_ores_and_crafts:palladium_leggings",
+    "many_more_ores_and_crafts:palladium_boots",
+
+    "many_more_ores_and_crafts:platinum_helmet",
+    "many_more_ores_and_crafts:platinum_chestplate",
+    "many_more_ores_and_crafts:platinum_leggings",
+    "many_more_ores_and_crafts:platinum_boots",
+
+    "many_more_ores_and_crafts:silver_helmet",
+    "many_more_ores_and_crafts:silver_chestplate",
+    "many_more_ores_and_crafts:silver_leggings",
+    "many_more_ores_and_crafts:silver_boots",
+
+    "many_more_ores_and_crafts:tin_helmet",
+    "many_more_ores_and_crafts:tin_chestplate",
+    "many_more_ores_and_crafts:tin_leggings",
+    "many_more_ores_and_crafts:tin_boots",
+
+    "many_more_ores_and_crafts:titanium_helmet",
+    "many_more_ores_and_crafts:titanium_chestplate",
+    "many_more_ores_and_crafts:titanium_leggings",
+    "many_more_ores_and_crafts:titanium_boots",
+
+    "many_more_ores_and_crafts:tungsten_helmet",
+    "many_more_ores_and_crafts:tungsten_chestplate",
+    "many_more_ores_and_crafts:tungsten_leggings",
+    "many_more_ores_and_crafts:tungsten_boots"
+  ]
+}
