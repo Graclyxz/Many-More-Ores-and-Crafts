@@ -1,63 +1,84 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
+import com.graclyxz.manymoreoresandcrafts.util.ModTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
 import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
-import static com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems.*;
 
 public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
 
-    ADAMANTITE("adamantitearmor", 25, createMap(new int[]{3, 8, 6, 3}),
-            15, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.2f, () -> Ingredient.of(ADAMANTITEINGOT)),
+    ADAMANTITE("adamantite", 20, createMap(new int[]{3, 8, 6, 3}),
+            22, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f,
+            () -> Ingredient.of(ModTags.Items.ADAMANTITE_INGOT)),
 
-    AMETHYST("amethystarmor", 15, createMap(new int[]{1, 5, 3, 2}),
-            25, SoundEvents.AMETHYST_BLOCK_RESONATE, 0f, 0f, () -> Ingredient.of(Items.AMETHYST_SHARD)),
+    COBALT("cobalt", 20, createMap(new int[]{2, 7, 5, 2}),
+            15, SoundEvents.ARMOR_EQUIP_GOLD, 0.5f, 0f,
+            () -> Ingredient.of(ModTags.Items.COBALT_INGOT)),
 
-    COBALT("cobaltarmor", 25, createMap(new int[]{2, 7, 5, 2}),
-            15, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f, () -> Ingredient.of(COBALTINGOT)),
+    INFERNAL("infernal", 25, createMap(new int[]{3, 8, 6, 3}),
+            15, SoundEvents.ARMOR_EQUIP_NETHERITE,  1f, 0.2f,
+            () -> Ingredient.of(ModTags.Items.INFERNAL_INGOT)),
 
-    INFERNAL("infernalarmor", 15, createMap(new int[]{3, 8, 6, 3}),
-            25, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.1f, () -> Ingredient.of(INFERNALINGOT)),
+    LEAD("lead", 15, createMap(new int[]{2, 4, 3, 1}),
+            14, SoundEvents.ARMOR_EQUIP_IRON,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.LEAD_INGOT)),
 
-    LEAD("leadarmor", 15, createMap(new int[]{1, 4, 3, 2}),
-            15, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(LEADINGOT)),
+    MYTHRIL("mythril", 32, createMap(new int[]{4, 8, 6, 2}),
+            24, SoundEvents.ARMOR_EQUIP_NETHERITE,  2f, 0.1f,
+            () -> Ingredient.of(ModTags.Items.MYTHRIL_INGOT)),
 
-    MYTHRIL("mythrilarmor", 33, createMap(new int[]{3, 8, 6, 3}),
-            25, SoundEvents.ARMOR_EQUIP_LEATHER, 2f, 0.1f, () -> Ingredient.of(MYTHRILINGOT)),
+    OBSIDIAN("obsidian", 18, createMap(new int[]{2, 6, 5, 2}),
+            22, SoundEvents.ARMOR_EQUIP_ELYTRA,   2f, 0.4f,
+            () -> Ingredient.of(ModTags.Items.OBSIDIAN_INGOT)),
 
-    OBSIDIAN("obsidianarmor", 20, createMap(new int[]{2, 6, 5, 2}),
-            25, SoundEvents.ARMOR_EQUIP_DIAMOND, 2f, 0.1f, () -> Ingredient.of(OBSIDIANINGOT)),
+    ORICHALCUM("orichalcum", 25, createMap(new int[]{2, 6, 5, 2}),
+            22, SoundEvents.ARMOR_EQUIP_DIAMOND,  1f, 0.2f,
+            () -> Ingredient.of(ModTags.Items.ORICHALCUM_INGOT)),
 
-    ORICHALCUM("orichalcumarmor", 25, createMap(new int[]{2, 6, 5, 2}),
-            15, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.2f, () -> Ingredient.of(ORICHALCUMINGOT)),
+    PALLADIUM("palladium", 25, createMap(new int[]{2, 7, 5, 2}),
+            15, SoundEvents.ARMOR_EQUIP_IRON,  0.5f, 0f,
+            () -> Ingredient.of(ModTags.Items.PALLADIUM_INGOT)),
 
-    PALLADIUM("palladiumarmor", 25, createMap(new int[]{2, 7, 5, 2}),
-            15, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f, () -> Ingredient.of(PALLADIUMINGOT)),
+    PLATINUM("platinum", 20, createMap(new int[]{2, 6, 5, 2}),
+            15, SoundEvents.ARMOR_EQUIP_GOLD,  0.2f, 0f,
+            () -> Ingredient.of(ModTags.Items.PLATINUM_INGOT)),
 
-    PLATINUM("platinumarmor", 20, createMap(new int[]{2, 6, 5, 2}),
-            12, SoundEvents.ARMOR_EQUIP_GOLD, 0.2f, 0f, () -> Ingredient.of(PLATINUMINGOT)),
+    SILVER("silver", 18, createMap(new int[]{2, 5, 4, 2}),
+            16, SoundEvents.ARMOR_EQUIP_GOLD,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.SILVER_INGOT)),
 
-    SILVER("silverarmor", 15, createMap(new int[]{2, 5, 4, 2}),
-            12, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(SILVERINGOT)),
+    TIN("tin", 15, createMap(new int[]{2, 3, 2, 1}),
+            6, SoundEvents.ARMOR_EQUIP_GENERIC,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.TIN_INGOT)),
 
-    TIN("tinarmor", 15, createMap(new int[]{1, 3, 2, 1}),
-            9, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(TININGOT)),
+    TITANIUM("titanium", 34, createMap(new int[]{2, 6, 5, 2}),
+            14, SoundEvents.ARMOR_EQUIP_TURTLE,   3f, 0.2f,
+            () -> Ingredient.of(ModTags.Items.TITANIUM_INGOT)),
 
-    TITANIUM("titaniumarmor", 33, createMap(new int[]{2, 6, 5, 2}),
-            15, SoundEvents.ARMOR_EQUIP_CHAIN, 3f, 0.3f, () -> Ingredient.of(TITANIUMINGOT)),
+    TUNGSTEN("tungsten", 18, createMap(new int[]{2, 5, 4, 2}),
+            16, SoundEvents.ARMOR_EQUIP_IRON,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.TUNGSTEN_INGOT)),
 
-    TUNGSTEN("tungstenarmor", 15, createMap(new int[]{2, 5, 4, 2}),
-            12, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(TUNGSTENINGOT));
+    COPPER("copper", 10, createMap(new int[]{2, 3, 2, 1}),
+            6, SoundEvents.COPPER_HIT,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.COPPER)),
+
+    AMETHYST("amethyst", 16, createMap(new int[]{2, 4, 3, 2}),
+            25, SoundEvents.AMETHYST_BLOCK_RESONATE,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.AMETHYST_SHARD)),
+
+    EMERALD ("emerald", 15, createMap(new int[]{3, 6, 5, 3}),
+            9, SoundEvents.ARMOR_EQUIP_GENERIC,  0f, 0f,
+            () -> Ingredient.of(ModTags.Items.EMERALD));
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
         EnumMap<Type, Integer> enumMap = new EnumMap<>(Type.class);
@@ -119,7 +140,6 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
         return knockbackResistance;
     }
 
-    @Override
     public String getSerializedName() {
         return name;
     }

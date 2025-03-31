@@ -146,19 +146,19 @@ public class ModItems {
 			BlockBehaviour.Properties.of(),
 			new Item.Properties());
 
-	public static final List<RegistryObject<Item>> COPPER_ITEMS =  registerItems("copper", ModToolTiers.COPPER,
+	public static final List<RegistryObject<Item>> COPPER_ITEMS =  registerTools("copper", ModToolTiers.COPPER,
 			new float[]{4f, -2.5f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
 			new Item.Properties());
 	public static final List<RegistryObject<Item>> COPPER_ARMOR = registerArmor(ModArmorMaterials.COPPER,
 			new Item.Properties());
 
-	public static final List<RegistryObject<Item>> AMETHYST_ITEMS = registerItems("amethyst", ModToolTiers.AMETHYST,
+	public static final List<RegistryObject<Item>> AMETHYST_ITEMS = registerTools("amethyst", ModToolTiers.AMETHYST,
 			new float[]{5f, -2.4f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
 			new Item.Properties());
 	public static final List<RegistryObject<Item>> AMETHYST_ARMOR = registerArmor(ModArmorMaterials.AMETHYST,
 			new Item.Properties());
 
-	public static final List<RegistryObject<Item>> EMERALD_ITEMS =  registerItems("emerald", ModToolTiers.EMERALD,
+	public static final List<RegistryObject<Item>> EMERALD_ITEMS =  registerTools("emerald", ModToolTiers.EMERALD,
 			new float[]{6f, -2.6f}, new float[]{2f, -2.8f}, new float[]{7f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
 			new Item.Properties());
 	public static final List<RegistryObject<Item>> EMERALD_ARMOR = registerArmor(ModArmorMaterials.EMERALD,
@@ -194,7 +194,7 @@ public class ModItems {
 		);
 	}
 
-	private static List<RegistryObject<Item>> registerItems(String name, Tier tooltier,
+	private static List<RegistryObject<Item>> registerTools(String name, Tier tooltier,
 															   float[] swordattr, float[] pickaxeattr, float[] axeattr, float[] hoeattr, float[] shovelattr,
 															   Item.Properties itemProp) {
 		return List.of(

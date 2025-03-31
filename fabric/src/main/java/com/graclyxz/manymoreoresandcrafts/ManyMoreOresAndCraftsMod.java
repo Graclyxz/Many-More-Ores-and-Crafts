@@ -1,15 +1,15 @@
 
 package com.graclyxz.manymoreoresandcrafts;
 
-import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModItems;
-import com.graclyxz.manymoreoresandcrafts.init.ManyMoreOresAndCraftsModTabs;
+import com.graclyxz.manymoreoresandcrafts.init.ModItems;
+import com.graclyxz.manymoreoresandcrafts.init.ModTabs;
 import net.fabricmc.api.ModInitializer;
 
 public class ManyMoreOresAndCraftsMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CommonClass.init();
-		ManyMoreOresAndCraftsModItems.init();
-		ManyMoreOresAndCraftsModTabs.init();
+		ModItems.init();
+		ModTabs.init();
 	}
 }
