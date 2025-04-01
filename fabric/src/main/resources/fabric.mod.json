@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "many_more_ores_and_crafts",
+    "id": "mod_id",
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-          "com.graclyxz.manymoreoresandcrafts.ManyMoreOresAndCraftsMod"
+            "com.graclyxz.manymoreoresandcrafts.ManyMoreOresAndCraftsMod"
         ]
     },
     "mixins": [

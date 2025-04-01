@@ -1,0 +1,87 @@
+{
+  "display": {
+    "icon": {
+      "item": "many_more_ores_and_crafts:titanium_chestplate"
+    },
+    "title": {
+      "translate": "advancements.titanium_armor_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.titanium_armor_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "titanium_armor_achievement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "many_more_ores_and_crafts:titanium_helmet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "titanium_armor_achievement_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "many_more_ores_and_crafts:titanium_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "titanium_armor_achievement_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "many_more_ores_and_crafts:titanium_leggings"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "titanium_armor_achievement_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "many_more_ores_and_crafts:titanium_boots"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "many_more_ores_and_crafts:armors_achievement"
+}

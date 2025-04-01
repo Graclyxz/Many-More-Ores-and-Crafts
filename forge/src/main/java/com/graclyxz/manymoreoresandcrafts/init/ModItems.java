@@ -1,22 +1,19 @@
 package com.graclyxz.manymoreoresandcrafts.init;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.ArmorItem.Type;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 import java.util.function.Supplier;
-
 
 import static com.graclyxz.manymoreoresandcrafts.Constants.MOD_ID;
 

@@ -86,7 +86,7 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
         return enumMap;
     }
 
-    public static final StringRepresentable.EnumCodec<ModArmorMaterials> CODEC = StringRepresentable.fromEnum(ModArmorMaterials::values);
+    public static final EnumCodec<ModArmorMaterials> CODEC = StringRepresentable.fromEnum(ModArmorMaterials::values);
     private static final EnumMap<Type, Integer> durability = createMap(new int[]{13, 15, 16, 11});
     private final String name;
     private final int durabilityMultiplier;
