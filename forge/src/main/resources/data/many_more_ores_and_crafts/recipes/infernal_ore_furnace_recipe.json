@@ -5,7 +5,7 @@
   "cookingtime": 1800,
   "group": "infernal_ingot",
   "ingredient": {
-    "tag": "c:ores/infernal"
+    "tag": "forge:ores/infernal"
   },
   "result": "many_more_ores_and_crafts:infernal_ingot"
 }

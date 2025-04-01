@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/adamantite"
+            "tag": "c:raw_materials/adamantite"
           }
         ],
         "count": {

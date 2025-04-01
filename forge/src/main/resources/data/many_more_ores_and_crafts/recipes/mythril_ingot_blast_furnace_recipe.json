@@ -5,7 +5,7 @@
   "cookingtime": 200,
   "group": "mythril_ingot",
   "ingredient": {
-    "tag": "c:raw_materials/mythril"
+    "tag": "forge:raw_materials/mythril"
   },
   "result": "many_more_ores_and_crafts:mythril_ingot"
 }

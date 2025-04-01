@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/palladium"
+            "tag": "forge:raw_materials/palladium"
           }
         ],
         "count": {

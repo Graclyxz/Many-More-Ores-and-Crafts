@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:raw_materials/titanium"
+      "tag": "forge:raw_materials/titanium"
     }
   },
   "result": {

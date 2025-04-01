@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:ingots/tungsten"
+            "tag": "c:ingots/tungsten"
           }
         ],
         "count": {

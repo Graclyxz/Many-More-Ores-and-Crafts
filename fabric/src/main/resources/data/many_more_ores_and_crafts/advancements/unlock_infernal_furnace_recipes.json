@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/infernal"
+            "tag": "c:raw_materials/infernal"
           }
         ],
         "count": {

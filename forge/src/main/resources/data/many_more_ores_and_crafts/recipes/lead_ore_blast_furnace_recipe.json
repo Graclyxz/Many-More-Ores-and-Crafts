@@ -5,7 +5,7 @@
   "cookingtime": 100,
   "group": "lead_ingot",
   "ingredient": {
-    "tag": "c:ores/lead"
+    "tag": "forge:ores/lead"
   },
   "result": "many_more_ores_and_crafts:lead_ingot"
 }

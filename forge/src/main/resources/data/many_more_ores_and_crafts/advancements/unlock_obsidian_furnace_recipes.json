@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/obsidian"
+            "tag": "forge:raw_materials/obsidian"
           }
         ],
         "count": {

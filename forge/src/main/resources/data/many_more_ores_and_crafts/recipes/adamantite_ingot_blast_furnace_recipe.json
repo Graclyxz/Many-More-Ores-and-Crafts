@@ -5,7 +5,7 @@
   "cookingtime": 150,
   "group": "adamantite_ingot",
   "ingredient": {
-    "tag": "c:raw_materials/adamantite"
+    "tag": "forge:raw_materials/adamantite"
   },
   "result": "many_more_ores_and_crafts:adamantite_ingot"
 }

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:ingots/adamantite"
+            "tag": "c:ingots/adamantite"
           }
         ],
         "count": {

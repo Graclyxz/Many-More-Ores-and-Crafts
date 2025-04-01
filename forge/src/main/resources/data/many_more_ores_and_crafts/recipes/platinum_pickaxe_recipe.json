@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:ingots/platinum"
+      "tag": "forge:ingots/platinum"
     },
     "b": {
       "item": "minecraft:stick"

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/platinum"
+            "tag": "forge:raw_materials/platinum"
           }
         ],
         "count": {

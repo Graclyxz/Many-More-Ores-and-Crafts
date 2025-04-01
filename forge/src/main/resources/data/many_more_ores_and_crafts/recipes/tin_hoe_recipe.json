@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:ingots/tin"
+      "tag": "forge:ingots/tin"
     },
     "b": {
       "item": "minecraft:stick"

@@ -5,7 +5,7 @@
   "cookingtime": 150,
   "group": "orichalcum_ingot",
   "ingredient": {
-    "tag": "c:raw_materials/orichalcum"
+    "tag": "forge:raw_materials/orichalcum"
   },
   "result": "many_more_ores_and_crafts:orichalcum_ingot"
 }

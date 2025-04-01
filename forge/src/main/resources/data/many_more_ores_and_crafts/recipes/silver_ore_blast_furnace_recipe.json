@@ -5,7 +5,7 @@
   "cookingtime": 100,
   "group": "silver_ingot",
   "ingredient": {
-    "tag": "c:ores/silver"
+    "tag": "forge:ores/silver"
   },
   "result":  "many_more_ores_and_crafts:silver_ingot"
 }

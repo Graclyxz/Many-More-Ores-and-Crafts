@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:ingots/orichalcum"
+            "tag": "c:ingots/orichalcum"
           }
         ],
         "count": {

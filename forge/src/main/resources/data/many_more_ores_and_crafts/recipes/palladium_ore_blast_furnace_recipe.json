@@ -5,7 +5,7 @@
   "cookingtime": 150,
   "group": "palladium_ingot",
   "ingredient": {
-    "tag": "c:ores/palladium"
+    "tag": "forge:ores/palladium"
   },
   "result": "many_more_ores_and_crafts:palladium_ingot"
 }

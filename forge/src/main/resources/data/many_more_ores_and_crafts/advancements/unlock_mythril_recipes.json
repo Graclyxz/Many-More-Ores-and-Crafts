@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:ingots/mythril"
+            "tag": "forge:ingots/mythril"
           }
         ],
         "count": {

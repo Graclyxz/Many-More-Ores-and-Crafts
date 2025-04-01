@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/mythril"
+            "tag": "forge:raw_materials/mythril"
           }
         ],
         "count": {

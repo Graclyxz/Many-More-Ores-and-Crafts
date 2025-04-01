@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:raw_materials/cobalt"
+      "tag": "forge:raw_materials/cobalt"
     }
   },
   "result": {

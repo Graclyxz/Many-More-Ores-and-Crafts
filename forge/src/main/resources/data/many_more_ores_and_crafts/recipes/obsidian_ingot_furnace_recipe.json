@@ -5,7 +5,7 @@
   "cookingtime": 2400,
   "group": "obsidian_ingot",
   "ingredient": {
-    "tag": "c:raw_materials/obsidian"
+    "tag": "forge:raw_materials/obsidian"
   },
   "result": "many_more_ores_and_crafts:obsidian_ingot"
 }

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:ingots/silver"
+            "tag": "forge:ingots/silver"
           }
         ],
         "count": {

@@ -5,7 +5,7 @@
   "cookingtime": 300,
   "group": "cobalt_ingot",
   "ingredient": {
-    "tag": "c:ores/cobalt"
+    "tag": "forge:ores/cobalt"
   },
   "result": "many_more_ores_and_crafts:cobalt_ingot"
 }

@@ -5,7 +5,7 @@
   "cookingtime": 400,
   "group": "titanium_ingot",
   "ingredient": {
-    "tag": "c:ores/titanium"
+    "tag": "forge:ores/titanium"
   },
   "result": "many_more_ores_and_crafts:titanium_ingot"
 }

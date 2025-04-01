@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "c:raw_materials/titanium"
+            "tag": "forge:raw_materials/titanium"
           }
         ],
         "count": {

@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:raw_materials/obsidian"
+      "tag": "forge:raw_materials/obsidian"
     }
   },
   "result": {

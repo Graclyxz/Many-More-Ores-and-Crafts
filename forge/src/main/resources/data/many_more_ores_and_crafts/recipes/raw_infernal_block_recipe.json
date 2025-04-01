@@ -7,7 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": "#c:raw_materials/infernal"
+    "a": {
+      "tag": "forge:raw_materials/infernal"
+    }
 
   },
   "result": {

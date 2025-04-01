@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "c:ingots/orichalcum"
+      "tag": "forge:ingots/orichalcum"
     },
     "b": {
       "item": "minecraft:stick"

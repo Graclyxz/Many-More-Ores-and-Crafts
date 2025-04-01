@@ -5,7 +5,7 @@
   "cookingtime": 100,
   "group": "tin_ingot",
   "ingredient": {
-    "tag": "c:ores/tin"
+    "tag": "forge:ores/tin"
   },
   "result": "many_more_ores_and_crafts:tin_ingot"
 }

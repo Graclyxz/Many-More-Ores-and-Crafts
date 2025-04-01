@@ -5,7 +5,7 @@
   "cookingtime": 100,
   "group": "platinum_ingot",
   "ingredient": {
-    "tag": "c:ores/platinum"
+    "tag": "forge:ores/platinum"
   },
   "result": "many_more_ores_and_crafts:platinum_ingot"
 }
