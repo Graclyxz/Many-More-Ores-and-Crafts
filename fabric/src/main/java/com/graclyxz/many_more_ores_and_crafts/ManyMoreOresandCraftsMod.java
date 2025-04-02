@@ -2,6 +2,7 @@ package com.graclyxz.many_more_ores_and_crafts;
 
 import com.graclyxz.many_more_ores_and_crafts.init.ModItems;
 import com.graclyxz.many_more_ores_and_crafts.init.ModTab;
+import com.graclyxz.many_more_ores_and_crafts.worldgen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 public class ManyMoreOresandCraftsMod implements ModInitializer {
@@ -18,5 +19,6 @@ public class ManyMoreOresandCraftsMod implements ModInitializer {
         CommonClass.init();
         ModItems.init();
         ModTab.init();
+        ModWorldGeneration.generateModWorldGen();
     }
 }
