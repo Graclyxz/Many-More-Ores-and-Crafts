@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:gui/advancements/backgrounds/end",
     "icon": {
       "id": "many_more_ores_and_crafts:obsidian_ingot"
     },
