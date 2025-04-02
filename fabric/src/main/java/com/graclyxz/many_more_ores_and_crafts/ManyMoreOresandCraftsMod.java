@@ -1,5 +1,7 @@
 package com.graclyxz.many_more_ores_and_crafts;
 
+import com.graclyxz.many_more_ores_and_crafts.init.ModItems;
+import com.graclyxz.many_more_ores_and_crafts.init.ModTab;
 import net.fabricmc.api.ModInitializer;
 
 public class ManyMoreOresandCraftsMod implements ModInitializer {
@@ -14,5 +16,7 @@ public class ManyMoreOresandCraftsMod implements ModInitializer {
         // Use Fabric to bootstrap the Common mod.
         Constants.LOG.info("Hello Fabric world!");
         CommonClass.init();
+        ModItems.init();
+        ModTab.init();
     }
 }
