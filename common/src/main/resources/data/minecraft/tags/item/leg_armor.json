@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "many_more_ores_and_crafts:adamantite_leggings",
+    "many_more_ores_and_crafts:cobalt_leggings",
+    "many_more_ores_and_crafts:infernal_leggings",
+    "many_more_ores_and_crafts:lead_leggings",
+    "many_more_ores_and_crafts:mythril_leggings",
+    "many_more_ores_and_crafts:obsidian_leggings",
+    "many_more_ores_and_crafts:orichalcum_leggings",
+    "many_more_ores_and_crafts:palladium_leggings",
+    "many_more_ores_and_crafts:platinum_leggings",
+    "many_more_ores_and_crafts:silver_leggings",
+    "many_more_ores_and_crafts:tin_leggings",
+    "many_more_ores_and_crafts:titanium_leggings",
+    "many_more_ores_and_crafts:tungsten_leggings",
+
+    "many_more_ores_and_crafts:copper_leggings",
+    "many_more_ores_and_crafts:amethyst_leggings",
+    "many_more_ores_and_crafts:emerald_leggings"
+  ]
+}

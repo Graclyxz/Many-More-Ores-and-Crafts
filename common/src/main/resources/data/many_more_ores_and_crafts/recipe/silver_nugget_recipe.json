@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "#c:ingots/silver"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:silver_nugget",
+    "count": 9
+  }
+}

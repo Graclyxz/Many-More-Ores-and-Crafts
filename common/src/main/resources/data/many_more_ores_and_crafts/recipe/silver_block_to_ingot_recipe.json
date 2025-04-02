@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "many_more_ores_and_crafts:silver_block"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:silver_ingot",
+    "count": 9
+  }
+}

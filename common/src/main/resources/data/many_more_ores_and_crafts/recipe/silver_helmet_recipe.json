@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "#c:ingots/silver"
+  },
+  "result": {
+    "id": "many_more_ores_and_crafts:silver_helmet",
+    "count": 1
+  }
+}

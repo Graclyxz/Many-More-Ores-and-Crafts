@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "group": "lead_ingot",
+  "ingredient": "#c:raw_materials/lead",
+  "result": {
+    "id": "many_more_ores_and_crafts:lead_ingot"
+  }
+}

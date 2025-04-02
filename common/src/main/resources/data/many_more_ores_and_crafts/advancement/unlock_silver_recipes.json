@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "get_silver_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/silver"
+          }
+        ],
+        "count": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:silver_sword_recipe",
+      "many_more_ores_and_crafts:silver_pickaxe_recipe",
+      "many_more_ores_and_crafts:silver_axe_recipe",
+      "many_more_ores_and_crafts:silver_hoe_recipe",
+      "many_more_ores_and_crafts:silver_shovel_recipe",
+      "many_more_ores_and_crafts:silver_helmet_recipe",
+      "many_more_ores_and_crafts:silver_chestplate_recipe",
+      "many_more_ores_and_crafts:silver_leggings_recipe",
+      "many_more_ores_and_crafts:silver_boots_recipe",
+      "many_more_ores_and_crafts:silver_nugget_recipe",
+      "many_more_ores_and_crafts:silver_block_recipe"
+    ]
+  }
+}

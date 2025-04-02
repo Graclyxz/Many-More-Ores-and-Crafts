@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "group": "tin_ingot",
+  "ingredient": "#c:ores/tin",
+  "result": {
+    "id": "many_more_ores_and_crafts:tin_ingot"
+  }
+}
