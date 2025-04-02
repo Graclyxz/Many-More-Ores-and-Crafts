@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "many_more_ores_and_crafts:item/tin_nugget"
-  }
-}
