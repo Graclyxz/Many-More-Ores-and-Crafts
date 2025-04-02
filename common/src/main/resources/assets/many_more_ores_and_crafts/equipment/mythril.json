@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "many_more_ores_and_crafts:mythril"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "many_more_ores_and_crafts:mythril"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "many_more_ores_and_crafts:mythril"
+      }
+    ]
+  }
+}
