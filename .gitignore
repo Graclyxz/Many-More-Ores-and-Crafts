@@ -1,6 +1,5 @@
 # eclipse
 bin
-fabric
 *.launch
 .settings
 .metadata
