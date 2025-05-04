@@ -45,9 +45,9 @@ public class ModRegisters {
         return List.of(
                 registerItem(name + "_sword", (p) -> new Item(p.sword(toolmaterial, swordattr[0], swordattr[1])), itemProp),
                 registerItem(name + "_pickaxe", (p) -> new Item(p.pickaxe(toolmaterial,  pickaxeattr[0], pickaxeattr[1])), itemProp),
-                registerItem(name + "_axe", (p) -> new Item(p.axe(toolmaterial,  axeattr[0], axeattr[1])), itemProp),
-                registerItem(name + "_hoe", (p) -> new Item(p.hoe(toolmaterial,  hoeattr[0], hoeattr[1])), itemProp),
-                registerItem( name + "_shovel", (p) -> new Item(p.shovel(toolmaterial,  shovelattr[0], shovelattr[1])), itemProp),
+                registerItem(name + "_axe", (p) -> new AxeItem(toolmaterial,  axeattr[0], axeattr[1], p), itemProp),
+                registerItem(name + "_hoe", (p) -> new HoeItem(toolmaterial,  hoeattr[0], hoeattr[1] , p), itemProp),
+                registerItem( name + "_shovel", (p) -> new ShovelItem(toolmaterial,  shovelattr[0], shovelattr[1] , p), itemProp),
 
                 registerItem(name + "_helmet", (p) -> new Item(p.humanoidArmor(armormaterial, ArmorType.HELMET)) , itemProp),
                 registerItem(name + "_chestplate", (p) -> new Item(p.humanoidArmor(armormaterial, ArmorType.CHESTPLATE)), itemProp),
@@ -66,9 +66,9 @@ public class ModRegisters {
 
                 registerItem(name + "_sword", (p) -> new Item(p.sword(toolmaterial, swordattr[0], swordattr[1])), itemProp),
                 registerItem(name + "_pickaxe", (p) -> new Item(p.pickaxe(toolmaterial,  pickaxeattr[0], pickaxeattr[1])), itemProp),
-                registerItem(name + "_axe", (p) -> new Item(p.axe(toolmaterial,  axeattr[0], axeattr[1])), itemProp),
-                registerItem(name + "_hoe", (p) -> new Item(p.hoe(toolmaterial,  hoeattr[0], hoeattr[1])), itemProp),
-                registerItem( name + "_shovel", (p) -> new Item(p.shovel(toolmaterial,  shovelattr[0], shovelattr[1])), itemProp),
+                registerItem(name + "_axe", (p) -> new AxeItem(toolmaterial,  axeattr[0], axeattr[1], p), itemProp),
+                registerItem(name + "_hoe", (p) -> new HoeItem(toolmaterial,  hoeattr[0], hoeattr[1] , p), itemProp),
+                registerItem( name + "_shovel", (p) -> new ShovelItem(toolmaterial,  shovelattr[0], shovelattr[1] , p), itemProp),
 
                 registerItem(name + "_helmet", (p) -> new Item(p.humanoidArmor(armormaterial, ArmorType.HELMET)) , itemProp),
                 registerItem(name + "_chestplate", (p) -> new Item(p.humanoidArmor(armormaterial, ArmorType.CHESTPLATE)), itemProp),
