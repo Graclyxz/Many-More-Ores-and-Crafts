@@ -3,12 +3,13 @@
   "category": "equipment",
   "pattern": [
     "a",
-    "a",
-    "b"
+    "b",
+    "c"
   ],
   "key": {
     "a": "#c:ingots/infernal",
-    "b": "minecraft:stick"
+    "b": "minecraft:netherite_ingot",
+    "c": "minecraft:stick"
   },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_sword",

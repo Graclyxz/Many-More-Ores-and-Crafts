@@ -72,6 +72,10 @@ public class ModMaterials {
                 16, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
                 ModTags.Items.TUNGSTEM_INGOT, createAsset("tungsten"));
 
+        ArmorMaterial ENDERIUM = new ArmorMaterial(20, createMap(new int[]{3, 8, 6, 3, 8}),
+                22, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.1f,
+                ModTags.Items.ENDERIUM_INGOT, createAsset("enderium"));
+
         ArmorMaterial COPPER = new ArmorMaterial(10, createMap(new int[]{2, 3, 2, 1, 3}),
                 6, Holder.direct(SoundEvents.COPPER_HIT), 0f, 0f,
                 ModTags.Items.COPPER, createAsset("copper"));
@@ -149,6 +153,10 @@ public class ModMaterials {
         ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 300, 8f, 0f, 16,
                 ModTags.Items.TUNGSTEM_INGOT);
+
+        ToolMaterial ENDERIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+                1561, 9f, 0f, 22,
+                ModTags.Items.ADAMANTITE_INGOT);
 
         ToolMaterial COPPER = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 250, 6f, 0f, 14,

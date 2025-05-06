@@ -20,6 +20,7 @@ public class ModTags {
         TagKey<Item> SILVER_INGOT = createTag(ResourceLocation.parse("c:ingots/silver"));
         TagKey<Item> TIN_INGOT = createTag(ResourceLocation.parse("c:ingots/tin"));
         TagKey<Item> TITANIUM_INGOT = createTag(ResourceLocation.parse("c:ingots/titanium"));
+        TagKey<Item> ENDERIUM_INGOT = createTag(ResourceLocation.parse("c:ingots/enderium"));
         TagKey<Item> TUNGSTEM_INGOT = createTag(ResourceLocation.parse("c:ingots/tungsten"));
 
         TagKey<Item> COPPER = createTag(ResourceLocation.parse("c:ingots/copper"));

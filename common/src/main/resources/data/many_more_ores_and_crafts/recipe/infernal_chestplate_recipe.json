@@ -3,11 +3,12 @@
   "category": "equipment",
   "pattern": [
     "a a",
-    "aaa",
+    "aba",
     "aaa"
   ],
   "key": {
-    "a": "#c:ingots/infernal"
+    "a": "#c:ingots/infernal",
+    "b": "minecraft:netherite_ingot"
   },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_chestplate",

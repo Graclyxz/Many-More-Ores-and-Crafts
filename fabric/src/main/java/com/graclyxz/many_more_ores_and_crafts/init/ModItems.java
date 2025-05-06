@@ -117,6 +117,13 @@ public class ModItems {
             BlockBehaviour.Properties.of(),
             new Item.Properties().rarity(Rarity.EPIC));
 
+    /*public static final List<Item> ENDERIUM_ITEMS = registerAllItems("enderium", Tool.ENDERIUM, Armor.ENDERIUM,
+            new float[]{7.5f, -2f}, new float[]{4f, -2.8f}, new float[]{8f, -3f}, new float[]{0f, 0f}, new float[]{4.5f, -3f},
+            new Item.Properties().rarity(Rarity.EPIC));
+    public static final List<Block> ENDERIUM_BLOCKS = registerAllBlocks("enderium",  new float[]{8f, 10f}, SoundType.DEEPSLATE,
+            BlockBehaviour.Properties.of(),
+            new Item.Properties().rarity(Rarity.EPIC));*/
+
     public static final List<Item> TUNGSTEM_ITEMS = registerAllItems("tungsten", Tool.TUNGSTEM, Armor.TUNGSTEM,
             new float[]{5f, -2.4f}, new float[]{3f, -2.8f}, new float[]{6f, -3.1f}, new float[]{0, -1f}, new float[]{3.5f, -3f},
             new Item.Properties());

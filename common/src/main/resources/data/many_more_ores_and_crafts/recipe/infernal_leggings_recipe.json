@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "aaa",
+    "aba",
     "a a",
     "a a"
   ],
   "key": {
-    "a": "#c:ingots/infernal"
+    "a": "#c:ingots/infernal",
+    "b": "minecraft:netherite_ingot"
   },
   "result": {
     "id": "many_more_ores_and_crafts:infernal_leggings",

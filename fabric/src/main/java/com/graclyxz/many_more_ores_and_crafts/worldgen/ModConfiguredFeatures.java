@@ -80,7 +80,7 @@ public class ModConfiguredFeatures {
 
         register(context, OVERWORLD_ADAMANTITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAdamantiteOres, 4));
         register(context, OVERWORLD_COBALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCobaltOres, 6));
-        register(context, NETHER_INFERNAL_ORE_KEY, Feature.ORE, new OreConfiguration(netherInfernalOres, 8));
+        register(context, NETHER_INFERNAL_ORE_KEY, Feature.ORE, new OreConfiguration(netherInfernalOres, 4));
         register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLeadOres, 8));
         register(context, OVERWORLD_MYTHRIL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMythrilOres, 4));
         register(context, OVERWORLD_ORICHALCUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOrichalcumOres, 4));
