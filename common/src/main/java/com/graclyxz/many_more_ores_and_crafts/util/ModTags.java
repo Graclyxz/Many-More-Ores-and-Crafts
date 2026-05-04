@@ -23,7 +23,8 @@ public class ModTags {
         TagKey<Item> ENDERIUM_INGOT = createTag(Identifier.parse("c:ingots/enderium"));
         TagKey<Item> TUNGSTEM_INGOT = createTag(Identifier.parse("c:ingots/tungsten"));
 
-        TagKey<Item> COPPER = createTag(Identifier.parse("c:ingots/copper"));
+        // Disabled: vanilla Minecraft 26.1.2 added native copper tools/armor. Re-enable by uncommenting if needed.
+        // TagKey<Item> COPPER = createTag(Identifier.parse("c:ingots/copper"));
         TagKey<Item> AMETHYST_SHARD = createTag(Identifier.parse("c:items/amethyst_shard"));
         TagKey<Item> EMERALD = createTag(Identifier.parse("c:items/emerald"));
 

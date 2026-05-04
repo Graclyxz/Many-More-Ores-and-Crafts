@@ -131,9 +131,12 @@ public class ModItems {
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
+    // Disabled: vanilla Minecraft 26.1.2 added native copper tools/armor. Re-enable by uncommenting if needed.
+    /*
     public static final List<Item> COPPER_ITEMS =  registerItems("copper", Tool.COPPER, Armor.COPPER,
             new float[]{4f, -2.5f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
+    */
 
     public static final List<Item> AMETHYST_ITEMS = registerItems("amethyst", Tool.AMETHYST, Armor.AMETHYST,
             new float[]{5f, -2.4f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},

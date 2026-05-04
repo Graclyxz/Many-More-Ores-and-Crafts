@@ -76,9 +76,12 @@ public class ModMaterials {
                 22, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.1f,
                 ModTags.Items.ENDERIUM_INGOT, createAsset("enderium"));
 
+        // Disabled: vanilla Minecraft 26.1.2 added native copper tools/armor. Re-enable by uncommenting if needed.
+        /*
         ArmorMaterial COPPER = new ArmorMaterial(10, createMap(new int[]{2, 3, 2, 1, 3}),
                 6, Holder.direct(SoundEvents.COPPER_HIT), 0f, 0f,
                 ModTags.Items.COPPER, createAsset("copper"));
+        */
 
         ArmorMaterial AMETHYST = new ArmorMaterial(16, createMap(new int[]{2, 4, 3, 2, 4}),
                 25, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
@@ -158,9 +161,12 @@ public class ModMaterials {
                 1561, 9f, 0f, 22,
                 ModTags.Items.ENDERIUM_INGOT);
 
+        // Disabled: vanilla Minecraft 26.1.2 added native copper tools/armor. Re-enable by uncommenting if needed.
+        /*
         ToolMaterial COPPER = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 250, 6f, 0f, 14,
                 ModTags.Items.COPPER);
+        */
 
         ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
                 250, 6f, 0f, 25,
