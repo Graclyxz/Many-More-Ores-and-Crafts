@@ -3,7 +3,7 @@ package com.graclyxz.many_more_ores_and_crafts.init;
 import com.graclyxz.many_more_ores_and_crafts.util.ModTags;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.ToolMaterial;
@@ -90,7 +90,7 @@ public class ModMaterials {
 
 
         private static ResourceKey<EquipmentAsset> createAsset(String name) {
-            return ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
+            return ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(MOD_ID, name));
         }
 
         private static EnumMap<ArmorType, Integer> createMap(int[] values) {
@@ -156,7 +156,7 @@ public class ModMaterials {
 
         ToolMaterial ENDERIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                 1561, 9f, 0f, 22,
-                ModTags.Items.ADAMANTITE_INGOT);
+                ModTags.Items.ENDERIUM_INGOT);
 
         ToolMaterial COPPER = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
                 250, 6f, 0f, 14,
