@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "get_amethyst_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:copper_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "many_more_ores_and_crafts:copper_sword_recipe",
+      "many_more_ores_and_crafts:copper_pickaxe_recipe",
+      "many_more_ores_and_crafts:copper_axe_recipe",
+      "many_more_ores_and_crafts:copper_hoe_recipe",
+      "many_more_ores_and_crafts:copper_shovel_recipe",
+      "many_more_ores_and_crafts:copper_helmet_recipe",
+      "many_more_ores_and_crafts:copper_chestplate_recipe",
+      "many_more_ores_and_crafts:copper_leggings_recipe",
+      "many_more_ores_and_crafts:copper_boots_recipe"
+    ]
+  }
+}

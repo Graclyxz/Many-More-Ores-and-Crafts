@@ -4,7 +4,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
@@ -126,9 +126,13 @@ public class ModItems {
             BlockBehaviour.Properties.of(),
             new Item.Properties());
 
+    /* Vanilla 26.1.2 ya incluye herramientas/armadura de cobre nativos. Se mantiene
+       comentado por si se reactiva el set propio en el futuro. */
+    /*
     public static final List<RegistryObject<Item>> COPPER_ITEMS =  registerItems("copper", Tool.COPPER, Armor.COPPER,
             new float[]{4f, -2.5f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
             new Item.Properties());
+    */
 
     public static final List<RegistryObject<Item>> AMETHYST_ITEMS = registerItems("amethyst", Tool.AMETHYST, Armor.AMETHYST,
             new float[]{5f, -2.4f}, new float[]{2f, -2.8f}, new float[]{6f, -3.2f}, new float[]{0, -2f}, new float[]{2.5f, -3f},
@@ -139,7 +143,7 @@ public class ModItems {
             new Item.Properties());
 
 
-    public static void init(IEventBus bus) {
+    public static void init(BusGroup bus) {
         ITEMS.register(bus);
         BLOCKS.register(bus);
     }
