@@ -18,60 +18,84 @@ import static com.graclyxz.many_more_ores_and_crafts.Constants.MOD_ID;
 
 public class ModMaterials {
 
+    /*
+     * Balance pass 2026-06-07. Tiers (by worldgen rarity):
+     *   D (common 10-14/chunk): TIN, LEAD
+     *   C (medium 8/chunk):     SILVER, TUNGSTEM
+     *   B (uncommon 4-6):       COBALT, PALLADIUM, PLATINUM, OBSIDIAN
+     *   A (rare 4-6, deep):     ADAMANTITE, ORICHALCUM, INFERNAL
+     *   S (legendary 4, Y-64):  MYTHRIL, TITANIUM
+     * Vanilla-extension: AMETHYST (geode), EMERALD (villager)
+     */
+
     public interface Armor {
 
-        ArmorMaterial ADAMANTITE = new ArmorMaterial(20, createMap(new int[]{3, 8, 6, 3, 8}),
-                22, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f,
+        // A-tier — heavy hitter, durable
+        ArmorMaterial ADAMANTITE = new ArmorMaterial(25, createMap(new int[]{3, 7, 5, 3, 7}),
+                12, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f,
                 ModTags.Items.ADAMANTITE_INGOT, createAsset("adamantite"));
 
-        ArmorMaterial COBALT = new ArmorMaterial(20, createMap(new int[]{2, 7, 5, 2, 7}),
-                15, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f,
+        // B-tier — fast attacker
+        ArmorMaterial COBALT = new ArmorMaterial(18, createMap(new int[]{2, 6, 5, 2, 6}),
+                14, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f,
                 ModTags.Items.COBALT_INGOT, createAsset("cobalt"));
 
-        ArmorMaterial INFERNAL = new ArmorMaterial(25, createMap(new int[]{3, 8, 6, 3, 8}),
-                15, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.2f,
+        // A-tier — fire resistant, balanced offensive
+        ArmorMaterial INFERNAL = new ArmorMaterial(33, createMap(new int[]{3, 8, 6, 3, 8}),
+                14, SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.1f,
                 ModTags.Items.INFERNAL_INGOT, createAsset("infernal"));
 
-        ArmorMaterial LEAD = new ArmorMaterial(15, createMap(new int[]{2, 4, 3, 1, 4}),
-                14, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
+        // D-tier — heavy, anti-knockback
+        ArmorMaterial LEAD = new ArmorMaterial(15, createMap(new int[]{1, 4, 3, 1, 4}),
+                14, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.15f,
                 ModTags.Items.LEAD_INGOT, createAsset("lead"));
 
-        ArmorMaterial MYTHRIL = new ArmorMaterial(32, createMap(new int[]{4, 8, 6, 2, 8}),
-                24, SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.1f,
+        // S-tier — top enchantability, mid defense (tradeoff: mage)
+        ArmorMaterial MYTHRIL = new ArmorMaterial(28, createMap(new int[]{3, 7, 5, 2, 7}),
+                30, SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0f,
                 ModTags.Items.MYTHRIL_INGOT, createAsset("mythril"));
 
-        ArmorMaterial OBSIDIAN = new ArmorMaterial(18, createMap(new int[]{2, 6, 5, 2, 6}),
-                22, SoundEvents.ARMOR_EQUIP_ELYTRA, 2f, 0.4f,
-                ModTags.Items.TIN_INGOT, createAsset("obsidian"));
+        // B-tier — defensive tank, high knockback resist
+        ArmorMaterial OBSIDIAN = new ArmorMaterial(28, createMap(new int[]{3, 7, 5, 3, 7}),
+                14, SoundEvents.ARMOR_EQUIP_ELYTRA, 2f, 0.3f,
+                ModTags.Items.OBSIDIAN_INGOT, createAsset("obsidian"));
 
-        ArmorMaterial ORICHALCUM = new ArmorMaterial(25, createMap(new int[]{2, 6, 5, 2, 6}),
-                22, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.2f,
+        // A-tier — magical, enchantability focus
+        ArmorMaterial ORICHALCUM = new ArmorMaterial(22, createMap(new int[]{3, 7, 5, 2, 7}),
+                24, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f,
                 ModTags.Items.ORICHALCUM_INGOT, createAsset("orichalcum"));
 
-        ArmorMaterial PALLADIUM = new ArmorMaterial(25, createMap(new int[]{2, 7, 5, 2, 7}),
-                15, SoundEvents.ARMOR_EQUIP_IRON, 0.5f, 0f,
+        // B-tier — diamond-light balanced
+        ArmorMaterial PALLADIUM = new ArmorMaterial(22, createMap(new int[]{2, 6, 5, 2, 6}),
+                14, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f,
                 ModTags.Items.PALLADIUM_INGOT, createAsset("palladium"));
 
-        ArmorMaterial PLATINUM = new ArmorMaterial(20, createMap(new int[]{2, 6, 5, 2, 6}),
-                15, SoundEvents.ARMOR_EQUIP_GOLD, 0.2f, 0f,
+        // B-tier — fragile but top enchantability (gold-like)
+        ArmorMaterial PLATINUM = new ArmorMaterial(7, createMap(new int[]{2, 5, 3, 1, 5}),
+                28, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f,
                 ModTags.Items.PLATINUM_INGOT, createAsset("platinum"));
 
+        // C-tier — fast attacker, decent enchant
         ArmorMaterial SILVER = new ArmorMaterial(18, createMap(new int[]{2, 5, 4, 2, 5}),
-                16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f,
+                18, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f,
                 ModTags.Items.SILVER_INGOT, createAsset("silver"));
 
+        // D-tier — starter alternative
         ArmorMaterial TIN = new ArmorMaterial(15, createMap(new int[]{2, 3, 2, 1, 3}),
                 6, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f,
                 ModTags.Items.TIN_INGOT, createAsset("tin"));
 
-        ArmorMaterial TITANIUM = new ArmorMaterial(34, createMap(new int[]{2, 6, 5, 2, 8}),
-                14, SoundEvents.ARMOR_EQUIP_TURTLE, 3f, 0.2f,
+        // S-tier — top defense, top durability (tradeoff: tank)
+        ArmorMaterial TITANIUM = new ArmorMaterial(37, createMap(new int[]{3, 8, 6, 3, 8}),
+                10, SoundEvents.ARMOR_EQUIP_TURTLE, 3f, 0.2f,
                 ModTags.Items.TITANIUM_INGOT, createAsset("titanium"));
 
+        // C-tier — durable iron alt, no frills
         ArmorMaterial TUNGSTEM = new ArmorMaterial(18, createMap(new int[]{2, 5, 4, 2, 5}),
-                16, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
+                10, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
                 ModTags.Items.TUNGSTEM_INGOT, createAsset("tungsten"));
 
+        // Phantom material — kept until enderium items are implemented or removed (see audit).
         ArmorMaterial ENDERIUM = new ArmorMaterial(20, createMap(new int[]{3, 8, 6, 3, 8}),
                 22, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.1f,
                 ModTags.Items.ENDERIUM_INGOT, createAsset("enderium"));
@@ -83,12 +107,14 @@ public class ModMaterials {
                 ModTags.Items.COPPER, createAsset("copper"));
         */
 
+        // Vanilla-extension — fragile, top enchantability (mage gem)
         ArmorMaterial AMETHYST = new ArmorMaterial(16, createMap(new int[]{2, 4, 3, 2, 4}),
-                25, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
+                30, Holder.direct(SoundEvents.AMETHYST_BLOCK_RESONATE), 0f, 0f,
                 ModTags.Items.AMETHYST_SHARD, createAsset("amethyst"));
 
-        ArmorMaterial EMERALD = new ArmorMaterial(15, createMap(new int[]{3, 6, 5, 3, 4}),
-                9, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f,
+        // Vanilla-extension — mid via villager trade, slight toughness
+        ArmorMaterial EMERALD = new ArmorMaterial(15, createMap(new int[]{2, 5, 4, 2, 5}),
+                12, SoundEvents.ARMOR_EQUIP_GENERIC, 0.5f, 0f,
                 ModTags.Items.EMERALD, createAsset("emerald"));
 
 
@@ -105,58 +131,72 @@ public class ModMaterials {
 
     public interface Tool {
 
+        // A-tier — heavy hitter, slow
         ToolMaterial ADAMANTITE = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
-                1561, 9f, 0f, 22,
+                1561, 8f, 0f, 12,
                 ModTags.Items.ADAMANTITE_INGOT);
 
+        // B-tier — fast attacker
         ToolMaterial COBALT = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                1561, 8f, 0f, 15,
+                900, 7f, 0f, 14,
                 ModTags.Items.COBALT_INGOT);
 
+        // A-tier — fire resistant
         ToolMaterial INFERNAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-                2031, 9f, 0f, 15,
+                2031, 9f, 0f, 14,
                 ModTags.Items.INFERNAL_INGOT);
 
+        // D-tier — heavy utility
         ToolMaterial LEAD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                250, 6f, 0f, 14,
+                220, 5f, 0f, 6,
                 ModTags.Items.LEAD_INGOT);
 
+        // S-tier — top mining + enchantability (legendary mage)
         ToolMaterial MYTHRIL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-                2031, 12f, 0f, 24,
+                2031, 11f, 0f, 30,
                 ModTags.Items.MYTHRIL_INGOT);
 
+        // B-tier — defensive tank, slow mining
         ToolMaterial OBSIDIAN = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
-                2031, 7f, 0f, 22,
+                1800, 7f, 0f, 14,
                 ModTags.Items.OBSIDIAN_INGOT);
 
+        // A-tier — balanced magical
         ToolMaterial ORICHALCUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
-                1561, 9f, 0f, 22,
+                1300, 8f, 0f, 24,
                 ModTags.Items.ORICHALCUM_INGOT);
 
+        // B-tier — balanced iron+
         ToolMaterial PALLADIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                1561, 8f, 0f, 15,
+                1100, 7f, 0f, 14,
                 ModTags.Items.PALLADIUM_INGOT);
 
+        // B-tier — fragile, top enchant (gold-like)
         ToolMaterial PLATINUM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                250, 8f, 0f, 15,
+                200, 6f, 0f, 28,
                 ModTags.Items.PLATINUM_INGOT);
 
+        // C-tier — fast, enchant focus
         ToolMaterial SILVER = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                350, 8f, 0f, 16,
+                350, 6f, 0f, 18,
                 ModTags.Items.SILVER_INGOT);
 
+        // D-tier — stone+
         ToolMaterial TIN = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                131, 4f, 0f, 6,
+                180, 4f, 0f, 8,
                 ModTags.Items.TIN_INGOT);
 
+        // S-tier — top durability (legendary tank)
         ToolMaterial TITANIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-                2031, 9f, 0f, 10,
+                2500, 9f, 0f, 10,
                 ModTags.Items.TITANIUM_INGOT);
 
+        // C-tier — durable iron alt
         ToolMaterial TUNGSTEM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                300, 8f, 0f, 16,
+                800, 6f, 0f, 10,
                 ModTags.Items.TUNGSTEM_INGOT);
 
+        // Phantom material — kept until enderium items are implemented or removed (see audit).
         ToolMaterial ENDERIUM = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                 1561, 9f, 0f, 22,
                 ModTags.Items.ENDERIUM_INGOT);
@@ -168,12 +208,14 @@ public class ModMaterials {
                 ModTags.Items.COPPER);
         */
 
+        // Vanilla-extension — fragile but top enchant
         ToolMaterial AMETHYST = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                250, 6f, 0f, 25,
+                200, 5f, 0f, 30,
                 ModTags.Items.AMETHYST_SHARD);
 
+        // Vanilla-extension — mid via villager trade
         ToolMaterial EMERALD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
-                600, 7f, 0f, 9,
+                700, 7f, 0f, 12,
                 ModTags.Items.EMERALD);
     }
 }
